@@ -1,0 +1,16 @@
+[
+	{
+		"strategyType":"Bear Call Spread",
+		"expiryType":"Monthly",
+		"strikeSelection":"Price",
+		"price1":"100",
+		"price2":"200"
+	},
+	{
+		"strategyType":"Bear Put Spread",
+		"expiryType":"Monthly",
+		"strikeSelection":"Price",
+		"price1":"500",
+		"price2":"1000"
+	}
+]
