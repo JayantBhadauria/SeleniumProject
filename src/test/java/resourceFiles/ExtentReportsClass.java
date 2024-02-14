@@ -14,7 +14,7 @@ public class ExtentReportsClass {
 
         // Additional configurations (if needed)
         reporter.config().setDocumentTitle("uAlgos Test Report");
-        reporter.config().setReportName("Test Automation Result");
+        reporter.config().setReportName("Test Automation Result ");
         
         extent.attachReporter(reporter);
         extent.setSystemInfo("Tester", "Jayant Bhadauria");
