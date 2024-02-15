@@ -41,7 +41,6 @@ public class Create_portfolio_functionality extends BaseTest{
 		MyPortfolio myportfolio=new MyPortfolio(driver);
 		myportfolio.goToMyportfolioPage();
 		Assert.assertTrue("Portfolio not Saved", myportfolio.findPortfolio(portfolioName,"Created"));
-		System.out.println(getScreenShot("CreateStratey"));
 	}
 
 }

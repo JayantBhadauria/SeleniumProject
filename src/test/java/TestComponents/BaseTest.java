@@ -27,6 +27,7 @@ public class BaseTest extends DataReader{
 	// TODO Auto-generated method stub
 	public WebDriver driver;
 	public LoginPage LoginPage;
+	public TakesScreenshot ss;
 	public Properties prop= new Properties();
 	
 		public WebDriver initialization() throws IOException {
@@ -37,8 +38,9 @@ public class BaseTest extends DataReader{
 			if(browser.contains("Google")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--headless");
+//		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
+				ss=(TakesScreenshot)driver;
 			}
 			
 			System.out.println("Welcome to uTradeAlgos");
@@ -58,7 +60,7 @@ public class BaseTest extends DataReader{
 		}
 		
 		public String getScreenShot(String testCaseName) throws IOException {
-			TakesScreenshot ss=(TakesScreenshot)driver;
+			
 			File source=ss.getScreenshotAs(OutputType.FILE);
 			File outputFile=new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 			FileUtils.copyFile(source,outputFile );

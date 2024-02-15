@@ -18,7 +18,6 @@ public class ExtentReportsClass {
         
         extent.attachReporter(reporter);
         extent.setSystemInfo("Tester", "Jayant Bhadauria");
-
         return extent;
     }
 }

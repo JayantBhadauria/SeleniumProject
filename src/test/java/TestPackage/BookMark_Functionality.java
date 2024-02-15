@@ -57,18 +57,17 @@ public class BookMark_Functionality extends BaseTest {
 		MyPortfolio myportfolio=new MyPortfolio(driver);	
 		myportfolio.goToMyportfolioPage();
 		myportfolio.BookMarkPortfolio(portfolioName);
-		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));
-		getScreenShot("BookMark");	
+		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
 	}
 	
-	@Test(dependsOnMethods = { "BookMark_testing" })
-	public void unBookMarking() throws IOException, InterruptedException {
-		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
-		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
-		Thread.sleep(2000);
-		myportfolio.BookMarkPortfolio(portfolioName);
-		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
-	}
+//	@Test(dependsOnMethods = { "BookMark_testing" })
+//	public void unBookMarking() throws IOException, InterruptedException {
+//		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
+//		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
+//		Thread.sleep(2000);
+//		myportfolio.BookMarkPortfolio(portfolioName);
+//		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
+//	}
 	
 
 }

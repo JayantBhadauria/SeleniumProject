@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-10T23:17:04 IST" name="Suite" finished-at="2024-02-10T23:18:37 IST" duration-ms="93286">
+  <suite started-at="2024-02-15T21:36:25 IST" name="Suite" finished-at="2024-02-15T21:38:23 IST" duration-ms="118073">
     <groups>
       <group name="Smoke">
-        <method signature="BookMark_Functionality.BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" name="BookMark_testing" class="TestPackage.BookMark_Functionality"/>
-        <method signature="Create_portfolio_functionality.CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@4149c063]" name="CreatePortfolioTest" class="TestPackage.Create_portfolio_functionality"/>
+        <method signature="BookMark_Functionality.BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" name="BookMark_testing" class="TestPackage.BookMark_Functionality"/>
+        <method signature="Create_portfolio_functionality.CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" name="CreatePortfolioTest" class="TestPackage.Create_portfolio_functionality"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-10T23:17:04 IST" name="Test" finished-at="2024-02-10T23:18:37 IST" duration-ms="93286">
+    <test started-at="2024-02-15T21:36:25 IST" name="Test" finished-at="2024-02-15T21:38:23 IST" duration-ms="118073">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:17:05 IST" name="launchApplication" finished-at="2024-02-10T23:17:15 IST" duration-ms="10174" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:36:26 IST" name="launchApplication" finished-at="2024-02-15T21:36:40 IST" duration-ms="14381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:17:15 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-10T23:17:52 IST" duration-ms="37159" status="PASS">
+        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:36:40 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-15T21:37:25 IST" duration-ms="45216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:17:52 IST" name="closeDriver" finished-at="2024-02-10T23:17:52 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:25 IST" name="closeDriver" finished-at="2024-02-15T21:37:26 IST" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:17:52 IST" name="launchApplication" finished-at="2024-02-10T23:18:01 IST" duration-ms="8090" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:26 IST" name="launchApplication" finished-at="2024-02-15T21:37:42 IST" duration-ms="15650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:18:01 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-10T23:18:37 IST" duration-ms="36363" status="PASS">
+        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:42 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-15T21:38:22 IST" duration-ms="40813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,21 +45,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@75c56eb9]" started-at="2024-02-10T23:18:37 IST" name="closeDriver" finished-at="2024-02-10T23:18:37 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:38:22 IST" name="closeDriver" finished-at="2024-02-15T21:38:23 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- TestPackage.BookMark_Functionality -->
       <class name="TestPackage.Create_portfolio_functionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@4149c063]" started-at="2024-02-10T23:17:04 IST" name="launchApplication" finished-at="2024-02-10T23:17:14 IST" duration-ms="9730" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:36:25 IST" name="launchApplication" finished-at="2024-02-15T21:36:39 IST" duration-ms="14517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@4149c063]" started-at="2024-02-10T23:17:14 IST" name="CreatePortfolioTest" finished-at="2024-02-10T23:17:49 IST" duration-ms="35811" status="PASS">
+        <test-method signature="CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:36:39 IST" name="CreatePortfolioTest" finished-at="2024-02-15T21:37:25 IST" duration-ms="46104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePortfolioTest -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@4149c063]" started-at="2024-02-10T23:17:49 IST" name="closeDriver" finished-at="2024-02-10T23:17:50 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:37:25 IST" name="closeDriver" finished-at="2024-02-15T21:37:26 IST" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
