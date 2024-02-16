@@ -6,8 +6,8 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <!--class name="TestPackage.Create_portfolio_functionality"/-->
-      <class name="TestPackage.BookMark_Functionality"/>
+      <class name="TestPackage.Create_portfolio_functionality"/>
+      <!--class name="TestPackage.BookMark_Functionality"/-->
     </classes>
   </test> <!-- Test -->
  

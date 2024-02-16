@@ -15,9 +15,10 @@ import MainModules.MyPortfolio;
 import MainModules.PortfolioForm;
 import MainModules.StrategyForm;
 import TestComponents.BaseTest;
+import TestComponents.RetryAnalyzer;
 
 public class Create_portfolio_functionality extends BaseTest{
-	@Test(groups = "Smoke")
+	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class)
 	public void CreatePortfolioTest() throws IOException, InterruptedException {
 		
 		// uAlgos

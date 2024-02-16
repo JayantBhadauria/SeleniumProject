@@ -1,67 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results retried="1" ignored="1" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T08:07:53 IST" name="Suite" finished-at="2024-02-16T08:09:05 IST" duration-ms="71464">
+  <suite started-at="2024-02-16T19:30:33 IST" name="Suite" finished-at="2024-02-16T19:31:52 IST" duration-ms="79130">
     <groups>
+      <group name="Smoke">
+        <method signature="Create_portfolio_functionality.CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" name="CreatePortfolioTest" class="TestPackage.Create_portfolio_functionality"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-16T08:07:53 IST" name="Test" finished-at="2024-02-16T08:09:05 IST" duration-ms="71464">
-      <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:07:54 IST" name="launchApplication" finished-at="2024-02-16T08:08:05 IST" duration-ms="10491" status="PASS">
+    <test started-at="2024-02-16T19:30:33 IST" name="Test" finished-at="2024-02-16T19:31:52 IST" duration-ms="79130">
+      <class name="TestPackage.Create_portfolio_functionality">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:30:33 IST" name="launchApplication" finished-at="2024-02-16T19:30:44 IST" duration-ms="11177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:05 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-16T08:08:40 IST" duration-ms="35252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{strikeSelection=Price, expiryType=Monthly, price1=100, strategyType=Bear Call Spread, price2=200}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:40 IST" name="closeDriver" finished-at="2024-02-16T08:08:40 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:40 IST" name="launchApplication" finished-at="2024-02-16T08:08:50 IST" duration-ms="9506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:50 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-16T08:09:04 IST" duration-ms="14503" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{strikeSelection=Price, expiryType=Monthly, price1=500, strategyType=Bear Put Spread, price2=1000}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method retried="true" signature="CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:30:44 IST" name="CreatePortfolioTest" finished-at="2024-02-16T19:31:04 IST" duration-ms="19894" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=121.0.6167.162)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"// div[@class='social-logins ng-star-inserted']/button[@tabindex='2']"}
+  (Session info: chrome=121.0.6167.185)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0565d62ad92759d2ef7396ebb7b0e059, sendKeysToElement {id=41156B05641ED36159E2EA6CB221E270_element_380, value=[Ljava.lang.CharSequence;@52226e57}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.162, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65424/devtoo..., se:cdpVersion: 121.0.6167.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0565d62ad92759d2ef7396ebb7b0e059)] -> id: mat-input-29]
-Session ID: 0565d62ad92759d2ef7396ebb7b0e059]]>
+Command: [66a5b16b2c0e7ad142405601ab6b89f3, findElement {using=xpath, value=// div[@class='social-logins ng-star-inserted']/button[@tabindex='2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50215/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66a5b16b2c0e7ad142405601ab6b89f3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=121.0.6167.162)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"// div[@class='social-logins ng-star-inserted']/button[@tabindex='2']"}
+  (Session info: chrome=121.0.6167.185)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0565d62ad92759d2ef7396ebb7b0e059, sendKeysToElement {id=41156B05641ED36159E2EA6CB221E270_element_380, value=[Ljava.lang.CharSequence;@52226e57}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.162, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65424/devtoo..., se:cdpVersion: 121.0.6167.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0565d62ad92759d2ef7396ebb7b0e059)] -> id: mat-input-29]
-Session ID: 0565d62ad92759d2ef7396ebb7b0e059
+Command: [66a5b16b2c0e7ad142405601ab6b89f3, findElement {using=xpath, value=// div[@class='social-logins ng-star-inserted']/button[@tabindex='2']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50215/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66a5b16b2c0e7ad142405601ab6b89f3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -74,11 +49,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at MainModules.StrategyForm.PriceEntry(StrategyForm.java:69)
-at MainModules.StrategyForm.strategySetting(StrategyForm.java:24)
-at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:46)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at MainModules.LoginPage.LoginApplication(LoginPage.java:24)
+at TestPackage.Create_portfolio_functionality.CreatePortfolioTest(Create_portfolio_functionality.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +85,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:09:05 IST" name="closeDriver" finished-at="2024-02-16T08:09:05 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CreatePortfolioTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:31:04 IST" name="closeDriver" finished-at="2024-02-16T19:31:05 IST" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- TestPackage.BookMark_Functionality -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:31:05 IST" name="launchApplication" finished-at="2024-02-16T19:31:14 IST" duration-ms="9465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:31:14 IST" name="CreatePortfolioTest" finished-at="2024-02-16T19:31:51 IST" duration-ms="36993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatePortfolioTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@6c7a164b]" started-at="2024-02-16T19:31:51 IST" name="closeDriver" finished-at="2024-02-16T19:31:52 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- TestPackage.Create_portfolio_functionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

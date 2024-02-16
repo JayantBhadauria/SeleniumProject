@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="2" name="Test(failed)">
     <classes>
-      <class name="TestPackage.BookMark_Functionality">
+      <class name="TestPackage.Create_portfolio_functionality">
         <methods>
+          <include name="CreatePortfolioTest"/>
           <include name="launchApplication"/>
-          <include name="BookMark_testing" invocation-numbers="1"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.BookMark_Functionality -->
+      </class> <!-- TestPackage.Create_portfolio_functionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

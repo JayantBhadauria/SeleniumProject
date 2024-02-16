@@ -14,10 +14,10 @@ import com.aventstack.extentreports.Status;
 import resourceFiles.ExtentReportsClass;
 
 public class Listners extends BaseTest implements ITestListener{
-	ExtentReportsClass extentReport=new ExtentReportsClass();
-	ExtentReports extent;
-	ExtentTest test;
-	WebDriver driver;
+	public ExtentReportsClass extentReport=new ExtentReportsClass();
+	public ExtentReports extent;
+	public ExtentTest test;
+	public WebDriver driver;
 	@Override  
 	public void onTestStart(ITestResult result) {  
 	// TODO Auto-generated method stub 
