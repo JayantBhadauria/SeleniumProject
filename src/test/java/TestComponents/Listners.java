@@ -13,15 +13,15 @@ import com.aventstack.extentreports.Status;
 
 import resourceFiles.ExtentReportsClass;
 
-public class Listners implements ITestListener{
+public class Listners extends BaseTest implements ITestListener{
 	ExtentReportsClass extentReport=new ExtentReportsClass();
 	ExtentReports extent;
-	BaseTest base=new BaseTest();
 	ExtentTest test;
+	WebDriver driver;
 	@Override  
 	public void onTestStart(ITestResult result) {  
 	// TODO Auto-generated method stub 
-		extent=extentReport.getObjectReport();
+		
 		test= extent.createTest(result.getMethod().getMethodName(), "To verify end to end functionality of uAlgos");		
 	}  
 	  
@@ -35,7 +35,7 @@ public class Listners implements ITestListener{
 	public void onTestFailure(ITestResult result) {  
 	// TODO Auto-generated method stub  
 		System.out.println("Test case Failed");
-		WebDriver driver;
+		
 		try {
 			 driver=(WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
@@ -43,7 +43,7 @@ public class Listners implements ITestListener{
 			e.printStackTrace();
 		}
 		try {
-			test.addScreenCaptureFromPath(base.getScreenShot(result.getMethod().getMethodName()));
+			test.addScreenCaptureFromPath(getScreenShot(result.getMethod().getMethodName(), driver));
 		} catch (IOException e) {
 		// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -67,6 +67,7 @@ public class Listners implements ITestListener{
 	@Override  
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
+		extent=extentReport.getObjectReport();
 	}  
 	  
 	@Override  

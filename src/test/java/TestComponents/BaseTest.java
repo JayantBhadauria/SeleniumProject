@@ -40,7 +40,7 @@ public class BaseTest extends DataReader{
 				ChromeOptions options = new ChromeOptions();
 //		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
-				ss=(TakesScreenshot)driver;
+				
 			}
 			
 			System.out.println("Welcome to uTradeAlgos");
@@ -50,7 +50,7 @@ public class BaseTest extends DataReader{
 			return driver;
 		}
 		
-		@BeforeMethod(groups="Smoke")
+		@BeforeMethod()
 		public void launchApplication() throws IOException, InterruptedException {
 			this.driver=initialization();
 			LoginPage=new LoginPage(driver);
@@ -59,17 +59,17 @@ public class BaseTest extends DataReader{
 			LoginPage.GoTo(prop.getProperty("url"));
 		}
 		
-		public String getScreenShot(String testCaseName) throws IOException {
-			
+		public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
+			ss=(TakesScreenshot)driver;
 			File source=ss.getScreenshotAs(OutputType.FILE);
 			File outputFile=new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 			FileUtils.copyFile(source,outputFile );
 			return outputFile.getAbsolutePath();
 		}
 		
-		@AfterMethod(groups="Smoke")
+		@AfterMethod()
 		public void closeDriver() {
-			driver.quit();
+//			driver.quit();
 		}
 		
 		@DataProvider()

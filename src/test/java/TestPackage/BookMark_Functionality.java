@@ -36,7 +36,7 @@ import TestComponents.BaseTest;
 public class BookMark_Functionality extends BaseTest {
 	public String portfolioName=null;
 	
-	@Test(dataProvider= "StrategyDetailsData", groups="Smoke")
+	@Test(dataProvider= "StrategyDetailsData")
 	public void BookMark_testing(HashMap<String,String> input) throws InterruptedException, IOException {
 		// uAlgos
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));

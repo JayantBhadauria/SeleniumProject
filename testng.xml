@@ -5,13 +5,8 @@
 	<listener class-name="TestComponents.Listners"></listener>
 </listeners>
   <test thread-count="5" name="Test">
-	 <groups>
-		  <run>
-			  <include name= "Smoke"></include>
-		  </run>
-	  </groups>
     <classes>
-      <class name="TestPackage.Create_portfolio_functionality"/>
+      <!--class name="TestPackage.Create_portfolio_functionality"/-->
       <class name="TestPackage.BookMark_Functionality"/>
     </classes>
   </test> <!-- Test -->

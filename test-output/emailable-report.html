@@ -9,12 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">118,073</td><td>Smoke</td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">71,464</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestPackage.BookMark_Functionality</td><td><a href="#m0">BookMark_testing</a></td><td rowspan="2">1708013200736</td><td rowspan="2">45216</td></tr><tr class="passedeven"><td><a href="#m1">BookMark_testing</a></td></tr><tr class="passedodd"><td rowspan="1">TestPackage.Create_portfolio_functionality</td><td><a href="#m2">CreatePortfolioTest</a></td><td rowspan="1">1708013199875</td><td rowspan="1">46104</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m0">BookMark_testing</a></td><td rowspan="1">1708051130188</td><td rowspan="1">14503</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m1">BookMark_testing</a></td><td rowspan="1">1708051085416</td><td rowspan="1">35252</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strikeSelection=Price, expiryType=Monthly, price1=100, strategyType=Bear Call Spread, price2=200}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strikeSelection=Price, expiryType=Monthly, price1=500, strategyType=Bear Put Spread, price2=1000}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestPackage.Create_portfolio_functionality#CreatePortfolioTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strikeSelection=Price, expiryType=Monthly, price1=500, strategyType=Bear Put Spread, price2=1000}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.162)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0565d62ad92759d2ef7396ebb7b0e059, sendKeysToElement {id=41156B05641ED36159E2EA6CB221E270_element_380, value=[Ljava.lang.CharSequence;@52226e57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.162, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65424/devtoo..., se:cdpVersion: 121.0.6167.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0565d62ad92759d2ef7396ebb7b0e059)] -&gt; id: mat-input-29]
+Session ID: 0565d62ad92759d2ef7396ebb7b0e059
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at MainModules.StrategyForm.PriceEntry(StrategyForm.java:69)
+	at MainModules.StrategyForm.strategySetting(StrategyForm.java:24)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strikeSelection=Price, expiryType=Monthly, price1=100, strategyType=Bear Call Spread, price2=200}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

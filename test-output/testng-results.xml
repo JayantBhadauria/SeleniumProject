@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T21:36:25 IST" name="Suite" finished-at="2024-02-15T21:38:23 IST" duration-ms="118073">
+  <suite started-at="2024-02-16T08:07:53 IST" name="Suite" finished-at="2024-02-16T08:09:05 IST" duration-ms="71464">
     <groups>
-      <group name="Smoke">
-        <method signature="BookMark_Functionality.BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" name="BookMark_testing" class="TestPackage.BookMark_Functionality"/>
-        <method signature="Create_portfolio_functionality.CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" name="CreatePortfolioTest" class="TestPackage.Create_portfolio_functionality"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-15T21:36:25 IST" name="Test" finished-at="2024-02-15T21:38:23 IST" duration-ms="118073">
+    <test started-at="2024-02-16T08:07:53 IST" name="Test" finished-at="2024-02-16T08:09:05 IST" duration-ms="71464">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:36:26 IST" name="launchApplication" finished-at="2024-02-15T21:36:40 IST" duration-ms="14381" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:07:54 IST" name="launchApplication" finished-at="2024-02-16T08:08:05 IST" duration-ms="10491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:36:40 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-15T21:37:25 IST" duration-ms="45216" status="PASS">
+        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:05 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-16T08:08:40 IST" duration-ms="35252" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:25 IST" name="closeDriver" finished-at="2024-02-15T21:37:26 IST" duration-ms="437" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:40 IST" name="closeDriver" finished-at="2024-02-16T08:08:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:26 IST" name="launchApplication" finished-at="2024-02-15T21:37:42 IST" duration-ms="15650" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:40 IST" name="launchApplication" finished-at="2024-02-16T08:08:50 IST" duration-ms="9506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:37:42 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-15T21:38:22 IST" duration-ms="40813" status="PASS">
+        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:08:50 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-16T08:09:04 IST" duration-ms="14503" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -42,28 +38,86 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.162)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0565d62ad92759d2ef7396ebb7b0e059, sendKeysToElement {id=41156B05641ED36159E2EA6CB221E270_element_380, value=[Ljava.lang.CharSequence;@52226e57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.162, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65424/devtoo..., se:cdpVersion: 121.0.6167.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0565d62ad92759d2ef7396ebb7b0e059)] -> id: mat-input-29]
+Session ID: 0565d62ad92759d2ef7396ebb7b0e059]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.162)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0565d62ad92759d2ef7396ebb7b0e059, sendKeysToElement {id=41156B05641ED36159E2EA6CB221E270_element_380, value=[Ljava.lang.CharSequence;@52226e57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.162, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65424/devtoo..., se:cdpVersion: 121.0.6167.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0565d62ad92759d2ef7396ebb7b0e059)] -> id: mat-input-29]
+Session ID: 0565d62ad92759d2ef7396ebb7b0e059
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at MainModules.StrategyForm.PriceEntry(StrategyForm.java:69)
+at MainModules.StrategyForm.strategySetting(StrategyForm.java:24)
+at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@cd1e646]" started-at="2024-02-15T21:38:22 IST" name="closeDriver" finished-at="2024-02-15T21:38:23 IST" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6c7a164b]" started-at="2024-02-16T08:09:05 IST" name="closeDriver" finished-at="2024-02-16T08:09:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- TestPackage.BookMark_Functionality -->
-      <class name="TestPackage.Create_portfolio_functionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:36:25 IST" name="launchApplication" finished-at="2024-02-15T21:36:39 IST" duration-ms="14517" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="CreatePortfolioTest()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:36:39 IST" name="CreatePortfolioTest" finished-at="2024-02-15T21:37:25 IST" duration-ms="46104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreatePortfolioTest -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@21d03963]" started-at="2024-02-15T21:37:25 IST" name="closeDriver" finished-at="2024-02-15T21:37:26 IST" duration-ms="807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- TestPackage.Create_portfolio_functionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
