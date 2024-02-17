@@ -47,7 +47,7 @@ public class BaseTest extends DataReader{
 			if(browser.contains("Google")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-//		        options.addArguments("--headless");
+		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
 				
 			}
