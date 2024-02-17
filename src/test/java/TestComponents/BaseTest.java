@@ -15,12 +15,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import MainModules.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import resourceFiles.DataReader;
+import resourceFiles.ExtentReportsClass;
 
 public class BaseTest extends DataReader{
 	
@@ -29,7 +35,10 @@ public class BaseTest extends DataReader{
 	public LoginPage LoginPage;
 	public TakesScreenshot ss;
 	public Properties prop= new Properties();
-	
+	public ExtentReportsClass extentReport;
+//	public ExtentReports extent;
+	public static ExtentReports extent;
+
 		public WebDriver initialization() throws IOException {
 			
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
@@ -76,8 +85,20 @@ public class BaseTest extends DataReader{
 		public Object[][] StrategyDetailsData() throws IOException{	
 			List<HashMap<String,String>> maps=getJSONDataToMap();
 			return new Object [][] {
-					{maps.get(0)},
-					{maps.get(1)}
+					{maps.get(0)}
 			}; 	
 		}
+		
+		@BeforeSuite
+		public void InitiateReport() {
+			System.out.println("Before Asigning");
+			ExtentReportsClass extentReport=new ExtentReportsClass();
+			ExtentReports extent=extentReport.getObjectReport();
+			this.extent=extent;
+		}
+		@AfterSuite
+		public void flushReport() {
+		    extent.flush();
+		}
+	
 }

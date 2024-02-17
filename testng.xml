@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="2">
+<suite name="Suite" thread-count="1">
 <listeners>
 	<listener class-name="TestComponents.Listners"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+
+   <test thread-count="2" name="Create Strategy">
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
-      <!--class name="TestPackage.BookMark_Functionality"/-->
+    </classes>
+  </test> 
+  
+  <test thread-count="2" name="Bookmark Strategy">
+    <classes>
+      <class name="TestPackage.BookMark_Functionality"/>
     </classes>
   </test> <!-- Test -->
  

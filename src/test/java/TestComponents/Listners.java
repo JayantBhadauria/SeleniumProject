@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -14,15 +16,21 @@ import com.aventstack.extentreports.Status;
 import resourceFiles.ExtentReportsClass;
 
 public class Listners extends BaseTest implements ITestListener{
-	public ExtentReportsClass extentReport=new ExtentReportsClass();
-	public ExtentReports extent;
+
 	public ExtentTest test;
 	public WebDriver driver;
+//	public ExtentReportsClass extentReport=new ExtentReportsClass();;
+	public ExtentReports extent;
+	String category;
+	
+	
+	
 	@Override  
 	public void onTestStart(ITestResult result) {  
 	// TODO Auto-generated method stub 
 		
-		test= extent.createTest(result.getMethod().getMethodName(), "To verify end to end functionality of uAlgos");		
+		test= extent.createTest(result.getMethod().getMethodName(), "To verify end to end functionality of uAlgos");
+		test.assignCategory(category);
 	}  
 	  
 	@Override  
@@ -67,12 +75,13 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
-		extent=extentReport.getObjectReport();
+		category=context.getCurrentXmlTest().getName();
+		extent=BaseTest.extent;
 	}  
 	  
 	@Override  
 	public void onFinish(ITestContext context) {  
 	// TODO Auto-generated method stub  
-		extent.flush();
 	}  
+	
 }

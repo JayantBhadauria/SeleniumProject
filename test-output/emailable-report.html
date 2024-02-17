@@ -9,19 +9,66 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">79,130</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Create Strategy</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">23,632</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Bookmark Strategy</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">62,241</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">2</th><th class="num">85,873</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestPackage.Create_portfolio_functionality</td><td><a href="#m0">CreatePortfolioTest</a></td><td rowspan="1">1708092044755</td><td rowspan="1">19894</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestPackage.Create_portfolio_functionality</td><td><a href="#m1">CreatePortfolioTest</a></td><td rowspan="1">1708092074684</td><td rowspan="1">36993</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Create Strategy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.Create_portfolio_functionality</td><td><a href="#m0">CreatePortfolioTest</a></td><td rowspan="1">1708186611098</td><td rowspan="1">2099</td></tr><tr><th colspan="4">Create Strategy &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestPackage.Create_portfolio_functionality</td><td><a href="#m1">CreatePortfolioTest</a></td><td rowspan="1">1708186596749</td><td rowspan="1">5537</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Bookmark Strategy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m2">BookMark_testing</a></td><td rowspan="1">1708186623474</td><td rowspan="1">51999</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestPackage.Create_portfolio_functionality#CreatePortfolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// div[@class=&apos;social-logins ng-star-inserted&apos;]/button[@tabindex=&apos;2&apos;]&quot;}
+<h2>Create Strategy</h2><h3 id="m0">TestPackage.Create_portfolio_functionality#CreatePortfolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-rtp-c286=&quot;&quot; tabindex=&quot;7&quot; mat-flat-button=&quot;&quot; color=&quot;accent&quot; type=&quot;submit&quot; class=&quot;mat-focus-indicator trasnform-centered-vr submit-button text-primary-contrast mat-flat-button mat-button-base mat-accent ng-tns-c197-3 full-width auth-btn&quot;&gt;...&lt;/button&gt; is not clickable at point (1018, 409). Other element would receive the click: &lt;div _ngcontent-rtp-c105=&quot;&quot; class=&quot;width-95 padding-vr&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=121.0.6167.185)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [525dfdc584345fc2e0fe930027778134, clickElement {id=87019596D626E5FBB0C02F653234A783_element_9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54504/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (525dfdc584345fc2e0fe930027778134)] -&gt; xpath: // button[@tabindex=&apos;7&apos;]]
+Session ID: 525dfdc584345fc2e0fe930027778134
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at MainModules.LoginPage.LoginApplication(LoginPage.java:27)
+	at TestPackage.Create_portfolio_functionality.CreatePortfolioTest(Create_portfolio_functionality.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestPackage.Create_portfolio_functionality#CreatePortfolioTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-kfq-c286=&quot;&quot; tabindex=&quot;7&quot; mat-flat-button=&quot;&quot; color=&quot;accent&quot; type=&quot;submit&quot; class=&quot;mat-focus-indicator trasnform-centered-vr submit-button text-primary-contrast mat-flat-button mat-button-base mat-accent ng-tns-c197-3 full-width auth-btn&quot;&gt;...&lt;/button&gt; is not clickable at point (1018, 409). Other element would receive the click: &lt;div _ngcontent-kfq-c105=&quot;&quot; class=&quot;width-95 padding-vr&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=121.0.6167.185)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3aa5e6ced44aba4b163e1b0a6ebc2ea1, clickElement {id=5AC0AE27FB8906C8EDDE41787AE7C56D_element_9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54469/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3aa5e6ced44aba4b163e1b0a6ebc2ea1)] -&gt; xpath: // button[@tabindex=&apos;7&apos;]]
+Session ID: 3aa5e6ced44aba4b163e1b0a6ebc2ea1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at MainModules.LoginPage.LoginApplication(LoginPage.java:27)
+	at TestPackage.Create_portfolio_functionality.CreatePortfolioTest(Create_portfolio_functionality.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Bookmark Strategy</h2><h3 id="m2">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strikeSelection=Price, expiryType=Monthly, price1=100, strategyType=Bear Call Spread, price2=200}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;// div[@class=&apos;flex-centered-container-hr&apos;]/button&quot;}
   (Session info: chrome=121.0.6167.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [66a5b16b2c0e7ad142405601ab6b89f3, findElement {using=xpath, value=// div[@class=&apos;social-logins ng-star-inserted&apos;]/button[@tabindex=&apos;2&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50215/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 66a5b16b2c0e7ad142405601ab6b89f3
+Command: [94b571ddfaae9b5d4a461e2ae9c5d844, findElement {value=// div[@class=&apos;flex-centered-container-hr&apos;]/button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54541/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 94b571ddfaae9b5d4a461e2ae9c5d844
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -33,10 +80,9 @@ Session ID: 66a5b16b2c0e7ad142405601ab6b89f3
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at MainModules.LoginPage.LoginApplication(LoginPage.java:24)
-	at TestPackage.Create_portfolio_functionality.CreatePortfolioTest(Create_portfolio_functionality.java:26)
+	at MainModules.LoginPage.LoginApplication(LoginPage.java:29)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestPackage.Create_portfolio_functionality#CreatePortfolioTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

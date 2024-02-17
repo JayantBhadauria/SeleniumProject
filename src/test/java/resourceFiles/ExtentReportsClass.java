@@ -6,7 +6,7 @@ import com.aventstack.extentreports.ExtentReports;
 public class ExtentReportsClass {
     public ExtentReports getObjectReport() {
         String path = System.getProperty("user.dir") + "//reports//index.html";
-        
+        System.out.println("ExtentReportClass called");
         // Create an ExtentSparkReporter and attach it to the ExtentReports instance
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         ExtentReports extent = new ExtentReports();
