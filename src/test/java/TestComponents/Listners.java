@@ -19,7 +19,6 @@ public class Listners extends BaseTest implements ITestListener{
 
 	public ExtentTest test;
 	public WebDriver driver;
-//	public ExtentReportsClass extentReport=new ExtentReportsClass();;
 	public ExtentReports extent;
 	String category;
 	
