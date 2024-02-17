@@ -91,7 +91,6 @@ public class BaseTest extends DataReader{
 		
 		@BeforeSuite
 		public void InitiateReport() {
-			System.out.println("Before Asigning");
 			ExtentReportsClass extentReport=new ExtentReportsClass();
 			ExtentReports extent=extentReport.getObjectReport();
 			this.extent=extent;
