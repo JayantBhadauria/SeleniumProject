@@ -7,6 +7,7 @@
 
    <test thread-count="2" name="Create Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="Functionality of Create Strategy"></parameter>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
     </classes>
@@ -14,7 +15,8 @@
   
   
   <test thread-count="2" name="Bookmark Strategy">
-	 <parameter name="Author" value="Shivam Bhadauria"></parameter>
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="Functionality of Bookmark Strategy"></parameter>
     <classes>
       <class name="TestPackage.BookMark_Functionality"/>
     </classes>

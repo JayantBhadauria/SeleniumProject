@@ -20,15 +20,12 @@ public class Listners extends BaseTest implements ITestListener{
 	public ExtentTest test;
 	public WebDriver driver;
 	public ExtentReports extent;
-	String category,Author;
-	
-	
+	String category,Author,Description;	
 	
 	@Override  
 	public void onTestStart(ITestResult result) {  
 	// TODO Auto-generated method stub 
-		
-		test= extent.createTest(result.getMethod().getMethodName(), "To verify end to end functionality of uAlgos");
+		test= extent.createTest(result.getMethod().getMethodName(), Description);
 		test.assignCategory(category);
 		test.assignDevice(System.getenv("COMPUTERNAME"));
 		test.assignAuthor(Author);
@@ -43,8 +40,6 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onTestFailure(ITestResult result) {  
 	// TODO Auto-generated method stub  
-		System.out.println("Test case Failed");
-		
 		try {
 			 driver=(WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
@@ -64,14 +59,9 @@ public class Listners extends BaseTest implements ITestListener{
 	public void onTestSkipped(ITestResult result) {  
 	// TODO Auto-generated method stub  
 	System.out.println("Skip of test cases and its details are : "+result.getName()); 
-	
+	test.log(Status.SKIP, "Test Skipped");
 	}  
 	  
-	@Override  
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {  
-	// TODO Auto-generated method stub  
-	System.out.println("Failure of test cases and its details are : "+result.getName());  
-	}  
 	  
 	@Override  
 	public void onStart(ITestContext context) {  
@@ -79,11 +69,8 @@ public class Listners extends BaseTest implements ITestListener{
 		category=context.getCurrentXmlTest().getName();
 		Author=context.getCurrentXmlTest().getParameter("Author");
 		extent=BaseTest.extent;
+		Description=context.getCurrentXmlTest().getParameter("Description");
 	}  
 	  
-	@Override  
-	public void onFinish(ITestContext context) {  
-	// TODO Auto-generated method stub  
-	}  
 	
 }

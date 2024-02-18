@@ -13,11 +13,9 @@ public class ExtentReportsClass {
     	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
     	prop.load(fis);
         String path = System.getProperty("user.dir") + "//reports//index.html";
-        System.out.println("ExtentReportClass called");
         // Create an ExtentSparkReporter and attach it to the ExtentReports instance
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         ExtentReports extent = new ExtentReports();
-        extent.attachReporter(reporter);
 
         // Additional configurations (if needed)
         reporter.config().setDocumentTitle("uAlgos Test Report");
