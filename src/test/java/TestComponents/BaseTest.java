@@ -90,7 +90,7 @@ public class BaseTest extends DataReader{
 		}
 		
 		@BeforeSuite
-		public void InitiateReport() {
+		public void InitiateReport() throws IOException {
 			ExtentReportsClass extentReport=new ExtentReportsClass();
 			ExtentReports extent=extentReport.getObjectReport();
 			this.extent=extent;
