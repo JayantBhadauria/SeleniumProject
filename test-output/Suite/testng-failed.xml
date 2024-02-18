@@ -5,29 +5,17 @@
     <listener class-name="TestComponents.Listners"/>
   </listeners>
   <test thread-count="1" name="Create Strategy(failed)">
+    <parameter name="Author" value="Jayant Bhadauria"/>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality">
         <methods>
           <include name="flushReport"/>
-          <include name="launchApplication"/>
           <include name="CreatePortfolioTest"/>
+          <include name="launchApplication"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- TestPackage.Create_portfolio_functionality -->
     </classes>
   </test> <!-- Create Strategy(failed) -->
-  <test thread-count="1" name="Bookmark Strategy(failed)">
-    <classes>
-      <class name="TestPackage.BookMark_Functionality">
-        <methods>
-          <include name="flushReport"/>
-          <include name="launchApplication"/>
-          <include name="BookMark_testing" invocation-numbers="0"/>
-          <include name="InitiateReport"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- TestPackage.BookMark_Functionality -->
-    </classes>
-  </test> <!-- Bookmark Strategy(failed) -->
 </suite> <!-- Failed suite [Suite] -->

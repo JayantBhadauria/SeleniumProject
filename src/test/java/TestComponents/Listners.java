@@ -20,7 +20,7 @@ public class Listners extends BaseTest implements ITestListener{
 	public ExtentTest test;
 	public WebDriver driver;
 	public ExtentReports extent;
-	String category;
+	String category,Author;
 	
 	
 	
@@ -30,6 +30,8 @@ public class Listners extends BaseTest implements ITestListener{
 		
 		test= extent.createTest(result.getMethod().getMethodName(), "To verify end to end functionality of uAlgos");
 		test.assignCategory(category);
+		test.assignDevice(System.getenv("COMPUTERNAME"));
+		test.assignAuthor(Author);
 	}  
 	  
 	@Override  
@@ -75,6 +77,7 @@ public class Listners extends BaseTest implements ITestListener{
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
 		category=context.getCurrentXmlTest().getName();
+		Author=context.getCurrentXmlTest().getParameter("Author");
 		extent=BaseTest.extent;
 	}  
 	  
