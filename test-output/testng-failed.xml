@@ -4,18 +4,19 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="Create Strategy(failed)">
+  <test thread-count="1" name="Bookmark Strategy(failed)">
+    <parameter name="Description" value="Functionality of Bookmark Strategy"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
     <classes>
-      <class name="TestPackage.Create_portfolio_functionality">
+      <class name="TestPackage.BookMark_Functionality">
         <methods>
           <include name="flushReport"/>
-          <include name="CreatePortfolioTest"/>
           <include name="launchApplication"/>
+          <include name="BookMark_testing" invocation-numbers="0"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.Create_portfolio_functionality -->
+      </class> <!-- TestPackage.BookMark_Functionality -->
     </classes>
-  </test> <!-- Create Strategy(failed) -->
+  </test> <!-- Bookmark Strategy(failed) -->
 </suite> <!-- Failed suite [Suite] -->

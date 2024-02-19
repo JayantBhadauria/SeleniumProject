@@ -1,4 +1,6 @@
 package TestPackage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.junit.Assert;
 
 import java.io.FileInputStream;
@@ -41,8 +43,10 @@ public class BookMark_Functionality extends BaseTest {
 	@Test(dataProvider= "StrategyDetailsData", retryAnalyzer=RetryAnalyzer.class)
 	public void BookMark_testing(HashMap<String,String> input) throws InterruptedException, IOException {
 		// uAlgos
+		Logger log=(Logger) LogManager.getLogger(BookMark_Functionality.class);
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
+		log.info("Logs added");
 		
 		StrategyForm strategyform=portfolioform.addStrategy();
 		strategyform.strategySetting(input.get("strategyType"), input.get("expiryType"), input.get("strikeSelection"), input.get("price1"), input.get("price2"));
