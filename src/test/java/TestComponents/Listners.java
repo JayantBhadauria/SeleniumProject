@@ -59,7 +59,7 @@ public class Listners extends BaseTest implements ITestListener{
 			e.printStackTrace();
 		}
 		test.log(Status.FAIL, result.getThrowable());
-		log.info("Test : "+result.getTestContext().getName()+" Failed");
+		log.error("Test : "+result.getTestContext().getName()+" Failed");
 	}  
 	  
 	@Override  
@@ -67,7 +67,7 @@ public class Listners extends BaseTest implements ITestListener{
 	// TODO Auto-generated method stub  
 	System.out.println("Skip of test cases and its details are : "+result.getName()); 
 	test.log(Status.SKIP, "Test Skipped");
-	log.info("Test : "+result.getTestContext().getName()+" Skipped");
+	log.debug("Test : "+result.getTestContext().getName()+" Skipped");
 	}  
 	  
 	  
