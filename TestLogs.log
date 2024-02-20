@@ -1,105 +1,19 @@
-2024-02-19 22:34:04 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Logs added
-2024-02-20 20:03:54 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:04:00 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:04:09 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:04:09 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null started
-2024-02-20 20:04:13 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:04:13 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:04:23 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Strategy added
-2024-02-20 20:04:43 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio added
-2024-02-20 20:04:49 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio sucessfully bookmarked
-2024-02-20 20:04:49 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null Success
-2024-02-20 20:04:49 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Program completed
-2024-02-20 20:04:50 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Ended
-2024-02-20 20:07:54 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:07:58 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:08:04 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:08:04 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null started
-2024-02-20 20:08:07 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:08:07 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:14:24 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:14:28 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:14:34 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:14:34 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null started
-2024-02-20 20:15:47 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:15:50 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:15:57 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:15:57 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null started
-2024-02-20 20:16:00 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:16:00 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:19:22 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:19:26 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:19:33 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:19:33 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : null started
-2024-02-20 20:19:37 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:19:37 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:22:00 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:22:04 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:22:09 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:22:09 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : Bookmark Strategy started
-2024-02-20 20:22:17 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:22:17 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:22:27 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Strategy added
-2024-02-20 20:23:59 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:24:02 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:24:08 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:24:08 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : Bookmark Strategy started
-2024-02-20 20:24:11 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:24:11 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:24:20 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Strategy added
-2024-02-20 20:24:40 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio added
-2024-02-20 20:24:46 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio sucessfully bookmarked
-2024-02-20 20:24:46 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : Bookmark Strategy Success
-2024-02-20 20:24:46 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Program completed
-2024-02-20 20:24:47 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Ended
-2024-02-20 20:30:50 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Started
-2024-02-20 20:30:50 [main] INFO  {TestComponents.Listners}{.*}{$1} - Old log file deleted
-2024-02-20 20:30:54 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - ChromeDriver initialized
-2024-02-20 20:31:00 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Login page opened
-2024-02-20 20:31:00 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : Bookmark Strategy started
-2024-02-20 20:31:02 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - =========TEST INFO===========
-2024-02-20 20:31:02 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - User Logged In
-2024-02-20 20:31:13 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Strategy added
-2024-02-20 20:31:33 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio added
-2024-02-20 20:31:39 [main] INFO  {TestPackage.BookMark_Functionality}{.*}{$1} - Portfolio sucessfully bookmarked
-2024-02-20 20:31:39 [main] INFO  {TestComponents.Listners}{.*}{$1} - Test : Bookmark Strategy Success
-2024-02-20 20:31:39 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Program completed
-2024-02-20 20:31:40 [main] INFO  {TestComponents.BaseTest}{.*}{$1} - Report Ended
-2024-02-20 20:43:40 [main] INFO  {TestComponents.BaseTest}{36} - Report Started
-2024-02-20 20:43:40 [main] INFO  {TestComponents.Listners}{36} - Old log file deleted
-2024-02-20 20:43:44 [main] INFO  {TestComponents.BaseTest}{36} - ChromeDriver initialized
-2024-02-20 20:43:53 [main] INFO  {TestComponents.BaseTest}{36} - Login page opened
-2024-02-20 20:43:53 [main] INFO  {TestComponents.Listners}{36} - Test : Bookmark Strategy started
-2024-02-20 20:43:55 [main] INFO  {TestPackage.BookMark_Functionality}{36} - =========TEST INFO===========
-2024-02-20 20:43:55 [main] INFO  {TestPackage.BookMark_Functionality}{36} - User Logged In
-2024-02-20 20:44:06 [main] INFO  {TestPackage.BookMark_Functionality}{36} - Strategy added
-2024-02-20 20:45:48 [main] INFO  TestComponents.BaseTest - Old log file deleted
-2024-02-20 20:45:49 [main] INFO  TestComponents.BaseTest - Report Started
-2024-02-20 20:45:52 [main] INFO  TestComponents.BaseTest - ChromeDriver initialized
-2024-02-20 20:46:00 [main] INFO  TestComponents.BaseTest - Login page opened
-2024-02-20 20:46:00 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy started
-2024-02-20 20:46:02 [main] INFO  TestPackage.BookMark_Functionality - =========TEST INFO===========
-2024-02-20 20:46:02 [main] INFO  TestPackage.BookMark_Functionality - User Logged In
-2024-02-20 20:55:33 [main] INFO  TestComponents.BaseTest - Old log file deleted
-2024-02-20 20:55:34 [main] INFO  TestComponents.BaseTest - Report Started
-2024-02-20 20:55:37 [main] INFO  TestComponents.BaseTest - ChromeDriver initialized
-2024-02-20 20:55:46 [main] INFO  TestComponents.BaseTest - Login page opened
-2024-02-20 20:55:46 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy started
-2024-02-20 20:55:49 [main] INFO  TestPackage.BookMark_Functionality - =========TEST INFO===========
-2024-02-20 20:55:49 [main] INFO  TestPackage.BookMark_Functionality - User Logged In
-2024-02-20 20:55:57 [main] INFO  TestPackage.BookMark_Functionality - Strategy added
-2024-02-20 20:56:19 [main] INFO  TestPackage.BookMark_Functionality - Portfolio added
-2024-02-20 20:57:09 [main] INFO  TestComponents.RetryAnalyzer - Retrying test : null
-2024-02-20 20:57:09 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy Skipped
-2024-02-20 20:57:09 [main] INFO  TestComponents.BaseTest - Program completed
-2024-02-20 20:57:10 [main] INFO  TestComponents.BaseTest - ChromeDriver initialized
-2024-02-20 20:57:16 [main] INFO  TestComponents.BaseTest - Login page opened
-2024-02-20 20:57:16 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy started
-2024-02-20 20:57:19 [main] INFO  TestPackage.BookMark_Functionality - =========TEST INFO===========
-2024-02-20 20:57:19 [main] INFO  TestPackage.BookMark_Functionality - User Logged In
-2024-02-20 20:57:28 [main] INFO  TestPackage.BookMark_Functionality - Strategy added
-2024-02-20 20:57:47 [main] INFO  TestPackage.BookMark_Functionality - Portfolio added
-2024-02-20 20:57:53 [main] INFO  TestPackage.BookMark_Functionality - Portfolio sucessfully bookmarked
-2024-02-20 20:57:53 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy Success
-2024-02-20 20:57:53 [main] INFO  TestComponents.BaseTest - Program completed
-2024-02-20 20:57:53 [main] INFO  TestComponents.BaseTest - Report Ended
+2024-02-20 21:35:46 [main] INFO  TestComponents.BaseTest - Report Started
+2024-02-20 21:35:49 [main] INFO  TestComponents.BaseTest - ChromeDriver initialized
+2024-02-20 21:35:55 [main] INFO  TestComponents.BaseTest - Login page opened
+2024-02-20 21:35:55 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy started
+2024-02-20 21:35:59 [main] INFO  TestPackage.BookMark_Functionality - =========TEST INFO===========
+2024-02-20 21:35:59 [main] INFO  TestPackage.BookMark_Functionality - User Logged In
+2024-02-20 21:36:01 [main] INFO  TestComponents.RetryAnalyzer - Retrying test : null
+2024-02-20 21:36:01 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy Skipped
+2024-02-20 21:36:01 [main] INFO  TestComponents.BaseTest - Program completed
+2024-02-20 21:36:02 [main] INFO  TestComponents.BaseTest - ChromeDriver initialized
+2024-02-20 21:36:11 [main] INFO  TestComponents.BaseTest - Login page opened
+2024-02-20 21:36:11 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy started
+2024-02-20 21:36:14 [main] INFO  TestPackage.BookMark_Functionality - =========TEST INFO===========
+2024-02-20 21:36:14 [main] INFO  TestPackage.BookMark_Functionality - User Logged In
+2024-02-20 21:36:19 [main] INFO  TestComponents.RetryAnalyzer - Retrying test : null
+2024-02-20 21:36:19 [main] INFO  TestComponents.BaseTest - Screenshot taken
+2024-02-20 21:36:19 [main] INFO  TestComponents.Listners - Test : Bookmark Strategy Failed
+2024-02-20 21:36:19 [main] INFO  TestComponents.BaseTest - Program completed
+2024-02-20 21:36:20 [main] INFO  TestComponents.BaseTest - Report Ended

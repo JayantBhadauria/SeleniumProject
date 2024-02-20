@@ -98,7 +98,6 @@ public class BaseTest extends DataReader{
 		
 		@BeforeSuite
 		public void InitiateReport() throws IOException {
-			deleteLogFile();
 			ExtentReportsClass extentReport=new ExtentReportsClass();
 			ExtentReports extent=extentReport.getObjectReport();
 			this.extent=extent;
@@ -110,14 +109,5 @@ public class BaseTest extends DataReader{
 		    log.info("Report Ended");
 		}
 		
-		private void deleteLogFile() {
-			String filePath=System.getProperty("user.dir")+"//TestLogs.log";
-			File logFile=new File(filePath);
-			File newFile=new File(System.getProperty("user.dir")+"//TestLogs1.log");
-			if(logFile.exists()) {
-				logFile.renameTo(newFile);
-				log.info("Old log file deleted");
-			}
-		}
 	
 }
