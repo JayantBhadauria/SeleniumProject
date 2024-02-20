@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -38,8 +40,10 @@ public class BaseTest extends DataReader{
 	public ExtentReportsClass extentReport;
 //	public ExtentReports extent;
 	public static ExtentReports extent;
+	Logger log=(Logger) LogManager.getLogger(BaseTest.class);
 
 		public WebDriver initialization() throws IOException {
+			
 			
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
 			prop.load(fis);
@@ -49,7 +53,7 @@ public class BaseTest extends DataReader{
 				ChromeOptions options = new ChromeOptions();
 		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
-				
+				log.info("ChromeDriver initialized");
 			}
 			
 			System.out.println("Welcome to uTradeAlgos");
@@ -66,6 +70,7 @@ public class BaseTest extends DataReader{
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
 			prop.load(fis);
 			LoginPage.GoTo(prop.getProperty("url"));
+			log.info("Login page opened");
 		}
 		
 		public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
@@ -73,12 +78,14 @@ public class BaseTest extends DataReader{
 			File source=ss.getScreenshotAs(OutputType.FILE);
 			File outputFile=new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 			FileUtils.copyFile(source,outputFile );
+			log.info("Screenshot taken");
 			return outputFile.getAbsolutePath();
 		}
 		
 		@AfterMethod()
 		public void closeDriver() {
 			driver.quit();
+			log.info("Program completed");
 		}
 		
 		@DataProvider()
@@ -91,13 +98,26 @@ public class BaseTest extends DataReader{
 		
 		@BeforeSuite
 		public void InitiateReport() throws IOException {
+			deleteLogFile();
 			ExtentReportsClass extentReport=new ExtentReportsClass();
 			ExtentReports extent=extentReport.getObjectReport();
 			this.extent=extent;
+			log.info("Report Started");
 		}
 		@AfterSuite
 		public void flushReport() {
 		    extent.flush();
+		    log.info("Report Ended");
+		}
+		
+		private void deleteLogFile() {
+			String filePath=System.getProperty("user.dir")+"//TestLogs.log";
+			File logFile=new File(filePath);
+			File newFile=new File(System.getProperty("user.dir")+"//TestLogs1.log");
+			if(logFile.exists()) {
+				logFile.renameTo(newFile);
+				log.info("Old log file deleted");
+			}
 		}
 	
 }

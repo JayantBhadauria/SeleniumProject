@@ -1,7 +1,10 @@
 package TestComponents;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -21,6 +24,7 @@ public class Listners extends BaseTest implements ITestListener{
 	public WebDriver driver;
 	public ExtentReports extent;
 	String category,Author,Description;	
+	Logger log=(Logger) LogManager.getLogger(Listners.class);
 	
 	@Override  
 	public void onTestStart(ITestResult result) {  
@@ -29,12 +33,14 @@ public class Listners extends BaseTest implements ITestListener{
 		test.assignCategory(category);
 		test.assignDevice(System.getenv("COMPUTERNAME"));
 		test.assignAuthor(Author);
+		log.info("Test : "+result.getTestContext().getName()+" started");
 	}  
 	  
 	@Override  
 	public void onTestSuccess(ITestResult result) {  
 	// TODO Auto-generated method stub  
 		test.log(Status.PASS, "Test Passed");
+		log.info("Test : "+result.getTestContext().getName()+" Success");
 	}  
 	  
 	@Override  
@@ -53,6 +59,7 @@ public class Listners extends BaseTest implements ITestListener{
 			e.printStackTrace();
 		}
 		test.log(Status.FAIL, result.getThrowable());
+		log.info("Test : "+result.getTestContext().getName()+" Failed");
 	}  
 	  
 	@Override  
@@ -60,17 +67,20 @@ public class Listners extends BaseTest implements ITestListener{
 	// TODO Auto-generated method stub  
 	System.out.println("Skip of test cases and its details are : "+result.getName()); 
 	test.log(Status.SKIP, "Test Skipped");
+	log.info("Test : "+result.getTestContext().getName()+" Skipped");
 	}  
 	  
 	  
 	@Override  
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
+		
 		category=context.getCurrentXmlTest().getName();
 		Author=context.getCurrentXmlTest().getParameter("Author");
 		extent=BaseTest.extent;
 		Description=context.getCurrentXmlTest().getParameter("Description");
 	}  
 	  
+	
 	
 }

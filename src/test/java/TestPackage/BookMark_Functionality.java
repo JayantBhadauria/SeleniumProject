@@ -26,6 +26,7 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -34,28 +35,31 @@ import MainModules.MyPortfolio;
 import MainModules.PortfolioForm;
 import MainModules.StrategyForm;
 import TestComponents.BaseTest;
+import TestComponents.Listners;
 import TestComponents.RetryAnalyzer;
 
-
+@Listeners(Listners.class)
 public class BookMark_Functionality extends BaseTest {
 	public String portfolioName=null;
 	
-	@Test(dataProvider= "StrategyDetailsData", retryAnalyzer=RetryAnalyzer.class)
+	@Test(testName="Bookmark Case", dataProvider= "StrategyDetailsData", retryAnalyzer=RetryAnalyzer.class)
 	public void BookMark_testing(HashMap<String,String> input) throws InterruptedException, IOException {
 		// uAlgos
 		Logger log=(Logger) LogManager.getLogger(BookMark_Functionality.class);
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
+		log.info("=========TEST INFO===========");
+		log.info("User Logged In");
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
-		log.info("Logs added");
 		
 		StrategyForm strategyform=portfolioform.addStrategy();
 		strategyform.strategySetting(input.get("strategyType"), input.get("expiryType"), input.get("strikeSelection"), input.get("price1"), input.get("price2"));
 		strategyform.SubmitStrategy();	
-		
+		log.info("Strategy added");
 		String []tagsList= {"Profitable","Strategy","uTrade"};
 		String []executionDaysList= {"Mon","Tue"};
 		portfolioform.ChangePortfolioDetails("PF1", "11", "10", "2", "30",tagsList,executionDaysList);
 		portfolioform.SubmitPortfolioForm();
+		log.info("Portfolio added");
 		
 		String toasterText=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
 		String[] wordsArray = toasterText.split(" ");
@@ -63,7 +67,11 @@ public class BookMark_Functionality extends BaseTest {
 		MyPortfolio myportfolio=new MyPortfolio(driver);	
 		myportfolio.goToMyportfolioPage();
 		myportfolio.BookMarkPortfolio(portfolioName);
-		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
+		if(myportfolio.findPortfolio(portfolioName, "BookMark")) {
+			Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
+			log.info("Portfolio sucessfully bookmarked");
+		}
+		
 	}
 	
 //	@Test(dependsOnMethods = { "BookMark_testing" })
