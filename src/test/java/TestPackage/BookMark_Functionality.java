@@ -62,10 +62,7 @@ public class BookMark_Functionality extends BaseTest {
 		MyPortfolio myportfolio=new MyPortfolio(driver);	
 		myportfolio.goToMyportfolioPage();
 		myportfolio.BookMarkPortfolio(portfolioName);
-		if(myportfolio.findPortfolio(portfolioName, "BookMark")) {
-			Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
-			log.info("Portfolio sucessfully bookmarked");
-		}
+		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
 		
 	}
 	
