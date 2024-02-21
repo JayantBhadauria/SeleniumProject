@@ -38,7 +38,6 @@ public class BaseTest extends DataReader{
 	public TakesScreenshot ss;
 	public Properties prop= new Properties();
 	public ExtentReportsClass extentReport;
-//	public ExtentReports extent;
 	public static ExtentReports extent;
 	Logger log=(Logger) LogManager.getLogger(BaseTest.class);
 
@@ -55,9 +54,6 @@ public class BaseTest extends DataReader{
 				this.driver=new ChromeDriver(options);
 				log.info("ChromeDriver initialized");
 			}
-			
-			System.out.println("Welcome to uTradeAlgos");
-			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 			return driver;

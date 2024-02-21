@@ -2,6 +2,8 @@ package MainModules;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import AbstractClasses.AbstractClass;
 
 public class LoginPage extends AbstractClass{
+	Logger log=(Logger) LogManager.getLogger(getClass());
 		WebDriver driver;
 		public LoginPage(WebDriver driver) {
 			super(driver);
@@ -27,12 +30,14 @@ public class LoginPage extends AbstractClass{
 			driver.findElement(By.xpath("// button[@tabindex='7']")).click();
 			WaitImplicit(10);
 			driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
+			log.info("User Logged In");
 		}
 		
 		public PortfolioForm AddPortfolio() throws InterruptedException {
 			goToMyportfolioPage();
 			sleep(2000);
 			driver.findElement(By.xpath("// button[@color='accent' and @type='button']")).click();
+			log.info("Portfolio form opened");
 			return new PortfolioForm(driver);
 			
 		}
