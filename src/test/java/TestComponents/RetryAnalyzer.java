@@ -10,7 +10,7 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 	@Override
 	public boolean retry(ITestResult result) {
 		// TODO Auto-generated method stub
-		log.info("Retrying test : "+result.getTestName());
+		log.warn("Retrying test : "+result.getTestName());
 		if(currentCount<maxCount) {
 			currentCount++;
 			return true;

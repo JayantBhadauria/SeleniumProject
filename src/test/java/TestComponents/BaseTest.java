@@ -11,9 +11,11 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
@@ -50,7 +52,7 @@ public class BaseTest extends DataReader{
 			if(browser.contains("Google")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--headless");
+//		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
 				log.info("ChromeDriver initialized");
 			}
@@ -104,6 +106,8 @@ public class BaseTest extends DataReader{
 		    extent.flush();
 		    log.info("Report Ended");
 		}
+		
+		
 		
 	
 }
