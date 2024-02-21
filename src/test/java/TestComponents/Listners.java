@@ -74,7 +74,7 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
-		
+		log.info("=========TEST INFO===========");
 		category=context.getCurrentXmlTest().getName();
 		Author=context.getCurrentXmlTest().getParameter("Author");
 		extent=BaseTest.extent;

@@ -26,19 +26,15 @@ public class Create_portfolio_functionality extends BaseTest{
 		// uAlgos
 		Logger log=(Logger) LogManager.getLogger(getClass());
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
-		log.info("=========TEST INFO===========");
-		log.info("User Logged In");
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
 		
 		StrategyForm strategyform=portfolioform.addStrategy();
 		strategyform.strategySetting("Bear Call Spread", "Monthly", "Price", "100", "150");
-		strategyform.SubmitStrategy();	
-		log.info("Strategy Added");
+		strategyform.SubmitStrategy();
 		String []tagsList= {"Profitable","Strategy","uTrade"};
 		String []executionDaysList= {"Mon","Tue"};
 		portfolioform.ChangePortfolioDetails("PF1", "11", "10", "2", "30",tagsList,executionDaysList);
 		portfolioform.SubmitPortfolioForm();
-		log.info("Portfolio Added");
 		
 		// Check if it is in Created Section 
 		String toasterText=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();

@@ -41,25 +41,20 @@ import TestComponents.RetryAnalyzer;
 @Listeners(Listners.class)
 public class BookMark_Functionality extends BaseTest {
 	public String portfolioName=null;
-	
+	Logger log=(Logger) LogManager.getLogger(getClass());
 	@Test(testName="Bookmark Case", dataProvider= "StrategyDetailsData", retryAnalyzer=RetryAnalyzer.class)
 	public void BookMark_testing(HashMap<String,String> input) throws InterruptedException, IOException {
 		// uAlgos
-		Logger log=(Logger) LogManager.getLogger(BookMark_Functionality.class);
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
-		log.info("=========TEST INFO===========");
-		log.info("User Logged In");
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
 		
 		StrategyForm strategyform=portfolioform.addStrategy();
 		strategyform.strategySetting(input.get("strategyType"), input.get("expiryType"), input.get("strikeSelection"), input.get("price1"), input.get("price2"));
 		strategyform.SubmitStrategy();	
-		log.info("Strategy added");
 		String []tagsList= {"Profitable","Strategy","uTrade"};
 		String []executionDaysList= {"Mon","Tue"};
 		portfolioform.ChangePortfolioDetails("PF1", "11", "10", "2", "30",tagsList,executionDaysList);
 		portfolioform.SubmitPortfolioForm();
-		log.info("Portfolio added");
 		
 		String toasterText=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
 		String[] wordsArray = toasterText.split(" ");

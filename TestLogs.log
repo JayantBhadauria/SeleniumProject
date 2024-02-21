@@ -1,22 +1,3 @@
-2024-02-20 22:50:52 [main] INFO  - Report Started
-2024-02-20 22:50:58 [main] INFO  - ChromeDriver initialized
-2024-02-20 22:51:09 [main] INFO  - Login page opened
-2024-02-20 22:51:09 [main] INFO  - Test : Create Strategy started
-2024-02-20 22:51:18 [main] INFO  - =========TEST INFO===========
-2024-02-20 22:51:18 [main] INFO  - User Logged In
-2024-02-20 22:51:27 [main] INFO  - Strategy Added
-2024-02-20 22:51:46 [main] INFO  - Portfolio Added
-2024-02-20 22:51:50 [main] INFO  - Portfolio sucessfully Saved
-2024-02-20 22:51:50 [main] INFO  - Test : Create Strategy Success
-2024-02-20 22:51:50 [main] INFO  - Program completed
-2024-02-20 22:51:51 [main] INFO  - ChromeDriver initialized
-2024-02-20 22:52:00 [main] INFO  - Login page opened
-2024-02-20 22:52:00 [main] INFO  - Test : Bookmark Strategy started
-2024-02-20 22:52:02 [main] INFO  - =========TEST INFO===========
-2024-02-20 22:52:02 [main] INFO  - User Logged In
-2024-02-20 22:52:11 [main] INFO  - Strategy added
-2024-02-20 22:52:30 [main] INFO  - Portfolio added
-2024-02-20 22:52:36 [main] INFO  - Portfolio sucessfully bookmarked
-2024-02-20 22:52:36 [main] INFO  - Test : Bookmark Strategy Success
-2024-02-20 22:52:36 [main] INFO  - Program completed
-2024-02-20 22:52:36 [main] INFO  - Report Ended
+2024-02-21 08:22:53 [main] INFO  - Report Started
+2024-02-21 08:22:53 [main] INFO  - =========TEST INFO===========
+2024-02-21 08:22:57 [main] INFO  - ChromeDriver initialized
