@@ -33,12 +33,12 @@ public class PortfolioForm extends AbstractClass{
 		sleep(2000);
 		WebElement SubmitButton=driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']"));
 		By elementLocator = By.xpath("//button/span[text()=' Save & Review Portfolio ']");
-		if(SubmitButton.isDisplayed()) {
-			log.error("Portfolio not submitted");
-		}
-		else {
+		if(SubmitButton.isEnabled()) {
 			SubmitButton.click();
 			log.info("Portfolio Submitted");
+		}
+		else {
+			log.error("Portfolio not submitted");
 		}
 		sleep(2000);
 	}

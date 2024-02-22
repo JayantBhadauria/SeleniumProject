@@ -68,13 +68,6 @@ public class BaseTest extends DataReader{
 				this.driver=new EdgeDriver(options);
 				log.info("EdgeDriver initialized");
 			}
-			else if(browser.contains("FireFox")) {
-				WebDriverManager.firefoxdriver().setup();
-				FirefoxOptions options=new FirefoxOptions();
-				options.addArguments("--headless");
-				this.driver=new FirefoxDriver(options);
-				log.info("FirefoxDriver initialized");
-			}
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 			return driver;
