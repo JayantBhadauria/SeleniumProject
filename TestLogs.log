@@ -1,30 +1,26 @@
-2024-02-21 22:24:51 [main] INFO  - Report Started
-2024-02-21 22:24:51 [main] INFO  - =========TEST INFO===========
-2024-02-21 22:24:54 [main] INFO  - ChromeDriver initialized
-2024-02-21 22:25:25 [main] INFO  - Login page opened
-2024-02-21 22:25:25 [main] INFO  - Test : Bookmark Strategy started
-2024-02-21 22:25:36 [main] INFO  - User Logged In
-2024-02-21 22:25:37 [main] INFO  - My portfolio page opened
-2024-02-21 22:25:41 [main] INFO  - Portfolio form opened
-2024-02-21 22:25:41 [main] INFO  - Strategy form opened
-2024-02-21 22:25:47 [main] INFO  - Strategy Added
-2024-02-21 22:26:07 [main] INFO  - Portfolio Submitted
-2024-02-21 22:26:08 [main] INFO  - My portfolio page opened
-2024-02-21 22:26:13 [main] WARN  - Retrying test : null
-2024-02-21 22:26:13 [main] DEBUG - Test : Bookmark Strategy Skipped
-2024-02-21 22:26:14 [main] INFO  - Program completed
-2024-02-21 22:26:15 [main] INFO  - ChromeDriver initialized
-2024-02-21 22:26:22 [main] INFO  - Login page opened
-2024-02-21 22:26:22 [main] INFO  - Test : Bookmark Strategy started
-2024-02-21 22:26:33 [main] INFO  - User Logged In
-2024-02-21 22:26:34 [main] INFO  - My portfolio page opened
-2024-02-21 22:26:36 [main] INFO  - Portfolio form opened
-2024-02-21 22:26:37 [main] INFO  - Strategy form opened
-2024-02-21 22:26:43 [main] INFO  - Strategy Added
-2024-02-21 22:27:03 [main] INFO  - Portfolio Submitted
-2024-02-21 22:27:04 [main] INFO  - My portfolio page opened
-2024-02-21 22:27:35 [main] WARN  - Retrying test : null
-2024-02-21 22:27:36 [main] INFO  - Screenshot taken
-2024-02-21 22:27:36 [main] ERROR - Test : Bookmark Strategy Failed
-2024-02-21 22:27:36 [main] INFO  - Program completed
-2024-02-21 22:27:37 [main] INFO  - Report Ended
+2024-02-22 21:37:44 [main] INFO  - Report Started
+2024-02-22 21:37:50 [main] INFO  - ChromeDriver initialized
+2024-02-22 21:38:00 [main] INFO  - Login page opened
+2024-02-22 21:38:00 [main] INFO  - =========TEST INFO===========
+2024-02-22 21:38:00 [main] INFO  - Test : Bookmark Strategy started
+2024-02-22 21:38:12 [main] INFO  - User Logged In
+2024-02-22 21:38:12 [main] INFO  - My portfolio page opened
+2024-02-22 21:38:16 [main] INFO  - Portfolio form opened
+2024-02-22 21:38:17 [main] INFO  - Strategy form opened
+2024-02-22 21:38:23 [main] WARN  - Retrying test : null
+2024-02-22 21:38:23 [main] DEBUG - Test : Bookmark Strategy Skipped
+2024-02-22 21:38:26 [main] INFO  - ChromeDriver initialized
+2024-02-22 21:38:34 [main] INFO  - Login page opened
+2024-02-22 21:38:34 [main] INFO  - =========TEST INFO===========
+2024-02-22 21:38:34 [main] INFO  - Test : Bookmark Strategy started
+2024-02-22 21:38:45 [main] INFO  - User Logged In
+2024-02-22 21:38:46 [main] INFO  - My portfolio page opened
+2024-02-22 21:38:49 [main] INFO  - Portfolio form opened
+2024-02-22 21:38:51 [main] INFO  - Strategy form opened
+2024-02-22 21:39:48 [main] INFO  - Strategy Added
+2024-02-22 21:40:08 [main] ERROR - Portfolio not submitted
+2024-02-22 21:41:00 [main] WARN  - Retrying test : null
+2024-02-22 21:41:00 [main] INFO  - Screenshot taken
+2024-02-22 21:41:00 [main] ERROR - Test : Bookmark Strategy Failed
+2024-02-22 21:41:01 [main] INFO  - Report Ended
+2024-02-22 21:41:01 [main] INFO  - Program completed

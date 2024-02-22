@@ -74,7 +74,16 @@ public class StrategyForm extends AbstractClass{
 	
 	public void SubmitStrategy() {
 		driver.findElement(By.xpath("//button[@class='mat-focus-indicator ut-pro-button gradient margin-left margin-right mat-flat-button mat-button-base mat-accent ng-star-inserted']")).click();
-		log.info("Strategy Added");
+		By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
+		if(isElementPresent(elementLocator)) {
+			WebElement toastContainer=driver.findElement(By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster"));
+			String errorMsg=toastContainer.findElement(By.xpath("./div/div/div/div")).getText();
+			log.error(errorMsg);	
+		}
+		else {
+			log.info("Strategy Added");
+		}
+		
 	}
 	
 	

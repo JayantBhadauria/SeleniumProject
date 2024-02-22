@@ -29,6 +29,7 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onTestStart(ITestResult result) {  
 	// TODO Auto-generated method stub 
+		log.info("=========TEST INFO===========");
 		test= extent.createTest(result.getMethod().getMethodName(), Description);
 		test.assignCategory(category);
 		test.assignDevice(System.getenv("COMPUTERNAME"));
@@ -65,7 +66,6 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onTestSkipped(ITestResult result) {  
 	// TODO Auto-generated method stub  
-	System.out.println("Skip of test cases and its details are : "+result.getName()); 
 	test.log(Status.SKIP, "Test Skipped");
 	log.debug("Test : "+result.getTestContext().getName()+" Skipped");
 	}  
@@ -74,12 +74,12 @@ public class Listners extends BaseTest implements ITestListener{
 	@Override  
 	public void onStart(ITestContext context) {  
 	// TODO Auto-generated method stub  
-		log.info("=========TEST INFO===========");
 		category=context.getCurrentXmlTest().getName();
 		Author=context.getCurrentXmlTest().getParameter("Author");
 		extent=BaseTest.extent;
 		Description=context.getCurrentXmlTest().getParameter("Description");
 	}  
+	
 	  
 	
 	

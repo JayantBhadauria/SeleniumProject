@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import MainModules.MyPortfolio;
 
@@ -51,6 +52,14 @@ public class AbstractClass {
 		driver.findElement(By.id("mat-button-toggle-5-button")).click();
 		log.info("Margin Calculator opened");
 	}
-
+	
+	public boolean isElementPresent(By locator) {
+		try{
+			WebElement element = driver.findElement(locator);
+            return element.isDisplayed();
+		}catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
+			return false;
+		}
+	}
 
 }

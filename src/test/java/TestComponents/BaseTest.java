@@ -18,6 +18,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -48,6 +52,7 @@ public class BaseTest extends DataReader{
 			
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
 			prop.load(fis);
+			
 			String browser=prop.getProperty("browserName");
 			if(browser.contains("Google")) {
 				WebDriverManager.chromedriver().setup();
@@ -55,6 +60,20 @@ public class BaseTest extends DataReader{
 //		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
 				log.info("ChromeDriver initialized");
+			}
+			else if(browser.contains("Edge")) {
+				WebDriverManager.edgedriver().setup();
+				EdgeOptions options=new EdgeOptions();
+				options.addArguments("--headless");
+				this.driver=new EdgeDriver(options);
+				log.info("EdgeDriver initialized");
+			}
+			else if(browser.contains("FireFox")) {
+				WebDriverManager.firefoxdriver().setup();
+				FirefoxOptions options=new FirefoxOptions();
+				options.addArguments("--headless");
+				this.driver=new FirefoxDriver(options);
+				log.info("FirefoxDriver initialized");
 			}
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
@@ -83,7 +102,6 @@ public class BaseTest extends DataReader{
 		@AfterMethod()
 		public void closeDriver() {
 			driver.quit();
-			log.info("Program completed");
 		}
 		
 		@DataProvider()
@@ -105,9 +123,8 @@ public class BaseTest extends DataReader{
 		public void flushReport() {
 		    extent.flush();
 		    log.info("Report Ended");
+		    log.info("Program completed");
 		}
-		
-		
 		
 	
 }
