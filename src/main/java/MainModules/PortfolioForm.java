@@ -31,14 +31,13 @@ public class PortfolioForm extends AbstractClass{
 	
 	public void SubmitPortfolioForm() throws InterruptedException {
 		sleep(2000);
-		driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']")).click();
-		By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
-		if(isElementPresent(elementLocator)) {
-			WebElement toastContainer=driver.findElement(By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster"));
-			String errorMsg=toastContainer.findElement(By.xpath("./div/div/div/div")).getText();
-			log.error(errorMsg);	
+		WebElement SubmitButton=driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']"));
+		By elementLocator = By.xpath("//button/span[text()=' Save & Review Portfolio ']");
+		if(SubmitButton.isDisplayed()) {
+			log.error("Portfolio not submitted");
 		}
 		else {
+			SubmitButton.click();
 			log.info("Portfolio Submitted");
 		}
 		sleep(2000);
