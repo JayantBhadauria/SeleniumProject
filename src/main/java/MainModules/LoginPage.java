@@ -30,7 +30,7 @@ public class LoginPage extends AbstractClass{
 			driver.findElement(By.id("mat-input-1")).sendKeys(password);
 			driver.findElement(By.xpath("// button[@tabindex='7']")).click();
 			By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
-			if(isElementPresent(elementLocator,driver)) {
+			if(isElementPresent(elementLocator)) {
 				WebElement toastContainer=driver.findElement(By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster"));
 				String errorMsg=toastContainer.findElement(By.xpath("./div/div/div/div")).getText();
 				log.error(errorMsg);	
@@ -51,7 +51,7 @@ public class LoginPage extends AbstractClass{
 			driver.findElement(By.xpath("// button[@color='accent' and @type='button']")).click();
 			By elementLocator=By.xpath("//div[text()=' Create Portfolio ']");
 			
-			if(isElementPresent(elementLocator,driver)) {
+			if(isElementPresent(elementLocator)) {
 				WebElement portfolioForm=driver.findElement(elementLocator);
 				log.info("Portfolio form opened");
 				
@@ -62,15 +62,6 @@ public class LoginPage extends AbstractClass{
 			
 			return new PortfolioForm(driver);
 			
-		}
-		
-		private boolean isElementPresent(By locator,WebDriver driver) {
-			try{
-				WebElement element = driver.findElement(locator);
-	            return element.isDisplayed();
-			}catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
-				return false;
-			}
 		}
 
 }

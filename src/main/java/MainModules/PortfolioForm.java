@@ -32,8 +32,16 @@ public class PortfolioForm extends AbstractClass{
 	public void SubmitPortfolioForm() throws InterruptedException {
 		sleep(2000);
 		driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']")).click();
+		By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
+		if(isElementPresent(elementLocator)) {
+			WebElement toastContainer=driver.findElement(By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster"));
+			String errorMsg=toastContainer.findElement(By.xpath("./div/div/div/div")).getText();
+			log.error(errorMsg);	
+		}
+		else {
+			log.info("Portfolio Submitted");
+		}
 		sleep(2000);
-		log.info("Portfolio Submitted");
 	}
 	
 	public void ChangePortfolioDetails(String portfolioName,String startHour,String startMin, String endHour, String endMin,String []tagsList,String[]days) throws InterruptedException {

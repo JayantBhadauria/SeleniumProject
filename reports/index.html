@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Feb 21, 2024 10:24:50 pm</span>
+                    <span class="badge badge-primary">Feb 22, 2024 08:31:21 am</span>
                 </a>
             </li>
         </ul>
@@ -78,14 +78,6 @@
             <i class="fa fa-tag"></i>
           </span>
           <span class="title">Tags</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
         </a>
       </li>
       <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -116,8 +108,8 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
 						
-						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -164,8 +156,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">BookMark_testing</p>
-							<p class="duration text-sm">0h 0m 47s+790ms</p>
-							<span class="datetime">22:25:25 pm</span>
+							<p class="duration text-sm">0h 3m 7s+123ms</p>
+							<span class="datetime">08:31:31 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -173,9 +165,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-skip">BookMark_testing</h5>
-									<span class='badge badge-success'>02.21.2024 22:25:25</span>
-									<span class='badge badge-danger'>02.21.2024 22:26:13</span>
-									<span class='badge badge-default'>0h 0m 47s+790ms</span>
+									<span class='badge badge-success'>02.22.2024 08:31:31</span>
+									<span class='badge badge-danger'>02.22.2024 08:34:38</span>
+									<span class='badge badge-default'>0h 3m 7s+123ms</span>
 								</div>
 								<div class="m-t-15">
 			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> JayantBhadauria</span>
@@ -197,7 +189,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-long-arrow-right text-skip"></i></td>
-				<td>10:26:13 pm</td>
+				<td>8:34:38 am</td>
 				<td>
 						Test Skipped
 				</td>
@@ -207,28 +199,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="pass" test-id="2"
 					author="JayantBhadauria"
 					tag="BookmarkStrategy"
 					device="ACERSWIFT3">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">BookMark_testing</p>
-							<p class="duration text-sm">0h 1m 13s+543ms</p>
-							<span class="datetime">22:26:22 pm</span>
+							<p class="duration text-sm">0h 0m 45s+361ms</p>
+							<span class="datetime">08:34:46 am</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">BookMark_testing</h5>
-									<span class='badge badge-success'>02.21.2024 22:26:22</span>
-									<span class='badge badge-danger'>02.21.2024 22:27:36</span>
-									<span class='badge badge-default'>0h 1m 13s+543ms</span>
+									<h5 class="test-status text-pass">BookMark_testing</h5>
+									<span class='badge badge-success'>02.22.2024 08:34:46</span>
+									<span class='badge badge-danger'>02.22.2024 08:35:31</span>
+									<span class='badge badge-default'>0h 0m 45s+361ms</span>
 								</div>
 								<div class="m-t-15">
 			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> JayantBhadauria</span>
@@ -249,74 +241,14 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>10:27:36 pm</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>8:35:31 am</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=121.0.6167.185)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f3b596e38de38b59284cb28a186d96c5, findChildElement {using=xpath, value=./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1], id=9830840D463DF7620FD85562BF6A13FA_element_463}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51609/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f3b596e38de38b59284cb28a186d96c5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-	at MainModules.MyPortfolio.findPortfolio(MyPortfolio.java:64)
-	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\jayan\eclipse-workspace\uTradeAlgos_1.0\reports\BookMark_testing.png' src='C:\Users\jayan\eclipse-workspace\uTradeAlgos_1.0\reports\BookMark_testing.png'>
-	</ul>
 </div>
 					</div>
 				</li>
@@ -363,8 +295,8 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 							<p class="name">BookmarkStrategy</p>
 							<p class="duration text-sm">2 tests</p>
 							<span class="datetime">
+							<span class='badge badge-success'>1</span>
 							
-							<span class='badge badge-danger'>1</span>
 							<span class='badge badge-skip'>1</span>
 							
 							</span>
@@ -373,8 +305,8 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 					<div class="test-contents d-none">
 						<div class="info">
 							<h4>BookmarkStrategy</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
 							
-							<span status="fail" class='badge badge-danger'>1 failed</span>
 							<span status="skip" class='badge badge-skip'>1 skipped</span>
 							
 						</div>
@@ -393,90 +325,18 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 											<i class="fa fa-long-arrow-right text-white"></i>
 										</div>
 									</td>
-									<td>22:25:25 pm</td>
+									<td>08:31:31 am</td>
 									<td class='linked' test-id='1'>
 										BookMark_testing
 									</td>
 								</tr>
-								<tr class="tag-test-status" status="fail">
+								<tr class="tag-test-status" status="pass">
 									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>22:26:22 pm</td>
-									<td class='linked' test-id='2'>
-										BookMark_testing
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">1</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.StaleElementReferenceException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>22:26:22 pm</td>
+									<td>08:34:46 am</td>
 									<td class='linked' test-id='2'>
 										BookMark_testing
 									</td>
@@ -516,12 +376,12 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'>
-						<b>0</b> tests passed
+					<div><small data-tooltip='50%'>
+						<b>1</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='50%'><b>1</b> tests failed, 
+						<small data-tooltip='0%'><b>0</b> tests failed, 
 						<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -539,9 +399,9 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+					<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
 					<div>
-						<small data-tooltip='50%'><b>1</b> events failed, 
+						<small data-tooltip='0%'><b>0</b> events failed, 
 						<b data-tooltip='50%'>1</b> others
 						</small>
 					</div>
@@ -559,7 +419,7 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>.00%</span>
+							<span>50.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -575,7 +435,7 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Feb 21, 2024 10:24:50 pm</h4>
+							<h4 class="font-weight-light mt-4">Feb 22, 2024 08:31:21 am</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -591,7 +451,7 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 2m 45s+744ms</h4>
+							<h4 class="font-weight-light mt-4">0h 4m 9s+986ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -636,11 +496,11 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 						<tbody>
 							<tr>
 								<td>JayantBhadauria</td>
-								<td>0</td>
 								<td>1</td>
 								<td>0</td>
+								<td>0</td>
 								<td>
-									0%
+									50%
 								</td>
 							</tr>
 						</tbody>
@@ -667,11 +527,11 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 						<tbody>
 							<tr>
 								<td>BookmarkStrategy</td>
-								<td>0</td>
 								<td>1</td>
 								<td>0</td>
+								<td>0</td>
 								<td>
-									0%
+									50%
 								</td>
 							</tr>
 						</tbody>
@@ -698,11 +558,11 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 						<tbody>
 							<tr>
 								<td>ACERSWIFT3</td>
-								<td>0</td>
 								<td>1</td>
 								<td>0</td>
+								<td>0</td>
 								<td>
-									0%
+									50%
 								</td>
 							</tr>
 						</tbody>
@@ -738,13 +598,13 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 <script>
 	var statusGroup = {
 	    parentCount: 2,
-		passParent: 0,
-		failParent: 1,
+		passParent: 1,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 1,
-		exceptionsParent: 2,
+		exceptionsParent: 1,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -766,8 +626,8 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 2,
-		passEvents: 0,
-		failEvents: 1,
+		passEvents: 1,
+		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -779,7 +639,7 @@ Session ID: f3b596e38de38b59284cb28a186d96c5
 </script>
 <script>
 	var timeline = {
-	        "BookMark_testing":47.79,"BookMark_testing":73.543
+	        "BookMark_testing":187.123,"BookMark_testing":45.361
 	};
 </script>
                 </div>
