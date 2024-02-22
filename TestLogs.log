@@ -1,26 +1,25 @@
-2024-02-22 21:37:44 [main] INFO  - Report Started
-2024-02-22 21:37:50 [main] INFO  - ChromeDriver initialized
-2024-02-22 21:38:00 [main] INFO  - Login page opened
-2024-02-22 21:38:00 [main] INFO  - =========TEST INFO===========
-2024-02-22 21:38:00 [main] INFO  - Test : Bookmark Strategy started
-2024-02-22 21:38:12 [main] INFO  - User Logged In
-2024-02-22 21:38:12 [main] INFO  - My portfolio page opened
-2024-02-22 21:38:16 [main] INFO  - Portfolio form opened
-2024-02-22 21:38:17 [main] INFO  - Strategy form opened
-2024-02-22 21:38:23 [main] WARN  - Retrying test : null
-2024-02-22 21:38:23 [main] DEBUG - Test : Bookmark Strategy Skipped
-2024-02-22 21:38:26 [main] INFO  - ChromeDriver initialized
-2024-02-22 21:38:34 [main] INFO  - Login page opened
-2024-02-22 21:38:34 [main] INFO  - =========TEST INFO===========
-2024-02-22 21:38:34 [main] INFO  - Test : Bookmark Strategy started
-2024-02-22 21:38:45 [main] INFO  - User Logged In
-2024-02-22 21:38:46 [main] INFO  - My portfolio page opened
-2024-02-22 21:38:49 [main] INFO  - Portfolio form opened
-2024-02-22 21:38:51 [main] INFO  - Strategy form opened
-2024-02-22 21:39:48 [main] INFO  - Strategy Added
-2024-02-22 21:40:08 [main] ERROR - Portfolio not submitted
-2024-02-22 21:41:00 [main] WARN  - Retrying test : null
-2024-02-22 21:41:00 [main] INFO  - Screenshot taken
-2024-02-22 21:41:00 [main] ERROR - Test : Bookmark Strategy Failed
-2024-02-22 21:41:01 [main] INFO  - Report Ended
-2024-02-22 21:41:01 [main] INFO  - Program completed
+2024-02-22 22:13:14 [main] INFO  - Report Started
+2024-02-22 22:13:17 [main] INFO  - EdgeDriver initialized
+2024-02-22 22:13:24 [main] INFO  - Login page opened
+2024-02-22 22:13:24 [main] INFO  - =========TEST INFO===========
+2024-02-22 22:13:24 [main] INFO  - Test : Bookmark Strategy started
+2024-02-22 22:13:35 [main] INFO  - User Logged In
+2024-02-22 22:13:35 [main] INFO  - My portfolio page opened
+2024-02-22 22:14:27 [main] WARN  - Retrying test : null
+2024-02-22 22:14:27 [main] DEBUG - Test : Bookmark Strategy Skipped
+2024-02-22 22:14:28 [main] INFO  - EdgeDriver initialized
+2024-02-22 22:14:34 [main] INFO  - Login page opened
+2024-02-22 22:14:34 [main] INFO  - =========TEST INFO===========
+2024-02-22 22:14:34 [main] INFO  - Test : Bookmark Strategy started
+2024-02-22 22:14:45 [main] INFO  - User Logged In
+2024-02-22 22:14:46 [main] INFO  - My portfolio page opened
+2024-02-22 22:14:49 [main] INFO  - Portfolio form opened
+2024-02-22 22:14:50 [main] INFO  - Strategy form opened
+2024-02-22 22:15:46 [main] INFO  - Strategy Added
+2024-02-22 22:16:04 [main] INFO  - Portfolio Submitted
+2024-02-22 22:16:06 [main] INFO  - My portfolio page opened
+2024-02-22 22:16:10 [main] WARN  - Retrying test : null
+2024-02-22 22:16:11 [main] INFO  - Screenshot taken
+2024-02-22 22:16:11 [main] ERROR - Test : Bookmark Strategy Failed
+2024-02-22 22:16:12 [main] INFO  - Report Ended
+2024-02-22 22:16:12 [main] INFO  - Program completed
