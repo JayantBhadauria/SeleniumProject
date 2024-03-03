@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
+<testng-results retried="1" ignored="1" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-22T22:13:14 IST" name="Suite" finished-at="2024-02-22T22:16:11 IST" duration-ms="177095">
+  <suite started-at="2024-03-03T12:20:21 IST" name="Suite" finished-at="2024-03-03T12:23:09 IST" duration-ms="167741">
     <groups>
     </groups>
-    <test started-at="2024-02-22T22:13:14 IST" name="Bookmark Strategy" finished-at="2024-02-22T22:16:11 IST" duration-ms="177095">
+    <test started-at="2024-03-03T12:20:21 IST" name="Bookmark Strategy" finished-at="2024-03-03T12:23:09 IST" duration-ms="167741">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:13:13 IST" name="InitiateReport" finished-at="2024-02-22T22:13:14 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:20:21 IST" name="InitiateReport" finished-at="2024-03-03T12:20:21 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:13:14 IST" name="launchApplication" finished-at="2024-02-22T22:13:24 IST" duration-ms="9593" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:20:21 IST" name="launchApplication" finished-at="2024-03-03T12:20:47 IST" duration-ms="25663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:13:24 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-22T22:14:27 IST" duration-ms="63299" status="SKIP">
+        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:20:47 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-03T12:22:22 IST" duration-ms="94489" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,28 +23,40 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookMark_testing -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:22 IST" name="closeDriver" finished-at="2024-03-03T12:22:22 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:22 IST" name="launchApplication" finished-at="2024-03-03T12:22:33 IST" duration-ms="11364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="unBookMarking()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:33 IST" name="unBookMarking" finished-at="2024-03-03T12:22:46 IST" depends-on-methods="TestPackage.BookMark_Functionality.BookMark_testing" duration-ms="12502" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"// button[@color='accent' and @type='button']"}
-  (Session info: edge-headless-shell=123.0.2400.1)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+  (Session info: edge-headless-shell=123.0.2420.10)
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3baa7344569bd000f9636567b7a34cbe, findElement {using=xpath, value=// button[@color='accent' and @type='button']}]
-Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2400.1, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55818}, msedge: {msedgedriverVersion: 123.0.2419.0 (487f0220342c7..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55818/devtoo..., se:cdpVersion: 123.0.2400.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3baa7344569bd000f9636567b7a34cbe]]>
+Command: [5210f4e36f41db64bb63bca2bc358707, clickElement {id=f.A2BA9491998EF57C61028909ED2D163C.d.887AC36AD6627F4EF22D63AE2D965E46.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2420.10, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50706}, msedge: {msedgedriverVersion: 123.0.2420.10 (8f8b9e6320f9..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50706/devtoo..., se:cdpVersion: 123.0.2420.10, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: edge-headless-shell on windows (5210f4e36f41db64bb63bca2bc358707)] -> id: mat-button-toggle-2-button]
+Session ID: 5210f4e36f41db64bb63bca2bc358707]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"// button[@color='accent' and @type='button']"}
-  (Session info: edge-headless-shell=123.0.2400.1)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+  (Session info: edge-headless-shell=123.0.2420.10)
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3baa7344569bd000f9636567b7a34cbe, findElement {using=xpath, value=// button[@color='accent' and @type='button']}]
-Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2400.1, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55818}, msedge: {msedgedriverVersion: 123.0.2419.0 (487f0220342c7..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55818/devtoo..., se:cdpVersion: 123.0.2400.1, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3baa7344569bd000f9636567b7a34cbe
+Command: [5210f4e36f41db64bb63bca2bc358707, clickElement {id=f.A2BA9491998EF57C61028909ED2D163C.d.887AC36AD6627F4EF22D63AE2D965E46.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2420.10, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50706}, msedge: {msedgedriverVersion: 123.0.2420.10 (8f8b9e6320f9..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50706/devtoo..., se:cdpVersion: 123.0.2420.10, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: edge-headless-shell on windows (5210f4e36f41db64bb63bca2bc358707)] -> id: mat-button-toggle-2-button]
+Session ID: 5210f4e36f41db64bb63bca2bc358707
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,12 +69,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at MainModules.LoginPage.AddPortfolio(LoginPage.java:51)
-at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:49)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AbstractClasses.AbstractClass.goToMyportfolioPage(AbstractClass.java:31)
+at TestPackage.BookMark_Functionality.unBookMarking(BookMark_Functionality.java:72)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,33 +103,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:14:27 IST" name="closeDriver" finished-at="2024-02-22T22:14:27 IST" duration-ms="159" status="PASS">
+        </test-method> <!-- unBookMarking -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:46 IST" name="closeDriver" finished-at="2024-03-03T12:22:46 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:14:27 IST" name="launchApplication" finished-at="2024-02-22T22:14:34 IST" duration-ms="7203" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:46 IST" name="launchApplication" finished-at="2024-03-03T12:22:56 IST" duration-ms="9991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.HashMap)[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:14:34 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-02-22T22:16:10 IST" duration-ms="96062" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{strikeSelection=Price, expiryType=Monthly, price1=100, strategyType=Bear Call Spread, price2=200}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="unBookMarking()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:22:56 IST" name="unBookMarking" finished-at="2024-03-03T12:23:08 IST" depends-on-methods="TestPackage.BookMark_Functionality.BookMark_testing" duration-ms="12461" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+  (Session info: edge-headless-shell=123.0.2420.10)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9bcbf0d8061d5b4d203182153ad769b4, clickElement {id=f.7274CEDFFB61BC016D61EAE6075A679A.d.27D10E5F18277879EE8C0CA47BFDC7B8.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2420.10, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50762}, msedge: {msedgedriverVersion: 123.0.2420.10 (8f8b9e6320f9..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50762/devtoo..., se:cdpVersion: 123.0.2420.10, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: edge-headless-shell on windows (9bcbf0d8061d5b4d203182153ad769b4)] -> id: mat-button-toggle-2-button]
+Session ID: 9bcbf0d8061d5b4d203182153ad769b4]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.assertTrue(Assert.java:41)
-at org.junit.Assert.assertTrue(Assert.java:52)
-at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:65)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+  (Session info: edge-headless-shell=123.0.2420.10)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9bcbf0d8061d5b4d203182153ad769b4, clickElement {id=f.7274CEDFFB61BC016D61EAE6075A679A.d.27D10E5F18277879EE8C0CA47BFDC7B8.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 123.0.2420.10, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50762}, msedge: {msedgedriverVersion: 123.0.2420.10 (8f8b9e6320f9..., userDataDir: C:\Users\jayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50762/devtoo..., se:cdpVersion: 123.0.2420.10, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: edge-headless-shell on windows (9bcbf0d8061d5b4d203182153ad769b4)] -> id: mat-button-toggle-2-button]
+Session ID: 9bcbf0d8061d5b4d203182153ad769b4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at AbstractClasses.AbstractClass.goToMyportfolioPage(AbstractClass.java:31)
+at TestPackage.BookMark_Functionality.unBookMarking(BookMark_Functionality.java:72)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,15 +184,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:16:11 IST" name="closeDriver" finished-at="2024-02-22T22:16:11 IST" duration-ms="158" status="PASS">
+        </test-method> <!-- unBookMarking -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:23:09 IST" name="closeDriver" finished-at="2024-03-03T12:23:09 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@60cf80e7]" started-at="2024-02-22T22:16:11 IST" name="flushReport" finished-at="2024-02-22T22:16:12 IST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-03T12:23:09 IST" name="flushReport" finished-at="2024-03-03T12:23:10 IST" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
