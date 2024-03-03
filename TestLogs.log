@@ -1,31 +1,17 @@
-03-Mar-2024 12:20:21 BaseTest [main] INFO : Report Started
-03-Mar-2024 12:20:38 BaseTest [main] INFO : EdgeDriver initialized
-03-Mar-2024 12:20:47 BaseTest [main] INFO : Login page opened
-03-Mar-2024 12:20:47 Listners [main] INFO : =========TEST INFO===========
-03-Mar-2024 12:20:47 Listners [main] INFO : Test : Bookmark Strategy started
-03-Mar-2024 12:20:58 LoginPage [main] INFO : User Logged In
-03-Mar-2024 12:20:59 LoginPage [main] INFO : My portfolio page opened
-03-Mar-2024 12:21:01 LoginPage [main] INFO : Portfolio form opened
-03-Mar-2024 12:21:02 PortfolioForm [main] INFO : Strategy form opened
-03-Mar-2024 12:21:58 StrategyForm [main] INFO : Strategy Added
-03-Mar-2024 12:22:15 PortfolioForm [main] INFO : Portfolio Submitted
-03-Mar-2024 12:22:18 MyPortfolio [main] INFO : My portfolio page opened
-03-Mar-2024 12:22:22 BookMark_Functionality [main] INFO : Portfolio Bookmarked
-03-Mar-2024 12:22:22 Listners [main] INFO : Test : Bookmark Strategy Success
-03-Mar-2024 12:22:23 BaseTest [main] INFO : EdgeDriver initialized
-03-Mar-2024 12:22:33 BaseTest [main] INFO : Login page opened
-03-Mar-2024 12:22:33 Listners [main] INFO : =========TEST INFO===========
-03-Mar-2024 12:22:33 Listners [main] INFO : Test : Bookmark Strategy started
-03-Mar-2024 12:22:44 LoginPage [main] INFO : User Logged In
-03-Mar-2024 12:22:46 RetryAnalyzer [main] WARN : Retrying test : null
-03-Mar-2024 12:22:46 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-03-Mar-2024 12:22:47 BaseTest [main] INFO : EdgeDriver initialized
-03-Mar-2024 12:22:56 BaseTest [main] INFO : Login page opened
-03-Mar-2024 12:22:56 Listners [main] INFO : =========TEST INFO===========
-03-Mar-2024 12:22:56 Listners [main] INFO : Test : Bookmark Strategy started
-03-Mar-2024 12:23:07 LoginPage [main] INFO : User Logged In
-03-Mar-2024 12:23:08 RetryAnalyzer [main] WARN : Retrying test : null
-03-Mar-2024 12:23:09 BaseTest [main] INFO : Screenshot taken
-03-Mar-2024 12:23:09 Listners [main] ERROR: Test : Bookmark Strategy Failed
-03-Mar-2024 12:23:10 BaseTest [main] INFO : Report Ended
-03-Mar-2024 12:23:10 BaseTest [main] INFO : Program completed
+03-Mar-2024 06:54:09 BaseTest [main] INFO : Report Started
+03-Mar-2024 06:54:14 BaseTest [main] INFO : EdgeDriver initialized
+03-Mar-2024 06:54:21 BaseTest [main] INFO : Login page opened
+03-Mar-2024 06:54:21 Listners [main] INFO : =========TEST INFO===========
+03-Mar-2024 06:54:21 Listners [main] INFO : Test : Bookmark Strategy started
+03-Mar-2024 06:54:32 LoginPage [main] INFO : User Logged In
+03-Mar-2024 06:54:33 LoginPage [main] INFO : My portfolio page opened
+03-Mar-2024 06:54:35 LoginPage [main] INFO : Portfolio form opened
+03-Mar-2024 06:54:36 PortfolioForm [main] INFO : Strategy form opened
+03-Mar-2024 06:54:47 StrategyForm [main] INFO : Strategy Added
+03-Mar-2024 06:54:47 RetryAnalyzer [main] WARN : Retrying test : null
+03-Mar-2024 06:54:47 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+03-Mar-2024 06:54:51 BaseTest [main] INFO : EdgeDriver initialized
+03-Mar-2024 06:54:54 BaseTest [main] INFO : Login page opened
+03-Mar-2024 06:54:54 Listners [main] INFO : =========TEST INFO===========
+03-Mar-2024 06:54:54 Listners [main] INFO : Test : Bookmark Strategy started
+03-Mar-2024 06:54:54 RetryAnalyzer [main] WARN : Retrying test : null

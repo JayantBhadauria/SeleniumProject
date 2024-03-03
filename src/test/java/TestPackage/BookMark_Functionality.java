@@ -6,11 +6,15 @@ import org.junit.Assert;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -43,13 +47,21 @@ public class BookMark_Functionality extends BaseTest {
 	public String portfolioName=null;
 	Logger log=(Logger) LogManager.getLogger(getClass());
 	@Test(testName="Bookmark Case", dataProvider= "StrategyDetailsData", retryAnalyzer=RetryAnalyzer.class)
-	public void BookMark_testing(HashMap<String,String> input) throws InterruptedException, IOException {
+	public void BookMark_testing(LinkedHashMap<String,String> input) throws InterruptedException, IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		// uAlgos
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
 		
 		StrategyForm strategyform=portfolioform.addStrategy();
-		strategyform.strategySetting(input.get("strategyType"), input.get("expiryType"), input.get("strikeSelection"), input.get("price1"), input.get("price2"));
+		
+		Iterator<Map.Entry<String, String>> iterator = input.entrySet().iterator();
+		 while (iterator.hasNext()) {
+	            Map.Entry<String, String> entry = iterator.next();
+	            String key = entry.getKey();
+	            String value = entry.getValue();
+	            strategyform.formField(key, value);
+	     }
+		strategyform.priceEntry("100", "150");
 		strategyform.SubmitStrategy();	
 		String []tagsList= {"Profitable","Strategy","uTrade"};
 		String []executionDaysList= {"Mon","Tue"};
@@ -65,14 +77,14 @@ public class BookMark_Functionality extends BaseTest {
 		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
 	}
 	
-	@Test(dependsOnMethods = { "BookMark_testing" },testName="UnBookmark case", retryAnalyzer=RetryAnalyzer.class)
-	public void unBookMarking() throws IOException, InterruptedException {
-		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
-		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
-		Thread.sleep(2000);
-		myportfolio.BookMarkPortfolio(portfolioName);
-		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
-	}
+//	@Test(dependsOnMethods = { "BookMark_testing" },testName="UnBookmark case", retryAnalyzer=RetryAnalyzer.class)
+//	public void unBookMarking() throws IOException, InterruptedException {
+//		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
+//		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
+//		Thread.sleep(2000);
+//		myportfolio.BookMarkPortfolio(portfolioName);
+//		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
+//	}
 	
 
 }

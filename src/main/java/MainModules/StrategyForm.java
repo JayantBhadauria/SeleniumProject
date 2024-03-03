@@ -1,6 +1,12 @@
 package MainModules;
 
+import java.util.LinkedHashMap;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
@@ -17,17 +23,20 @@ public class StrategyForm extends AbstractClass{
 		super(driver);
 		this.driver=driver;
 	}
-	
-	
-	
 	public void strategySetting(String strategyType, String expiryType, String strikeType, String price1, String price2) {
-		StrategyType(strategyType);
-		ExpiryType(expiryType);
-		StrikeType(strikeType);
-		PriceEntry(price1,price2);
+		strategyType(strategyType);
+		expiryType(expiryType);
+		strikeSelection(strikeType);
+		priceEntry(price1,price2);
 	}
 	
-	public void StrategyType(String strategyType) {
+	
+	public void formField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		Method method=getClass().getMethod(fieldName, String.class);
+		method.invoke(this, fieldValue);
+	}
+	
+	public void strategyType(String strategyType) {
 		// Strategy Type
 		driver.findElement(By.xpath("//mat-select[@id='mat-select-5']")).click();
 		List<WebElement> stgTyp= driver.findElements(By.xpath("// div[@id='mat-select-5-panel']/mat-option"));
@@ -40,7 +49,7 @@ public class StrategyForm extends AbstractClass{
 		}
 	}
 	
-	public void ExpiryType(String expiryType) {
+	public void expiryType(String expiryType) {
 		// Expiry type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-8']")).click();
 		List<WebElement> expTyp= driver.findElements(By.xpath("// div[@id='mat-select-8-panel']/mat-option"));
@@ -53,7 +62,7 @@ public class StrategyForm extends AbstractClass{
 		}
 	}
 	
-	public void StrikeType(String strikeType) {
+	public void strikeSelection(String strikeType) {
 		// Strike type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-10']")).click();
 		List<WebElement> strikeTyp= driver.findElements(By.xpath("// div[@id='mat-select-10-panel']/mat-option"));
@@ -66,7 +75,7 @@ public class StrategyForm extends AbstractClass{
 		}
 	}
 	
-	public void PriceEntry(String price1,String price2) {
+	public void priceEntry(String price1,String price2) {
 		// Price Entry
 		driver.findElement(By.id("mat-input-28")).sendKeys(price1);
 		driver.findElement(By.id("mat-input-29")).sendKeys(price2);
