@@ -63,17 +63,16 @@ public class BookMark_Functionality extends BaseTest {
 		myportfolio.goToMyportfolioPage();
 		myportfolio.BookMarkPortfolio(portfolioName);
 		Assert.assertTrue(myportfolio.findPortfolio(portfolioName, "BookMark"));	
-		
 	}
 	
-//	@Test(dependsOnMethods = { "BookMark_testing" })
-//	public void unBookMarking() throws IOException, InterruptedException {
-//		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
-//		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
-//		Thread.sleep(2000);
-//		myportfolio.BookMarkPortfolio(portfolioName);
-//		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
-//	}
+	@Test(dependsOnMethods = { "BookMark_testing" },testName="UnBookmark case", retryAnalyzer=RetryAnalyzer.class)
+	public void unBookMarking() throws IOException, InterruptedException {
+		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
+		MyPortfolio myportfolio= LoginPage.goToMyportfolioPage();	
+		Thread.sleep(2000);
+		myportfolio.BookMarkPortfolio(portfolioName);
+		Assert.assertFalse(myportfolio.findPortfolio(portfolioName, "BookMark"));
+	}
 	
 
 }
