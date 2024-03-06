@@ -31,9 +31,17 @@ public class StrategyForm extends AbstractClass{
 	}
 	
 	
-	public void formField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+	public void strategyField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		Method method=getClass().getMethod(fieldName, String.class);
 		method.invoke(this, fieldValue);
+	}
+	
+	public void legField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		String updatedFieldName=fieldName.substring(0, fieldName.length()-1);
+		System.out.println("FieldName : "+updatedFieldName);
+		Method method=getClass().getMethod(updatedFieldName, String.class, char.class);
+		char legNumber=fieldName.charAt(fieldName.length()-1);
+		method.invoke(this, fieldValue,legNumber);
 	}
 	
 	public void strategyType(String strategyType) {
@@ -81,6 +89,13 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.id("mat-input-29")).sendKeys(price2);
 	}
 	
+	public void EnablelegSettings(char legNumber) {
+		int legNum=legNumber;
+		List<WebElement> togglebuttons=driver.findElements(By.xpath("//mat-slide-toggle[@formcontrolname='legSettings']"));
+		WebElement togglebutton= togglebuttons.get(legNum-48-1);
+		togglebutton.click();
+	}
+	
 	public void SubmitStrategy() {
 		driver.findElement(By.xpath("//button[@class='mat-focus-indicator ut-pro-button gradient margin-left margin-right mat-flat-button mat-button-base mat-accent ng-star-inserted']")).click();
 		By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
@@ -95,7 +110,28 @@ public class StrategyForm extends AbstractClass{
 		
 	}
 	
+	public void legTp(String tpValue,char legNumber) {
+		enableTP(legNumber);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(tpValue);
+	}
 	
+	public void enableTP(char legNumber) {
+		System.out.println("Enabling TP with legNumber : "+legNumber);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div/mat-checkbox[@formcontrolName='TPEnabled']/label";
+		try {
+		    driver.findElement(By.xpath(xpath)).click();
+		    System.out.println("Enabled TP ...");
+		} catch (Exception e) {
+		    e.printStackTrace();
+		    System.err.println("Unable to enable TP for legNumber: " + legNumber);
+		}
+	}
+	
+	public void enableSL(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[3]/div/mat-checkbox/label/div[1]/input", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
 	
 	
 }

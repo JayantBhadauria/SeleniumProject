@@ -1,17 +1,15 @@
-03-Mar-2024 06:54:09 BaseTest [main] INFO : Report Started
-03-Mar-2024 06:54:14 BaseTest [main] INFO : EdgeDriver initialized
-03-Mar-2024 06:54:21 BaseTest [main] INFO : Login page opened
-03-Mar-2024 06:54:21 Listners [main] INFO : =========TEST INFO===========
-03-Mar-2024 06:54:21 Listners [main] INFO : Test : Bookmark Strategy started
-03-Mar-2024 06:54:32 LoginPage [main] INFO : User Logged In
-03-Mar-2024 06:54:33 LoginPage [main] INFO : My portfolio page opened
-03-Mar-2024 06:54:35 LoginPage [main] INFO : Portfolio form opened
-03-Mar-2024 06:54:36 PortfolioForm [main] INFO : Strategy form opened
-03-Mar-2024 06:54:47 StrategyForm [main] INFO : Strategy Added
-03-Mar-2024 06:54:47 RetryAnalyzer [main] WARN : Retrying test : null
-03-Mar-2024 06:54:47 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-03-Mar-2024 06:54:51 BaseTest [main] INFO : EdgeDriver initialized
-03-Mar-2024 06:54:54 BaseTest [main] INFO : Login page opened
-03-Mar-2024 06:54:54 Listners [main] INFO : =========TEST INFO===========
-03-Mar-2024 06:54:54 Listners [main] INFO : Test : Bookmark Strategy started
-03-Mar-2024 06:54:54 RetryAnalyzer [main] WARN : Retrying test : null
+06-Mar-2024 11:18:30 BaseTest [main] INFO : Report Started
+06-Mar-2024 11:18:34 BaseTest [main] INFO : ChromeDriver initialized
+06-Mar-2024 11:18:42 BaseTest [main] INFO : Login page opened
+06-Mar-2024 11:18:42 Listners [main] INFO : =========TEST INFO===========
+06-Mar-2024 11:18:42 Listners [main] INFO : Test : Bookmark Strategy started
+06-Mar-2024 11:18:54 LoginPage [main] INFO : User Logged In
+06-Mar-2024 11:18:54 LoginPage [main] INFO : My portfolio page opened
+06-Mar-2024 11:18:57 LoginPage [main] INFO : Portfolio form opened
+06-Mar-2024 11:18:58 PortfolioForm [main] INFO : Strategy form opened
+06-Mar-2024 11:19:55 StrategyForm [main] INFO : Strategy Added
+06-Mar-2024 11:20:14 PortfolioForm [main] INFO : Portfolio Submitted
+06-Mar-2024 11:20:16 MyPortfolio [main] INFO : My portfolio page opened
+06-Mar-2024 11:20:20 Listners [main] INFO : Test : Bookmark Strategy Success
+06-Mar-2024 11:20:22 BaseTest [main] INFO : Report Ended
+06-Mar-2024 11:20:22 BaseTest [main] INFO : Program completed
