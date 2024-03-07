@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Properties;
 
@@ -64,7 +65,7 @@ public class BaseTest extends DataReader{
 			else if(browser.contains("Edge")) {
 				WebDriverManager.edgedriver().setup();
 				EdgeOptions options=new EdgeOptions();
-				options.addArguments("--headless");
+//				options.addArguments("--headless");
 				this.driver=new EdgeDriver(options);
 				log.info("EdgeDriver initialized");
 			}
@@ -94,12 +95,12 @@ public class BaseTest extends DataReader{
 		
 		@AfterMethod()
 		public void closeDriver() {
-			driver.quit();
+//			driver.quit();
 		}
 		
 		@DataProvider()
 		public Object[][] StrategyDetailsData() throws IOException{	
-			List<HashMap<String,String>> maps=getJSONDataToMap();
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap();
 			return new Object [][] {
 					{maps.get(0)}
 			}; 	
