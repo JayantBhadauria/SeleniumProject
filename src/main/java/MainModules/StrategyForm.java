@@ -131,4 +131,31 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).sendKeys(slValue);
 	}
 	
+	public void enableLegTrailSL(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[4]/div/mat-checkbox[@formcontrolName='trailSLEnabled']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legTrailSLat(String trailATvalue,char legNumber) {
+		enableLegTrailSL(legNumber);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[4]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(trailATvalue);
+	}
+	
+	public void legTrailSLby(String trailByvalue,char legNumber) {
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[4]/mat-form-field[3]/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(trailByvalue);
+	}
+	
+	public void enableLegMoveSL(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div[2]/div/mat-checkbox[@formcontrolName='costTypeEnabled']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legMoveSL(String moveSLvalue,char legNumber) {
+		enableLegMoveSL(legNumber);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(moveSLvalue);
+	}
+	
 }

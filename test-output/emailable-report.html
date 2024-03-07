@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Bookmark Strategy</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">75,756</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Bookmark Strategy</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">212,367</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bookmark Strategy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m0">BookMark_testing</a></td><td rowspan="1">1709827437428</td><td rowspan="1">11925</td></tr><tr><th colspan="4">Bookmark Strategy &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m1">BookMark_testing</a></td><td rowspan="1">1709827381822</td><td rowspan="1">49461</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bookmark Strategy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m0">BookMark_testing</a></td><td rowspan="1">1709831288928</td><td rowspan="1">134705</td></tr><tr><th colspan="4">Bookmark Strategy &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m1">BookMark_testing</a></td><td rowspan="1">1709831219713</td><td rowspan="1">62279</td></tr></tbody>
 </table>
-<h2>Bookmark Strategy</h2><h3 id="m0">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP2=100, legSL1=30}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;mat-button-toggle-button mat-focus-indicator&quot; id=&quot;mat-button-toggle-2-button&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot; name=&quot;dashboard_tabs&quot;&gt;...&lt;/button&gt; is not clickable at point (339, 35). Other element would receive the click: &lt;div class=&quot;full ngx-backdrop-custom-backdrop ng-star-inserted&quot;&gt;...&lt;/div&gt;
+<h2>Bookmark Strategy</h2><h3 id="m0">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//owl-date-time-timer-box[2]/label[1]/input&quot;}
   (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06a50763f7df63fc635119dfb7e016de, clickElement {id=f.4BCBAD3FB9F18238753BA882179B17FE.d.4777A7237E50A50CEAF64D47618CFBB3.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59882/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (06a50763f7df63fc635119dfb7e016de)] -&gt; id: mat-button-toggle-2-button]
-Session ID: 06a50763f7df63fc635119dfb7e016de
+Command: [b5f8c2700ddf40e89f90439aa4ae73ad, findElement {using=xpath, value=//owl-date-time-timer-box[2]/label[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61587/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5f8c2700ddf40e89f90439aa4ae73ad
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -29,14 +29,16 @@ Session ID: 06a50763f7df63fc635119dfb7e016de
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at AbstractClasses.AbstractClass.goToMyportfolioPage(AbstractClass.java:31)
-	at MainModules.LoginPage.AddPortfolio(LoginPage.java:49)
-	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at MainModules.PortfolioForm.ChangePortfolioEndTime(PortfolioForm.java:78)
+	at MainModules.PortfolioForm.ChangePortfolioDetails(PortfolioForm.java:49)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:85)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP2=100, legSL1=30}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: // button[@color=&apos;accent&apos; and @type=&apos;button&apos;]
+<h3 id="m1">TestPackage.BookMark_Functionality#BookMark_testing</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: // button[@color=&apos;accent&apos; and @type=&apos;button&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;

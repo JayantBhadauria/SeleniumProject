@@ -2,24 +2,24 @@
 <testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T21:32:53 IST" name="Suite" finished-at="2024-03-07T21:34:09 IST" duration-ms="75756">
+  <suite started-at="2024-03-07T22:36:51 IST" name="Suite" finished-at="2024-03-07T22:40:23 IST" duration-ms="212367">
     <groups>
     </groups>
-    <test started-at="2024-03-07T21:32:53 IST" name="Bookmark Strategy" finished-at="2024-03-07T21:34:09 IST" duration-ms="75756">
+    <test started-at="2024-03-07T22:36:51 IST" name="Bookmark Strategy" finished-at="2024-03-07T22:40:23 IST" duration-ms="212367">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:32:53 IST" name="InitiateReport" finished-at="2024-03-07T21:32:53 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:36:51 IST" name="InitiateReport" finished-at="2024-03-07T22:36:51 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:32:54 IST" name="launchApplication" finished-at="2024-03-07T21:33:01 IST" duration-ms="7652" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:36:51 IST" name="launchApplication" finished-at="2024-03-07T22:36:59 IST" duration-ms="7974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:33:01 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-07T21:33:51 IST" duration-ms="49461" status="SKIP">
+        <test-method retried="true" signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:36:59 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-07T22:38:01 IST" duration-ms="62279" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP2=100, legSL1=30}]]>
+                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60}]]>
               </value>
             </param>
           </params>
@@ -77,44 +77,44 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:33:51 IST" name="closeDriver" finished-at="2024-03-07T21:33:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:38:02 IST" name="closeDriver" finished-at="2024-03-07T22:38:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:33:51 IST" name="launchApplication" finished-at="2024-03-07T21:33:57 IST" duration-ms="6141" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:38:02 IST" name="launchApplication" finished-at="2024-03-07T22:38:08 IST" duration-ms="6890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:33:57 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-07T21:34:09 IST" duration-ms="11925" status="FAIL">
+        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:38:08 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-07T22:40:23 IST" duration-ms="134705" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP2=100, legSL1=30}]]>
+                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//owl-date-time-timer-box[2]/label[1]/input"}
   (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06a50763f7df63fc635119dfb7e016de, clickElement {id=f.4BCBAD3FB9F18238753BA882179B17FE.d.4777A7237E50A50CEAF64D47618CFBB3.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59882/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (06a50763f7df63fc635119dfb7e016de)] -> id: mat-button-toggle-2-button]
-Session ID: 06a50763f7df63fc635119dfb7e016de]]>
+Command: [b5f8c2700ddf40e89f90439aa4ae73ad, findElement {using=xpath, value=//owl-date-time-timer-box[2]/label[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61587/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5f8c2700ddf40e89f90439aa4ae73ad]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-2-button" tabindex="-1" aria-pressed="false" name="dashboard_tabs">...</button> is not clickable at point (339, 35). Other element would receive the click: <div class="full ngx-backdrop-custom-backdrop ng-star-inserted">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//owl-date-time-timer-box[2]/label[1]/input"}
   (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06a50763f7df63fc635119dfb7e016de, clickElement {id=f.4BCBAD3FB9F18238753BA882179B17FE.d.4777A7237E50A50CEAF64D47618CFBB3.e.110}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59882/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (06a50763f7df63fc635119dfb7e016de)] -> id: mat-button-toggle-2-button]
-Session ID: 06a50763f7df63fc635119dfb7e016de
+Command: [b5f8c2700ddf40e89f90439aa4ae73ad, findElement {using=xpath, value=//owl-date-time-timer-box[2]/label[1]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61587}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61587/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5f8c2700ddf40e89f90439aa4ae73ad
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -127,11 +127,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at AbstractClasses.AbstractClass.goToMyportfolioPage(AbstractClass.java:31)
-at MainModules.LoginPage.AddPortfolio(LoginPage.java:49)
-at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:53)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at MainModules.PortfolioForm.ChangePortfolioEndTime(PortfolioForm.java:78)
+at MainModules.PortfolioForm.ChangePortfolioDetails(PortfolioForm.java:49)
+at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:85)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,15 +164,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:34:09 IST" name="closeDriver" finished-at="2024-03-07T21:34:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:40:23 IST" name="closeDriver" finished-at="2024-03-07T22:40:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T21:34:09 IST" name="flushReport" finished-at="2024-03-07T21:34:10 IST" duration-ms="655" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@48c40605]" started-at="2024-03-07T22:40:24 IST" name="flushReport" finished-at="2024-03-07T22:40:24 IST" duration-ms="870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

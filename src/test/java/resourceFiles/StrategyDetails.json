@@ -3,8 +3,13 @@
 		"strategyType":"Bear Call Spread",
 		"strikeSelection":"Price",
 		"expiryType":"Monthly",
-		"legTP2":"100",
-		"legSL1":"30"
+		"legTP1":"100",
+		"legSL1":"30",
+		"legTrailSLat1":"50",
+		"legTrailSLby1":"60",
+		"legMoveSL1":"70",
+		"legSL2":"40",
+		"legMoveSL2":"41"
 		
 	}
 ]
