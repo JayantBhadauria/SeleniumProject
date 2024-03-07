@@ -106,32 +106,29 @@ public class StrategyForm extends AbstractClass{
 		}
 		else {
 			log.info("Strategy Added");
-		}
-		
+		}	
 	}
 	
-	public void legTp(String tpValue,char legNumber) {
+	public void legTP(String tpValue,char legNumber) {
 		enableTP(legNumber);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
 		driver.findElement(By.xpath(xpath)).sendKeys(tpValue);
 	}
 	
 	public void enableTP(char legNumber) {
-		System.out.println("Enabling TP with legNumber : "+legNumber);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div/mat-checkbox[@formcontrolName='TPEnabled']/label";
-		try {
-		    driver.findElement(By.xpath(xpath)).click();
-		    System.out.println("Enabled TP ...");
-		} catch (Exception e) {
-		    e.printStackTrace();
-		    System.err.println("Unable to enable TP for legNumber: " + legNumber);
-		}
-	}
-	
-	public void enableSL(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[3]/div/mat-checkbox/label/div[1]/input", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
+	public void enableSL(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[3]/div/mat-checkbox[@formcontrolName='SLEnabled']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legSL(String slValue,char legNumber) {
+		enableSL(legNumber);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[3]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(slValue);
+	}
 	
 }
