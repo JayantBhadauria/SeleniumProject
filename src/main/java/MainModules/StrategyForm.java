@@ -1,7 +1,7 @@
 package MainModules;
 
 import java.util.LinkedHashMap;
-
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -89,7 +89,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.id("mat-input-29")).sendKeys(price2);
 	}
 	
-	public void EnablelegSettings(char legNumber) {
+	public void enableLegSettings(char legNumber) {
 		int legNum=legNumber;
 		List<WebElement> togglebuttons=driver.findElements(By.xpath("//mat-slide-toggle[@formcontrolname='legSettings']"));
 		WebElement togglebutton= togglebuttons.get(legNum-48-1);
@@ -156,6 +156,27 @@ public class StrategyForm extends AbstractClass{
 		enableLegMoveSL(legNumber);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
 		driver.findElement(By.xpath(xpath)).sendKeys(moveSLvalue);
+	}
+	
+	public void enableWTT(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div/mat-checkbox[@formcontrolName='waitToTradeToggle']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legWTT(String WTTvalue,char legNumber) {
+		enableWTT(legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(WTTvalue);
+	}
+	
+	public void enableRangeThreshold(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/div/div/mat-checkbox[@formcontrolName='rangeThreshold']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legRangeThreshold(String WTTvalue,char legNumber) {
+		enableRangeThreshold(legNumber);
+		// To be implement
 	}
 	
 }

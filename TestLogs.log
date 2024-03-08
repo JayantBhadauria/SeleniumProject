@@ -1,17 +1,13 @@
-07-Mar-2024 11:00:23 BaseTest [main] INFO : Report Started
-07-Mar-2024 11:00:25 BaseTest [main] INFO : ChromeDriver initialized
-07-Mar-2024 11:00:31 BaseTest [main] INFO : Login page opened
-07-Mar-2024 11:00:31 Listners [main] INFO : =========TEST INFO===========
-07-Mar-2024 11:00:31 Listners [main] INFO : Test : Bookmark Strategy started
-07-Mar-2024 11:00:42 LoginPage [main] INFO : User Logged In
-07-Mar-2024 11:00:43 LoginPage [main] INFO : My portfolio page opened
-07-Mar-2024 11:00:46 LoginPage [main] INFO : Portfolio form opened
-07-Mar-2024 11:00:47 PortfolioForm [main] INFO : Strategy form opened
-07-Mar-2024 11:01:06 StrategyForm [main] INFO : Strategy Added
-07-Mar-2024 11:01:06 RetryAnalyzer [main] WARN : Retrying test : null
-07-Mar-2024 11:01:06 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-07-Mar-2024 11:01:07 BaseTest [main] INFO : ChromeDriver initialized
-07-Mar-2024 11:01:10 BaseTest [main] INFO : Login page opened
-07-Mar-2024 11:01:10 Listners [main] INFO : =========TEST INFO===========
-07-Mar-2024 11:01:10 Listners [main] INFO : Test : Bookmark Strategy started
-07-Mar-2024 11:01:10 RetryAnalyzer [main] WARN : Retrying test : null
+08-Mar-2024 01:52:37 BaseTest [main] INFO : Report Started
+08-Mar-2024 01:52:48 BaseTest [main] INFO : ChromeDriver initialized
+08-Mar-2024 01:52:53 Listners [main] INFO : =========TEST INFO===========
+08-Mar-2024 01:52:53 Listners [main] INFO : Test : Bookmark Strategy started
+08-Mar-2024 01:52:53 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+08-Mar-2024 01:52:56 BaseTest [main] INFO : Report Ended
+08-Mar-2024 01:52:56 BaseTest [main] INFO : Program completed
+egy Skipped
+08-Mar-2024 01:52:58 BaseTest [main] INFO : ChromeDriver initialized
+08-Mar-2024 01:53:00 BaseTest [main] INFO : Login page opened
+08-Mar-2024 01:53:00 Listners [main] INFO : =========TEST INFO===========
+08-Mar-2024 01:53:00 Listners [main] INFO : Test : Bookmark Strategy started
+08-Mar-2024 01:53:00 RetryAnalyzer [main] WARN : Retrying test : null

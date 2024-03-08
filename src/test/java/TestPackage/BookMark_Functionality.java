@@ -52,32 +52,7 @@ public class BookMark_Functionality extends BaseTest {
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
 		StrategyForm strategyform=portfolioform.addStrategy();
-		
-		Iterator<Map.Entry<String, String>> iterator = input.entrySet().iterator();
-		Map<Integer,Boolean>legStatus=new HashMap<>();
-        for (int i = 1; i <= 5; i++) {
-            legStatus.put(i, false);
-        }
-		while (iterator.hasNext()) {
-	            Map.Entry<String, String> entry = iterator.next();
-	            String key = entry.getKey();
-	            String value = entry.getValue();
-	            if(key.contains("leg")) {
-	            	char legNumber=key.charAt(key.length()-1);
-	            	if(!legStatus.get(Integer.valueOf(legNumber)-48)) {
-	            		strategyform.EnablelegSettings(legNumber);
-	            		legStatus.put(Integer.valueOf(legNumber)-48, true);
-	            	}
-	            	strategyform.legField(key, value);
-	          
-	            }
-	            else {
-	            	strategyform.strategyField(key, value);
-	            }
-	            
-	                   
-	     }
-		 
+		SetStrategyLegParams(input,strategyform);
 		strategyform.priceEntry("100", "150");
 		strategyform.SubmitStrategy();	
 		String []tagsList= {"Profitable","Strategy","uTrade"};

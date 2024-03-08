@@ -12,7 +12,7 @@
         <methods>
           <include name="flushReport"/>
           <include name="launchApplication"/>
-          <include name="BookMark_testing" invocation-numbers="0"/>
+          <include name="BookMark_testing"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
