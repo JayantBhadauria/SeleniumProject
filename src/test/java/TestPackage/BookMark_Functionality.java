@@ -53,7 +53,6 @@ public class BookMark_Functionality extends BaseTest {
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
 		StrategyForm strategyform=portfolioform.addStrategy();
 		SetStrategyLegParams(input,strategyform);
-		strategyform.priceEntry("100", "150");
 		strategyform.SubmitStrategy();	
 		String []tagsList= {"Profitable","Strategy","uTrade"};
 		String []executionDaysList= {"Mon","Tue"};

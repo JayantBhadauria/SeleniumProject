@@ -1,17 +1,18 @@
-08-Mar-2024 08:37:43 BaseTest [main] INFO : Report Started
-08-Mar-2024 08:37:47 BaseTest [main] INFO : ChromeDriver initialized
-08-Mar-2024 08:37:53 BaseTest [main] INFO : Login page opened
-08-Mar-2024 08:37:53 Listners [main] INFO : =========TEST INFO===========
-08-Mar-2024 08:37:53 Listners [main] INFO : Test : Bookmark Strategy started
-08-Mar-2024 08:38:04 LoginPage [main] INFO : User Logged In
-08-Mar-2024 08:38:05 LoginPage [main] INFO : My portfolio page opened
-08-Mar-2024 08:38:08 LoginPage [main] INFO : Portfolio form opened
-08-Mar-2024 08:38:09 PortfolioForm [main] INFO : Strategy form opened
-08-Mar-2024 08:38:44 StrategyForm [main] INFO : Strategy Added
-08-Mar-2024 08:38:44 RetryAnalyzer [main] WARN : Retrying test : null
-08-Mar-2024 08:38:44 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-08-Mar-2024 08:38:46 BaseTest [main] INFO : ChromeDriver initialized
-08-Mar-2024 08:38:48 BaseTest [main] INFO : Login page opened
-08-Mar-2024 08:38:48 Listners [main] INFO : =========TEST INFO===========
-08-Mar-2024 08:38:48 Listners [main] INFO : Test : Bookmark Strategy started
-08-Mar-2024 08:38:48 RetryAnalyzer [main] WARN : Retrying test : null
+08-Mar-2024 10:16:12 BaseTest [main] INFO : Report Started
+08-Mar-2024 10:16:16 BaseTest [main] INFO : ChromeDriver initialized
+08-Mar-2024 10:16:18 BaseTest [main] INFO : Login page opened
+08-Mar-2024 10:16:18 Listners [main] INFO : =========TEST INFO===========
+08-Mar-2024 10:16:19 Listners [main] INFO : Test : Bookmark Strategy started
+08-Mar-2024 10:17:23 LoginPage [main] INFO : User Logged In
+08-Mar-2024 10:17:24 RetryAnalyzer [main] WARN : Retrying test : null
+08-Mar-2024 10:17:25 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+08-Mar-2024 10:17:27 BaseTest [main] INFO : ChromeDriver initialized
+08-Mar-2024 10:17:34 BaseTest [main] INFO : Login page opened
+08-Mar-2024 10:17:34 Listners [main] INFO : =========TEST INFO===========
+08-Mar-2024 10:17:34 Listners [main] INFO : Test : Bookmark Strategy started
+08-Mar-2024 10:17:45 LoginPage [main] INFO : User Logged In
+08-Mar-2024 10:17:45 LoginPage [main] INFO : My portfolio page opened
+08-Mar-2024 10:17:49 LoginPage [main] INFO : Portfolio form opened
+08-Mar-2024 10:17:50 PortfolioForm [main] INFO : Strategy form opened
+08-Mar-2024 10:18:11 StrategyForm [main] ERROR: Mandatory Fields Missing
+08-Mar-2024 10:18:27 RetryAnalyzer [main] WARN : Retrying test : null
