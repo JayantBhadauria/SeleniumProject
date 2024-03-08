@@ -99,7 +99,7 @@ public class BaseTest extends DataReader{
 		
 		@AfterMethod()
 		public void closeDriver() {
-			driver.quit();
+//			driver.quit();
 		}
 		
 		@DataProvider()
@@ -142,9 +142,15 @@ public class BaseTest extends DataReader{
 		            		strategyform.enableLegSettings(legNumber);
 		            		legStatus.put(Integer.valueOf(legNumber)-48, true);
 		            	}
-		            	strategyform.legField(key, value);
-		          
+		            	if(key.contains("ExitRange")) {
+		            		strategyform.enableRange(value, legNumber);
+		            	}
+		            	else {
+		            		strategyform.legField(key, value);
+		            	}
+		            		
 		            }
+		            
 		            else {
 		            	strategyform.strategyField(key, value);
 		            }            

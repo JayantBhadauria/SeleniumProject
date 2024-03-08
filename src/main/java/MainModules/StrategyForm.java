@@ -179,4 +179,43 @@ public class StrategyForm extends AbstractClass{
 		// To be implement
 	}
 	
+	public void enableRange(String rangeType, char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div/div/mat-form-field", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
+		List<WebElement> elements=driver.findElements(By.xpath(xpath));
+		System.out.println("List Size : "+ elements.size());
+		for(int i=0;i<elements.size();i++) {
+			WebElement element=elements.get(i).findElement(By.xpath("./span"));
+			System.out.println("Element Name : "+ element.getText());
+			if(rangeType.contains("1") && element.getText().contains("Underlying (₹)")) {
+				element.click();
+				break;
+			}
+			else if(rangeType.contains("2") && element.getText().contains("Underlying (pts)")){
+				element.click();
+				break;
+			}
+			else if(rangeType.contains("3") && element.getText().contains("Delta")){
+				element.click();
+				break;
+			}
+		}	
+	}
+	
+	public void legMinRangeValue(String value,char legNumber) throws InterruptedException {
+		sleep(500);
+		System.out.println("MinRange Function called");
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	public void legMaxRangeValue(String value,char legNumber) throws InterruptedException {
+		sleep(500);
+		System.out.println("MaxRange Function called");
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	
 }

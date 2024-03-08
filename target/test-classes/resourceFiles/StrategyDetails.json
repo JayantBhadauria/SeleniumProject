@@ -10,7 +10,10 @@
 		"legMoveSL1":"70",
 		"legSL2":"40",
 		"legMoveSL2":"41",
-		"legWTT1":"93"
+		"legWTT1":"93",
+		"legExitRangeType1":"1",
+		"legMinRangeValue1":"50",
+		"legMaxRangeValue1":"99"
 		
 	}
 ]
