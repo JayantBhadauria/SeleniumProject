@@ -3,10 +3,13 @@ package TestComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -33,6 +36,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import MainModules.LoginPage;
+import MainModules.StrategyForm;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import resourceFiles.DataReader;
 import resourceFiles.ExtentReportsClass;
@@ -106,6 +110,8 @@ public class BaseTest extends DataReader{
 			}; 	
 		}
 		
+		
+		
 		@BeforeSuite
 		public void InitiateReport() throws IOException {
 			ExtentReportsClass extentReport=new ExtentReportsClass();
@@ -120,5 +126,35 @@ public class BaseTest extends DataReader{
 		    log.info("Program completed");
 		}
 		
-	
+		public void SetStrategyLegParams(LinkedHashMap<String,String> input,StrategyForm strategyform) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+			Iterator<Map.Entry<String, String>> iterator = input.entrySet().iterator();
+			Map<Integer,Boolean>legStatus=new HashMap<>();
+	        for (int i = 1; i <= 5; i++) {
+	            legStatus.put(i, false);
+	        }
+			while (iterator.hasNext()) {
+		            Map.Entry<String, String> entry = iterator.next();
+		            String key = entry.getKey();
+		            String value = entry.getValue();
+		            if(key.contains("leg")) {
+		            	char legNumber=key.charAt(key.length()-1);
+		            	if(!legStatus.get(Integer.valueOf(legNumber)-48)) {
+		            		strategyform.enableLegSettings(legNumber);
+		            		legStatus.put(Integer.valueOf(legNumber)-48, true);
+		            	}
+		            	if(key.contains("ExitRange")) {
+		            		strategyform.enableRange(value, legNumber);
+		            	}
+		            	else {
+		            		strategyform.legField(key, value);
+		            	}
+		            		
+		            }
+		            
+		            else {
+		            	strategyform.strategyField(key, value);
+		            }            
+		     }
+		}
+		
 }

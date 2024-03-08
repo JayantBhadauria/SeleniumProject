@@ -1,7 +1,7 @@
 package MainModules;
 
 import java.util.LinkedHashMap;
-
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -27,7 +27,6 @@ public class StrategyForm extends AbstractClass{
 		strategyType(strategyType);
 		expiryType(expiryType);
 		strikeSelection(strikeType);
-		priceEntry(price1,price2);
 	}
 	
 	
@@ -38,7 +37,6 @@ public class StrategyForm extends AbstractClass{
 	
 	public void legField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		String updatedFieldName=fieldName.substring(0, fieldName.length()-1);
-		System.out.println("FieldName : "+updatedFieldName);
 		Method method=getClass().getMethod(updatedFieldName, String.class, char.class);
 		char legNumber=fieldName.charAt(fieldName.length()-1);
 		method.invoke(this, fieldValue,legNumber);
@@ -83,13 +81,13 @@ public class StrategyForm extends AbstractClass{
 		}
 	}
 	
-	public void priceEntry(String price1,String price2) {
+	public void legPrice(String price,char legNumber) {
 		// Price Entry
-		driver.findElement(By.id("mat-input-28")).sendKeys(price1);
-		driver.findElement(By.id("mat-input-29")).sendKeys(price2);
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[5]/div/div/div[3]/div/div/input[@formcontrolname='strikePriceInput']", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(price);
 	}
 	
-	public void EnablelegSettings(char legNumber) {
+	public void enableLegSettings(char legNumber) {
 		int legNum=legNumber;
 		List<WebElement> togglebuttons=driver.findElements(By.xpath("//mat-slide-toggle[@formcontrolname='legSettings']"));
 		WebElement togglebutton= togglebuttons.get(legNum-48-1);
@@ -157,5 +155,61 @@ public class StrategyForm extends AbstractClass{
 		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
 		driver.findElement(By.xpath(xpath)).sendKeys(moveSLvalue);
 	}
+	
+	public void enableWTT(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div/mat-checkbox[@formcontrolName='waitToTradeToggle']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legWTT(String WTTvalue,char legNumber) {
+		enableWTT(legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(WTTvalue);
+	}
+	
+	public void enableRangeThreshold(char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/div/div/mat-checkbox[@formcontrolName='rangeThreshold']/label", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public void legRangeThreshold(String WTTvalue,char legNumber) {
+		enableRangeThreshold(legNumber);
+		// To be implement
+	}
+	
+	public void enableRange(String rangeType, char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div/div/mat-form-field", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
+		List<WebElement> elements=driver.findElements(By.xpath(xpath));
+		for(int i=0;i<elements.size();i++) {
+			WebElement element=elements.get(i).findElement(By.xpath("./span"));
+			if(rangeType.contains("1") && element.getText().contains("Underlying (₹)")) {
+				element.click();
+				break;
+			}
+			else if(rangeType.contains("2") && element.getText().contains("Underlying (pts)")){
+				element.click();
+				break;
+			}
+			else if(rangeType.contains("3") && element.getText().contains("Delta")){
+				element.click();
+				break;
+			}
+		}	
+	}
+	
+	public void legMinRangeValue(String value,char legNumber) throws InterruptedException {
+		sleep(500);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	public void legMaxRangeValue(String value,char legNumber) throws InterruptedException {
+		sleep(500);
+		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
 	
 }
