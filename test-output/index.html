@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -140,20 +140,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)">
-                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...) -->
+                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">
+                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...) -->
                   <span class="method-name">BookMark_testing</span>
-                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legExitRangeType1=1, legMinRangeValue1=50, legMaxRangeValue1=99})</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legTpReentry1=15, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at MainModules.StrategyForm.legField(StrategyForm.java:100)
+	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:149)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; role=&quot;switch&quot; class=&quot;mat-slide-toggle-input cdk-visually-hidden&quot; id=&quot;mat-slide-toggle-8-input&quot; tabindex=&quot;0&quot; aria-checked=&quot;false&quot;&gt; is not clickable at point (116, 505). Other element would receive the click: &lt;div class=&quot;mat-slide-toggle-thumb-container&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17e6978d658345b6fcd82d777d29a9b7, getElementText {id=f.30E12B855EA058B0EC3BAF90BB8CA87A.d.094DD291565829BE7EE9BC82CF6A0F85.e.685}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54886/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (17e6978d658345b6fcd82d777d29a9b7)] -&gt; xpath: //div[@class=&apos;cdk-overlay-container&apos;]/div[2]/div/div/div/mat-option]] -&gt; xpath: ./span]
-Session ID: 17e6978d658345b6fcd82d777d29a9b7
+Command: [505aef98af68ff4e4ed3be2c0fad4ad7, clickElement {id=f.1FE779BB997180AEEBAA0E550EF043CF.d.F01212228CF022A2CCB885849A1AFBF9.e.394}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49156/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (505aef98af68ff4e4ed3be2c0fad4ad7)] -&gt; xpath: //app-strategy-leg-form[1]//mat-slide-toggle[@formcontrolName=&apos;reOrderConditionToggle&apos;]/label/div/input]
+Session ID: 505aef98af68ff4e4ed3be2c0fad4ad7
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -162,12 +166,11 @@ Session ID: 17e6978d658345b6fcd82d777d29a9b7
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at MainModules.StrategyForm.enableRange(StrategyForm.java:190)
-	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:146)
-	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at MainModules.StrategyForm.legEnableReOrder(StrategyForm.java:270)
+	at MainModules.StrategyForm.legTpReentry(StrategyForm.java:276)
+	... 35 more
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -181,19 +184,24 @@ Session ID: 17e6978d658345b6fcd82d777d29a9b7
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)">
-                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...) -->
+                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">
+                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...) -->
                   <span class="method-name">BookMark_testing</span>
-                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legExitRangeType1=1, legMinRangeValue1=50, legMaxRangeValue1=99})</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legTpReentry1=15, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at MainModules.StrategyForm.legField(StrategyForm.java:100)
+	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:149)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-form-field-flex ng-tns-c76-93&quot;&gt;...&lt;/div&gt; is not clickable at point (362, 27). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
   (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93ce2f9d9a19416a1dfda9af9bf21aba, findChildElement {using=xpath, id=f.25A439B4DD9D2C80A9E963B356EB7C48.d.71DDE2588FE61F33F711AC86A88EF997.e.461, value=./span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54824/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ce2f9d9a19416a1dfda9af9bf21aba
+Command: [504f83d0574ce2fb59c6d748848ca6f8, clickElement {id=f.D1930E8C8B453771D778063DA9A67AED.d.81446548B5563529661DE79BF2D04256.e.246}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65490}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65490/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (504f83d0574ce2fb59c6d748848ca6f8)] -&gt; xpath: //app-strategy-leg-form[1]/div/form/div/div/div[2]/mat-form-field[2]/div/div]
+Session ID: 504f83d0574ce2fb59c6d748848ca6f8
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -201,15 +209,11 @@ Session ID: 93ce2f9d9a19416a1dfda9af9bf21aba
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-	at MainModules.StrategyForm.enableRange(StrategyForm.java:189)
-	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:146)
-	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at MainModules.StrategyForm.legInstrumentType(StrategyForm.java:138)
+	... 35 more
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -276,16 +280,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BookMark_testing')
 data.setCell(0, 2, 'TestPackage.BookMark_Functionality')
-data.setCell(0, 3, 31835);
+data.setCell(0, 3, 35725);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BookMark_testing')
 data.setCell(1, 2, 'TestPackage.BookMark_Functionality')
-data.setCell(1, 3, 31107);
+data.setCell(1, 3, 22507);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -318,33 +322,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">690 ms</span>
+                <span class="method-start">649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)</span>
-                <span class="method-start">10927 ms</span>
+                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</span>
+                <span class="method-start">9990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">42788 ms</span>
+                <span class="method-start">32523 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">42794 ms</span>
+                <span class="method-start">32524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, le...)</span>
-                <span class="method-start">51452 ms</span>
+                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</span>
+                <span class="method-start">41558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">83150 ms</span>
+                <span class="method-start">77622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">83213 ms</span>
+                <span class="method-start">77695 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

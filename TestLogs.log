@@ -1,17 +1,17 @@
-09-Mar-2024 09:46:24 BaseTest [main] INFO : Report Started
-09-Mar-2024 09:46:28 BaseTest [main] INFO : ChromeDriver initialized
-09-Mar-2024 09:46:34 BaseTest [main] INFO : Login page opened
-09-Mar-2024 09:46:34 Listners [main] INFO : =========TEST INFO===========
-09-Mar-2024 09:46:35 Listners [main] INFO : Test : Bookmark Strategy started
-09-Mar-2024 09:46:46 LoginPage [main] INFO : User Logged In
-09-Mar-2024 09:46:46 LoginPage [main] INFO : My portfolio page opened
-09-Mar-2024 09:46:49 LoginPage [main] INFO : Portfolio form opened
-09-Mar-2024 09:46:50 PortfolioForm [main] INFO : Strategy form opened
-09-Mar-2024 09:47:24 StrategyForm [main] INFO : Strategy Added
-09-Mar-2024 09:47:24 RetryAnalyzer [main] WARN : Retrying test : null
-09-Mar-2024 09:47:24 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-09-Mar-2024 09:47:26 BaseTest [main] INFO : ChromeDriver initialized
-09-Mar-2024 09:47:29 BaseTest [main] INFO : Login page opened
-09-Mar-2024 09:47:29 Listners [main] INFO : =========TEST INFO===========
-09-Mar-2024 09:47:29 Listners [main] INFO : Test : Bookmark Strategy started
-09-Mar-2024 09:47:29 RetryAnalyzer [main] WARN : Retrying test : null
+09-Mar-2024 02:23:32 BaseTest [main] INFO : Report Started
+09-Mar-2024 02:23:35 BaseTest [main] INFO : ChromeDriver initialized
+09-Mar-2024 02:23:56 BaseTest [main] INFO : Login page opened
+09-Mar-2024 02:23:56 Listners [main] INFO : =========TEST INFO===========
+09-Mar-2024 02:23:56 Listners [main] INFO : Test : Bookmark Strategy started
+09-Mar-2024 02:24:07 LoginPage [main] INFO : User Logged In
+09-Mar-2024 02:24:08 LoginPage [main] INFO : My portfolio page opened
+09-Mar-2024 02:24:10 LoginPage [main] INFO : Portfolio form opened
+09-Mar-2024 02:24:11 PortfolioForm [main] INFO : Strategy form opened
+09-Mar-2024 02:25:23 StrategyForm [main] INFO : Strategy Added
+09-Mar-2024 02:25:36 RetryAnalyzer [main] WARN : Retrying test : null
+09-Mar-2024 02:25:36 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+09-Mar-2024 02:25:37 BaseTest [main] INFO : ChromeDriver initialized
+09-Mar-2024 02:25:41 BaseTest [main] INFO : Login page opened
+09-Mar-2024 02:25:41 Listners [main] INFO : =========TEST INFO===========
+09-Mar-2024 02:25:41 Listners [main] INFO : Test : Bookmark Strategy started
+09-Mar-2024 02:25:41 RetryAnalyzer [main] WARN : Retrying test : null

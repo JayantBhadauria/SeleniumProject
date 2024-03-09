@@ -2,67 +2,36 @@
 <testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-08T20:14:47 IST" name="Suite" finished-at="2024-03-08T20:16:09 IST" duration-ms="82799">
+  <suite started-at="2024-03-09T13:48:26 IST" name="Suite" finished-at="2024-03-09T13:49:44 IST" duration-ms="77389">
     <groups>
     </groups>
-    <test started-at="2024-03-08T20:14:47 IST" name="Bookmark Strategy" finished-at="2024-03-08T20:16:09 IST" duration-ms="82799">
+    <test started-at="2024-03-09T13:48:26 IST" name="Bookmark Strategy" finished-at="2024-03-09T13:49:44 IST" duration-ms="77389">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:14:46 IST" name="InitiateReport" finished-at="2024-03-08T20:14:47 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:48:26 IST" name="InitiateReport" finished-at="2024-03-09T13:48:26 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:14:47 IST" name="launchApplication" finished-at="2024-03-08T20:14:57 IST" duration-ms="10235" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:48:27 IST" name="launchApplication" finished-at="2024-03-09T13:48:36 IST" duration-ms="9339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:14:57 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-08T20:15:29 IST" duration-ms="31835" status="SKIP">
+        <test-method retried="true" signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:48:36 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-09T13:48:59 IST" duration-ms="22507" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legExitRangeType1=1, legMinRangeValue1=50, legMaxRangeValue1=99}]]>
+                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legTpReentry1=15, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93ce2f9d9a19416a1dfda9af9bf21aba, findChildElement {using=xpath, id=f.25A439B4DD9D2C80A9E963B356EB7C48.d.71DDE2588FE61F33F711AC86A88EF997.e.461, value=./span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54824/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ce2f9d9a19416a1dfda9af9bf21aba]]>
-            </message>
+          <exception class="java.lang.reflect.InvocationTargetException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93ce2f9d9a19416a1dfda9af9bf21aba, findChildElement {using=xpath, id=f.25A439B4DD9D2C80A9E963B356EB7C48.d.71DDE2588FE61F33F711AC86A88EF997.e.461, value=./span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54824/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ce2f9d9a19416a1dfda9af9bf21aba
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-at MainModules.StrategyForm.enableRange(StrategyForm.java:189)
-at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:146)
+              <![CDATA[java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at MainModules.StrategyForm.legField(StrategyForm.java:100)
+at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:149)
 at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -92,52 +61,15 @@ at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:15:29 IST" name="closeDriver" finished-at="2024-03-08T20:15:29 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:15:29 IST" name="launchApplication" finished-at="2024-03-08T20:15:38 IST" duration-ms="8658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:15:38 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-08T20:16:09 IST" duration-ms="31107" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legExitRangeType1=1, legMinRangeValue1=50, legMaxRangeValue1=99}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="mat-form-field-flex ng-tns-c76-93">...</div> is not clickable at point (362, 27). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"></div>
   (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17e6978d658345b6fcd82d777d29a9b7, getElementText {id=f.30E12B855EA058B0EC3BAF90BB8CA87A.d.094DD291565829BE7EE9BC82CF6A0F85.e.685}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54886/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (17e6978d658345b6fcd82d777d29a9b7)] -> xpath: //div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option]] -> xpath: ./span]
-Session ID: 17e6978d658345b6fcd82d777d29a9b7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17e6978d658345b6fcd82d777d29a9b7, getElementText {id=f.30E12B855EA058B0EC3BAF90BB8CA87A.d.094DD291565829BE7EE9BC82CF6A0F85.e.685}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54886/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (17e6978d658345b6fcd82d777d29a9b7)] -> xpath: //div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option]] -> xpath: ./span]
-Session ID: 17e6978d658345b6fcd82d777d29a9b7
+Command: [504f83d0574ce2fb59c6d748848ca6f8, clickElement {id=f.D1930E8C8B453771D778063DA9A67AED.d.81446548B5563529661DE79BF2D04256.e.246}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65490}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65490/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (504f83d0574ce2fb59c6d748848ca6f8)] -> xpath: //app-strategy-leg-form[1]/div/form/div/div/div[2]/mat-form-field[2]/div/div]
+Session ID: 504f83d0574ce2fb59c6d748848ca6f8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -151,9 +83,40 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-at MainModules.StrategyForm.enableRange(StrategyForm.java:190)
-at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:146)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at MainModules.StrategyForm.legInstrumentType(StrategyForm.java:138)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookMark_testing -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:48:59 IST" name="closeDriver" finished-at="2024-03-09T13:48:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:48:59 IST" name="launchApplication" finished-at="2024-03-09T13:49:08 IST" duration-ms="9033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:49:08 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-09T13:49:43 IST" duration-ms="35725" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legTpReentry1=15, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at MainModules.StrategyForm.legField(StrategyForm.java:100)
+at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:149)
 at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -183,17 +146,43 @@ at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" role="switch" class="mat-slide-toggle-input cdk-visually-hidden" id="mat-slide-toggle-8-input" tabindex="0" aria-checked="false"> is not clickable at point (116, 505). Other element would receive the click: <div class="mat-slide-toggle-thumb-container">...</div>
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [505aef98af68ff4e4ed3be2c0fad4ad7, clickElement {id=f.1FE779BB997180AEEBAA0E550EF043CF.d.F01212228CF022A2CCB885849A1AFBF9.e.394}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49156/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (505aef98af68ff4e4ed3be2c0fad4ad7)] -> xpath: //app-strategy-leg-form[1]//mat-slide-toggle[@formcontrolName='reOrderConditionToggle']/label/div/input]
+Session ID: 505aef98af68ff4e4ed3be2c0fad4ad7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at MainModules.StrategyForm.legEnableReOrder(StrategyForm.java:270)
+at MainModules.StrategyForm.legTpReentry(StrategyForm.java:276)
+... 35 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:16:09 IST" name="closeDriver" finished-at="2024-03-08T20:16:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:49:44 IST" name="closeDriver" finished-at="2024-03-09T13:49:44 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-08T20:16:09 IST" name="flushReport" finished-at="2024-03-08T20:16:10 IST" duration-ms="994" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@476aac9]" started-at="2024-03-09T13:49:44 IST" name="flushReport" finished-at="2024-03-09T13:49:45 IST" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

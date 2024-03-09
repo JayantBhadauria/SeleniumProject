@@ -8,6 +8,7 @@
 		"legOrderMode2":"Sell",
 		"legPrice1":"56",
 		"legPrice2":"57",
+		"legLotMultiplier1":"4",
 		"legTP1":"100",
 		"legSL1":"30",
 		"legTrailSLat1":"50",
@@ -16,6 +17,7 @@
 		"legSL2":"40",
 		"legMoveSL2":"41",
 		"legWTT1":"93",
+		"legTpReEntry1":"5",
 		"legExitRangeType1":"2",
 		"legMinRangeValue1":"50",
 		"legMaxRangeValue1":"99"
