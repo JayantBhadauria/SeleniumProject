@@ -309,5 +309,39 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
+	public void legSlReEntry(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Entry")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
 	
+	public void legSlReExecution(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Execution")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
 }
