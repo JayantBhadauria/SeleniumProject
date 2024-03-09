@@ -23,6 +23,12 @@ public class StrategyForm extends AbstractClass{
 		super(driver);
 		this.driver=driver;
 	}
+	public List<WebElement> getDropdownElements() {
+		String xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
+		List<WebElement> elements=driver.findElements(By.xpath(xpath));
+		return elements;
+	}
+	
 	public void strategySetting(String strategyType, String expiryType, String strikeType, String price1, String price2) {
 		strategyType(strategyType);
 		expiryType(expiryType);
@@ -107,6 +113,47 @@ public class StrategyForm extends AbstractClass{
 		}	
 	}
 	
+	public void legExpiryType(String expiryType,char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[3]/div/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>expTyp=getDropdownElements();
+		for(int i=0;i<expTyp.size();i++) {
+			String expName=expTyp.get(i).findElement(By.xpath("./span")).getText();
+			if(expName.contains(expiryType)) {
+				expTyp.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+	}
+	
+	public void legInstrumentType(String instType,char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[2]/div/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>instTypList=getDropdownElements();
+		for(int i=0;i<instTypList.size();i++) {
+			String expName=instTypList.get(i).findElement(By.xpath("./span")).getText();
+			System.out.println("Inst name : "+expName);
+			if(expName.contains(instType)) {
+				instTypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+	}
+	
+	public void legOrderMode(String odrType,char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[1]/div/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>odrTypList=getDropdownElements();
+		for(int i=0;i<odrTypList.size();i++) {
+			String expName=odrTypList.get(i).findElement(By.xpath("./span")).getText();
+			if(expName.contains(odrType)) {
+				odrTypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+	}
+	
+	
 	public void legTP(String tpValue,char legNumber) {
 		enableTP(legNumber);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
@@ -180,8 +227,7 @@ public class StrategyForm extends AbstractClass{
 	public void enableRange(String rangeType, char legNumber) {
 		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div/div/mat-form-field", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
-		List<WebElement> elements=driver.findElements(By.xpath(xpath));
+		List<WebElement>elements=getDropdownElements();
 		for(int i=0;i<elements.size();i++) {
 			WebElement element=elements.get(i).findElement(By.xpath("./span"));
 			if(rangeType.contains("1") && element.getText().contains("Underlying (₹)")) {
