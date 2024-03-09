@@ -93,6 +93,17 @@ public class StrategyForm extends AbstractClass{
 		}	
 	}
 	
+	public void addLeg() {
+		WebElement legButton=driver.findElement(By.xpath("//app-individual-strategy-form//span[text()='Add Leg']"));
+		legButton.click();
+	}
+	
+	public void removeLeg(char legNumber) {
+		String xpath =String.format("//app-strategy-leg-form[%s]//span[text()=' [Remove] ']", legNumber);
+		WebElement removeButton=driver.findElement(By.xpath(xpath));
+		removeButton.click();
+	}
+	
 	public void legField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		String updatedFieldName=fieldName.substring(0, fieldName.length()-1);
 		Method method=getClass().getMethod(updatedFieldName, String.class, char.class);
@@ -268,7 +279,6 @@ public class StrategyForm extends AbstractClass{
 		String toggleButtonState=driver.findElement(By.xpath(xpath+"/input")).getAttribute("aria-checked");
 		if(toggleButtonState.contains("false")) {
 			driver.findElement(By.xpath(xpath+"/div/div")).click();
-			System.out.println("Element clicked");
 		}
 	}
 	
