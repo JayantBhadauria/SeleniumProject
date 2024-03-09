@@ -41,17 +41,10 @@ public class StrategyForm extends AbstractClass{
 		method.invoke(this, fieldValue);
 	}
 	
-	public void legField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-		String updatedFieldName=fieldName.substring(0, fieldName.length()-1);
-		Method method=getClass().getMethod(updatedFieldName, String.class, char.class);
-		char legNumber=fieldName.charAt(fieldName.length()-1);
-		method.invoke(this, fieldValue,legNumber);
-	}
-	
 	public void strategyType(String strategyType) {
 		// Strategy Type
 		driver.findElement(By.xpath("//mat-select[@id='mat-select-5']")).click();
-		List<WebElement> stgTyp= driver.findElements(By.xpath("// div[@id='mat-select-5-panel']/mat-option"));
+		List<WebElement> stgTyp= getDropdownElements();
 		for(int i=0;i<stgTyp.size();i++) {
 			String stgName=stgTyp.get(i).findElement(By.xpath("./span")).getText();
 			if(stgName.contains(strategyType)) {
@@ -64,7 +57,7 @@ public class StrategyForm extends AbstractClass{
 	public void expiryType(String expiryType) {
 		// Expiry type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-8']")).click();
-		List<WebElement> expTyp= driver.findElements(By.xpath("// div[@id='mat-select-8-panel']/mat-option"));
+		List<WebElement> expTyp= getDropdownElements();
 		for(int i=0;i<expTyp.size();i++) {
 			String expName=expTyp.get(i).findElement(By.xpath("./span")).getText();
 			if(expName.contains(expiryType)) {
@@ -77,7 +70,7 @@ public class StrategyForm extends AbstractClass{
 	public void strikeSelection(String strikeType) {
 		// Strike type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-10']")).click();
-		List<WebElement> strikeTyp= driver.findElements(By.xpath("// div[@id='mat-select-10-panel']/mat-option"));
+		List<WebElement> strikeTyp= getDropdownElements();
 		for(int i=0;i<strikeTyp.size();i++) {
 			String strikeName=strikeTyp.get(i).findElement(By.xpath("./span")).getText();
 			if(strikeName.contains(strikeType)) {
@@ -85,19 +78,6 @@ public class StrategyForm extends AbstractClass{
 				break;
 			}
 		}
-	}
-	
-	public void legPrice(String price,char legNumber) {
-		// Price Entry
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[5]/div/div/div[3]/div/div/input[@formcontrolname='strikePriceInput']", legNumber);
-		driver.findElement(By.xpath(xpath)).sendKeys(price);
-	}
-	
-	public void enableLegSettings(char legNumber) {
-		int legNum=legNumber;
-		List<WebElement> togglebuttons=driver.findElements(By.xpath("//mat-slide-toggle[@formcontrolname='legSettings']"));
-		WebElement togglebutton= togglebuttons.get(legNum-48-1);
-		togglebutton.click();
 	}
 	
 	public void SubmitStrategy() {
@@ -112,6 +92,33 @@ public class StrategyForm extends AbstractClass{
 			log.info("Strategy Added");
 		}	
 	}
+	
+	public void legField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		String updatedFieldName=fieldName.substring(0, fieldName.length()-1);
+		Method method=getClass().getMethod(updatedFieldName, String.class, char.class);
+		char legNumber=fieldName.charAt(fieldName.length()-1);
+		method.invoke(this, fieldValue,legNumber);
+	}
+	
+	public void legPrice(String price,char legNumber) {
+		// Price Entry
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[5]/div/div/div[3]/div/div/input[@formcontrolname='strikePriceInput']", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(price);
+	}
+	
+	public void legLotMultiplier(String multiplier,char legNumber) {
+		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[6]/div/div/div[3]/div/div/input[@formcontrolname='lotMultiplier']", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(multiplier);
+	}
+	
+	public void enableLegSettings(char legNumber) {
+		int legNum=legNumber;
+		List<WebElement> togglebuttons=driver.findElements(By.xpath("//mat-slide-toggle[@formcontrolname='legSettings']"));
+		WebElement togglebutton= togglebuttons.get(legNum-48-1);
+		togglebutton.click();
+	}
+	
+	
 	
 	public void legExpiryType(String expiryType,char legNumber) {
 		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[3]/div/div", legNumber);
@@ -131,9 +138,8 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>instTypList=getDropdownElements();
 		for(int i=0;i<instTypList.size();i++) {
-			String expName=instTypList.get(i).findElement(By.xpath("./span")).getText();
-			System.out.println("Inst name : "+expName);
-			if(expName.contains(instType)) {
+			String instName=instTypList.get(i).findElement(By.xpath("./span")).getText();
+			if(instName.contains(instType)) {
 				instTypList.get(i).findElement(By.xpath("./span")).click();
 					break;
 				}
@@ -145,8 +151,8 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>odrTypList=getDropdownElements();
 		for(int i=0;i<odrTypList.size();i++) {
-			String expName=odrTypList.get(i).findElement(By.xpath("./span")).getText();
-			if(expName.contains(odrType)) {
+			String odrName=odrTypList.get(i).findElement(By.xpath("./span")).getText();
+			if(odrName.contains(odrType)) {
 				odrTypList.get(i).findElement(By.xpath("./span")).click();
 					break;
 				}
@@ -257,5 +263,85 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
+	public void legEnableReOrder(char legNumber) {
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-slide-toggle[@formcontrolName='reOrderConditionToggle']/label/div", legNumber);
+		String toggleButtonState=driver.findElement(By.xpath(xpath+"/input")).getAttribute("aria-checked");
+		if(toggleButtonState.contains("false")) {
+			driver.findElement(By.xpath(xpath+"/div/div")).click();
+			System.out.println("Element clicked");
+		}
+	}
 	
+	public void legTpReEntry(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='tpReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Entry")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	
+	public void legTpReExecution(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='tpReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Execution")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	public void legSlReEntry(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Entry")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
+	
+	public void legSlReExecution(String value,char legNumber) {
+		legEnableReOrder(legNumber);
+		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Execution")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		driver.findElement(By.xpath(xpath)).sendKeys(value);
+	}
 }
