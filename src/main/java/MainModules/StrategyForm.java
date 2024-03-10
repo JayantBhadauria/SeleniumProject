@@ -354,4 +354,118 @@ public class StrategyForm extends AbstractClass{
 		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
+	
+	public void stgTp(String tpValue) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='targetProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(tpValue);
+	}
+	
+	public void stgSl(String slValue) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='SLEnabled']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='stopLossValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(slValue);
+	}
+	
+	public void stgMoveSL(String moveSlValue) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='costTypeEnabled']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='costValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(moveSlValue);
+	}
+	
+	public void stgTpReEntry(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='tpReOrderToggle']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='tpReOrderType']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Entry")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='tpReOrderValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgTpReExecution(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='tpReOrderToggle']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='tpReOrderType']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Execution")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='tpReOrderValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgSlReEntry(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='slReOrderToggle']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='slReOrderType']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Entry")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='slReOrderValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgSlReExecution(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='slReOrderToggle']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='slReOrderType']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>reordertypList=getDropdownElements();
+		for(int i=0;i<reordertypList.size();i++) {
+			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
+			if(reorderType.contains("Execution")) {
+				reordertypList.get(i).findElement(By.xpath("./span")).click();
+					break;
+				}
+		}
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='slReOrderValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgTrailSLat(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='trailSLEnabled']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='trailSLValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgTrailSLby(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='increaseBy']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgLockProfitOn(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfit']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='trailLockedProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void stgLockProfitAt(String Value) {
+		String xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+
 }

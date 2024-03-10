@@ -20,7 +20,13 @@
 		"legSlReExecution2":"5",
 		"legExitRangeType1":"2",
 		"legMinRangeValue1":"50",
-		"legMaxRangeValue1":"99"
+		"legMaxRangeValue1":"99",
+		"stgSl":"44",
+		"stgSlReExecution":"46",
+		"stgTrailSLat":"60",
+		"stgTrailSLby":"40",
+		"stgLockProfitOn":"53",
+		"stgLockProfitAt":"49"
 		
 	}
 ]
