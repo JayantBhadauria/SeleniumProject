@@ -41,6 +41,32 @@ public class StrategyForm extends AbstractClass{
 		method.invoke(this, fieldValue);
 	}
 	
+	public void stgSqroffType(String sqrOffType) {
+		String xpath="//app-strategy-details-form//mat-select[@formcontrolname='squareOff']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>sqrOffTypeList=getDropdownElements();
+		for(int i=0;i<sqrOffTypeList.size();i++) {
+			String sqrOffName=sqrOffTypeList.get(i).findElement(By.xpath("./span")).getText();
+			if(sqrOffName.contains(sqrOffType)) {
+				sqrOffTypeList.get(i).findElement(By.xpath("./span")).click();
+				break;
+			}
+		}
+	}
+	
+	public void stgUnderlyingTyp(String underlyingType) {
+		String xpath="//app-strategy-details-form//mat-select[@formcontrolname='underlying']";
+		driver.findElement(By.xpath(xpath)).click();
+		List<WebElement>underlyingTypeList=getDropdownElements();
+		for(int i=0;i<sqrOffTypeList.size();i++) {
+			String sqrOffName=sqrOffTypeList.get(i).findElement(By.xpath("./span")).getText();
+			if(sqrOffName.contains(sqrOffType)) {
+				sqrOffTypeList.get(i).findElement(By.xpath("./span")).click();
+				break;
+			}
+		}
+	}
+	
 	public void strategyType(String strategyType) {
 		// Strategy Type
 		driver.findElement(By.xpath("//mat-select[@id='mat-select-5']")).click();
@@ -113,12 +139,12 @@ public class StrategyForm extends AbstractClass{
 	
 	public void legPrice(String price,char legNumber) {
 		// Price Entry
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[5]/div/div/div[3]/div/div/input[@formcontrolname='strikePriceInput']", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='strikePriceInput']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(price);
 	}
 	
 	public void legLotMultiplier(String multiplier,char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[6]/div/div/div[3]/div/div/input[@formcontrolname='lotMultiplier']", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='lotMultiplier']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(multiplier);
 	}
 	
@@ -132,7 +158,7 @@ public class StrategyForm extends AbstractClass{
 	
 	
 	public void legExpiryType(String expiryType,char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[3]/div/div", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='expiryType']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>expTyp=getDropdownElements();
 		for(int i=0;i<expTyp.size();i++) {
@@ -145,7 +171,7 @@ public class StrategyForm extends AbstractClass{
 	}
 	
 	public void legInstrumentType(String instType,char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[2]/div/div", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='instrumentType']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>instTypList=getDropdownElements();
 		for(int i=0;i<instTypList.size();i++) {
@@ -158,7 +184,7 @@ public class StrategyForm extends AbstractClass{
 	}
 	
 	public void legOrderMode(String odrType,char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div/div[2]/mat-form-field[1]/div/div", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='orderMode']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>odrTypList=getDropdownElements();
 		for(int i=0;i<odrTypList.size();i++) {
@@ -173,66 +199,66 @@ public class StrategyForm extends AbstractClass{
 	
 	public void legTP(String tpValue,char legNumber) {
 		enableTP(legNumber);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolName='targetProfitValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(tpValue);
 	}
 	
 	public void enableTP(char legNumber) {
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div/mat-checkbox[@formcontrolName='TPEnabled']/label";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//mat-checkbox[@formcontrolName='TPEnabled']/label";
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
 	public void enableSL(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[3]/div/mat-checkbox[@formcontrolName='SLEnabled']/label", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='SLEnabled']/label", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
 	public void legSL(String slValue,char legNumber) {
 		enableSL(legNumber);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[3]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolName='stopLossValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(slValue);
 	}
 	
 	public void enableLegTrailSL(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div/div[4]/div/mat-checkbox[@formcontrolName='trailSLEnabled']/label", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='trailSLEnabled']/label", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
 	public void legTrailSLat(String trailATvalue,char legNumber) {
 		enableLegTrailSL(legNumber);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[4]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolName='trailSLValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(trailATvalue);
 	}
 	
 	public void legTrailSLby(String trailByvalue,char legNumber) {
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[4]/mat-form-field[3]/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolName='increaseBy']";
 		driver.findElement(By.xpath(xpath)).sendKeys(trailByvalue);
 	}
 	
 	public void enableLegMoveSL(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div[2]/div[2]/div/mat-checkbox[@formcontrolName='costTypeEnabled']/label", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='costTypeEnabled']/label", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
 	public void legMoveSL(String moveSLvalue,char legNumber) {
 		enableLegMoveSL(legNumber);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolname='costValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(moveSLvalue);
 	}
 	
 	public void enableWTT(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div/mat-checkbox[@formcontrolName='waitToTradeToggle']/label", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='waitToTradeToggle']/label", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
 	public void legWTT(String WTTvalue,char legNumber) {
 		enableWTT(legNumber);
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='waitToTradeValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(WTTvalue);
 	}
 	
 	public void enableRangeThreshold(char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/div/div[2]/div/div/mat-checkbox[@formcontrolName='rangeThreshold']/label", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='rangeThreshold']/label", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 	}
 	
@@ -242,7 +268,7 @@ public class StrategyForm extends AbstractClass{
 	}
 	
 	public void enableRange(String rangeType, char legNumber) {
-		String xpath = String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form/div/div/mat-form-field", legNumber);
+		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='underlyingType']", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>elements=getDropdownElements();
 		for(int i=0;i<elements.size();i++) {
@@ -264,13 +290,13 @@ public class StrategyForm extends AbstractClass{
 	
 	public void legMinRangeValue(String value,char legNumber) throws InterruptedException {
 		sleep(500);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolname='underlyingMinValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
 	public void legMaxRangeValue(String value,char legNumber) throws InterruptedException {
 		sleep(500);
-		String xpath ="//app-strategy-leg-form["+legNumber+"]/div/form/div/div[2]/div/form/div[2]/div[2]/mat-form-field/div/div/div[3]/div/div/div/input";
+		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolname='underlyingMaxValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
@@ -286,7 +312,7 @@ public class StrategyForm extends AbstractClass{
 		legEnableReOrder(legNumber);
 		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='tpReOrderToggle']", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[1]/div", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='tpReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>reordertypList=getDropdownElements();
 		for(int i=0;i<reordertypList.size();i++) {
@@ -296,7 +322,7 @@ public class StrategyForm extends AbstractClass{
 					break;
 				}
 		}
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='tpReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
@@ -305,7 +331,7 @@ public class StrategyForm extends AbstractClass{
 		legEnableReOrder(legNumber);
 		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='tpReOrderToggle']", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[1]/div", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='tpReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>reordertypList=getDropdownElements();
 		for(int i=0;i<reordertypList.size();i++) {
@@ -315,7 +341,7 @@ public class StrategyForm extends AbstractClass{
 					break;
 				}
 		}
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[1]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='tpReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
@@ -323,7 +349,7 @@ public class StrategyForm extends AbstractClass{
 		legEnableReOrder(legNumber);
 		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='slReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>reordertypList=getDropdownElements();
 		for(int i=0;i<reordertypList.size();i++) {
@@ -333,7 +359,7 @@ public class StrategyForm extends AbstractClass{
 					break;
 				}
 		}
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='slReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
@@ -341,7 +367,7 @@ public class StrategyForm extends AbstractClass{
 		legEnableReOrder(legNumber);
 		String xpath=String.format("//app-strategy-leg-form[%s]//mat-checkbox[@formcontrolName='slReOrderToggle']", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[1]/div", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='slReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
 		List<WebElement>reordertypList=getDropdownElements();
 		for(int i=0;i<reordertypList.size();i++) {
@@ -351,7 +377,7 @@ public class StrategyForm extends AbstractClass{
 					break;
 				}
 		}
-		xpath=String.format("//app-strategy-leg-form[%s]/div/form/div/div[2]/div/form[2]/div/div[2]/div[2]/mat-form-field[2]/div/div/div[3]/div/div/div/input", legNumber);
+		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='slReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	

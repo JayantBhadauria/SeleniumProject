@@ -1,21 +1,17 @@
-10-Mar-2024 10:53:09 BaseTest [main] INFO : Report Started
-10-Mar-2024 10:53:13 BaseTest [main] INFO : ChromeDriver initialized
-10-Mar-2024 10:53:16 BaseTest [main] INFO : Login page opened
-10-Mar-2024 10:53:16 Listners [main] INFO : =========TEST INFO===========
-10-Mar-2024 10:53:16 Listners [main] INFO : Test : Bookmark Strategy started
-10-Mar-2024 10:53:29 LoginPage [main] INFO : User Logged In
-10-Mar-2024 10:53:30 LoginPage [main] INFO : My portfolio page opened
-10-Mar-2024 10:53:33 LoginPage [main] INFO : Portfolio form opened
-10-Mar-2024 10:53:34 PortfolioForm [main] INFO : Strategy form opened
-10-Mar-2024 10:54:03 RetryAnalyzer [main] WARN : Retrying test : null
-10-Mar-2024 10:54:03 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-10-Mar-2024 10:54:06 BaseTest [main] INFO : ChromeDriver initialized
-10-Mar-2024 10:54:12 BaseTest [main] INFO : Login page opened
-10-Mar-2024 10:54:12 Listners [main] INFO : =========TEST INFO===========
-10-Mar-2024 10:54:12 Listners [main] INFO : Test : Bookmark Strategy started
-10-Mar-2024 10:54:23 LoginPage [main] INFO : User Logged In
-10-Mar-2024 10:54:24 LoginPage [main] INFO : My portfolio page opened
-10-Mar-2024 10:54:26 LoginPage [main] INFO : Portfolio form opened
-10-Mar-2024 10:54:27 PortfolioForm [main] INFO : Strategy form opened
-10-Mar-2024 10:54:57 StrategyForm [main] ERROR: Mandatory Fields Missing
-10-Mar-2024 10:55:03 RetryAnalyzer [main] WARN : Retrying test : null
+10-Mar-2024 04:30:23 BaseTest [main] INFO : Report Started
+10-Mar-2024 04:30:26 BaseTest [main] INFO : ChromeDriver initialized
+10-Mar-2024 04:30:29 BaseTest [main] INFO : Login page opened
+10-Mar-2024 04:30:29 Listners [main] INFO : =========TEST INFO===========
+10-Mar-2024 04:30:29 Listners [main] INFO : Test : Bookmark Strategy started
+10-Mar-2024 04:30:42 LoginPage [main] INFO : User Logged In
+10-Mar-2024 04:30:43 LoginPage [main] INFO : My portfolio page opened
+10-Mar-2024 04:30:46 LoginPage [main] INFO : Portfolio form opened
+10-Mar-2024 04:30:47 PortfolioForm [main] INFO : Strategy form opened
+10-Mar-2024 04:31:15 StrategyForm [main] ERROR: Mandatory Fields Missing
+10-Mar-2024 04:31:18 RetryAnalyzer [main] WARN : Retrying test : null
+10-Mar-2024 04:31:18 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+10-Mar-2024 04:31:20 BaseTest [main] INFO : ChromeDriver initialized
+10-Mar-2024 04:31:23 BaseTest [main] INFO : Login page opened
+10-Mar-2024 04:31:23 Listners [main] INFO : =========TEST INFO===========
+10-Mar-2024 04:31:23 Listners [main] INFO : Test : Bookmark Strategy started
+10-Mar-2024 04:31:23 RetryAnalyzer [main] WARN : Retrying test : null
