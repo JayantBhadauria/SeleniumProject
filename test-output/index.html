@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestPackage.BookMark_Functionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,11 +143,74 @@
                   <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">
                   </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...) -->
                   <span class="method-name">BookMark_testing</span>
-                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99})</span>
+                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at MainModules.StrategyForm.strategyField(StrategyForm.java:41)
+	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:155)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname=&apos;slReOrderType&apos;]&quot;}
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4eeec3a89a264058e8a24f23200628f6, findElement {using=xpath, value=//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname=&apos;slReOrderType&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54453/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4eeec3a89a264058e8a24f23200628f6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at MainModules.StrategyForm.stgSlReExecution(StrategyForm.java:434)
+	... 35 more
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestPackage.BookMark_Functionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)">
+                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...) -->
+                  <span class="method-name">BookMark_testing</span>
+                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legTrailSLat1=50, legTrailSLby1=60, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46})</span>
+                  <div class="stack-trace">java.lang.reflect.InvocationTargetException
+	at MainModules.StrategyForm.strategyField(StrategyForm.java:41)
+	at TestComponents.BaseTest.SetStrategyLegParams(BaseTest.java:155)
+	at TestPackage.BookMark_Functionality.BookMark_testing(BookMark_Functionality.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname=&apos;slReOrderType&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at MainModules.StrategyForm.stgSlReExecution(StrategyForm.java:434)
+	... 35 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -191,16 +268,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BookMark_testing')
 data.setCell(0, 2, 'TestPackage.BookMark_Functionality')
-data.setCell(0, 3, 114566);
+data.setCell(0, 3, 89766);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'BookMark_testing')
+data.setCell(1, 2, 'TestPackage.BookMark_Functionality')
+data.setCell(1, 3, 66783);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -233,19 +314,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">769 ms</span>
+                <span class="method-start">728 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</span>
-                <span class="method-start">24660 ms</span>
+                <span class="method-start">8998 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">139247 ms</span>
+                <span class="method-start">75927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">75929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, legExpiryType1=Basic, leg...)</span>
+                <span class="method-start">83816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">174005 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">139316 ms</span>
+                <span class="method-start">174046 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
