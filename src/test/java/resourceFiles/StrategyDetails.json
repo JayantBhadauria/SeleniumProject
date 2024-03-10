@@ -3,6 +3,7 @@
 		"strategyType":"Bear Call Spread",
 		"strikeSelection":"Price",
 		"expiryType":"Monthly",
+		"stgSqroffType":"Complete",
 		"legExpiryType1":"Basic",
 		"legInstrumentType1":"Put",
 		"legOrderMode2":"Sell",
