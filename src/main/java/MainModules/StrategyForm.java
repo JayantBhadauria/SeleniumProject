@@ -29,6 +29,17 @@ public class StrategyForm extends AbstractClass{
 		return elements;
 	}
 	
+	public void selectListOption(String option) {
+		List<WebElement>listItems=getDropdownElements();
+		for(int i=0;i<listItems.size();i++) {
+			String ListItemName=listItems.get(i).findElement(By.xpath("./span")).getText();
+			if(ListItemName.contains(option)) {
+				listItems.get(i).findElement(By.xpath("./span")).click();
+				break;
+			}
+		}
+	}
+	
 	public void strategySetting(String strategyType, String expiryType, String strikeType, String price1, String price2) {
 		strategyType(strategyType);
 		expiryType(expiryType);
@@ -44,66 +55,31 @@ public class StrategyForm extends AbstractClass{
 	public void stgSqroffType(String sqrOffType) {
 		String xpath="//app-strategy-details-form//mat-select[@formcontrolname='squareOff']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>sqrOffTypeList=getDropdownElements();
-		for(int i=0;i<sqrOffTypeList.size();i++) {
-			String sqrOffName=sqrOffTypeList.get(i).findElement(By.xpath("./span")).getText();
-			if(sqrOffName.contains(sqrOffType)) {
-				sqrOffTypeList.get(i).findElement(By.xpath("./span")).click();
-				break;
-			}
-		}
+		selectListOption(sqrOffType);
 	}
 	
-	public void stgUnderlyingTyp(String underlyingType) {
+	public void stgUnderlyingType(String underlyingType) {
 		String xpath="//app-strategy-details-form//mat-select[@formcontrolname='underlying']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>underlyingTypeList=getDropdownElements();
-		for(int i=0;i<sqrOffTypeList.size();i++) {
-			String sqrOffName=sqrOffTypeList.get(i).findElement(By.xpath("./span")).getText();
-			if(sqrOffName.contains(sqrOffType)) {
-				sqrOffTypeList.get(i).findElement(By.xpath("./span")).click();
-				break;
-			}
-		}
+		selectListOption(underlyingType);
 	}
 	
 	public void strategyType(String strategyType) {
 		// Strategy Type
 		driver.findElement(By.xpath("//mat-select[@id='mat-select-5']")).click();
-		List<WebElement> stgTyp= getDropdownElements();
-		for(int i=0;i<stgTyp.size();i++) {
-			String stgName=stgTyp.get(i).findElement(By.xpath("./span")).getText();
-			if(stgName.contains(strategyType)) {
-				stgTyp.get(i).findElement(By.xpath("./span")).click();
-				break;
-			}
-		}
+		selectListOption(strategyType);
 	}
 	
 	public void expiryType(String expiryType) {
 		// Expiry type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-8']")).click();
-		List<WebElement> expTyp= getDropdownElements();
-		for(int i=0;i<expTyp.size();i++) {
-			String expName=expTyp.get(i).findElement(By.xpath("./span")).getText();
-			if(expName.contains(expiryType)) {
-				expTyp.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption(expiryType);
 	}
 	
 	public void strikeSelection(String strikeType) {
 		// Strike type 
 		driver.findElement(By.xpath("// mat-select[@id='mat-select-10']")).click();
-		List<WebElement> strikeTyp= getDropdownElements();
-		for(int i=0;i<strikeTyp.size();i++) {
-			String strikeName=strikeTyp.get(i).findElement(By.xpath("./span")).getText();
-			if(strikeName.contains(strikeType)) {
-				strikeTyp.get(i).findElement(By.xpath("./span")).click();
-				break;
-			}
-		}
+		selectListOption(strikeType);
 	}
 	
 	public void SubmitStrategy() {
@@ -160,40 +136,19 @@ public class StrategyForm extends AbstractClass{
 	public void legExpiryType(String expiryType,char legNumber) {
 		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='expiryType']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>expTyp=getDropdownElements();
-		for(int i=0;i<expTyp.size();i++) {
-			String expName=expTyp.get(i).findElement(By.xpath("./span")).getText();
-			if(expName.contains(expiryType)) {
-				expTyp.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption(expiryType);
 	}
 	
 	public void legInstrumentType(String instType,char legNumber) {
 		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='instrumentType']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>instTypList=getDropdownElements();
-		for(int i=0;i<instTypList.size();i++) {
-			String instName=instTypList.get(i).findElement(By.xpath("./span")).getText();
-			if(instName.contains(instType)) {
-				instTypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption(instType);
 	}
 	
 	public void legOrderMode(String odrType,char legNumber) {
 		String xpath = String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='orderMode']/div/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>odrTypList=getDropdownElements();
-		for(int i=0;i<odrTypList.size();i++) {
-			String odrName=odrTypList.get(i).findElement(By.xpath("./span")).getText();
-			if(odrName.contains(odrType)) {
-				odrTypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption(odrType);
 	}
 	
 	
@@ -314,14 +269,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='tpReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Entry")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Entry");
 		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='tpReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
@@ -333,14 +281,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='tpReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Execution")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Execution");
 		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='tpReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
@@ -351,14 +292,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='slReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Entry")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Entry");
 		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='slReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
@@ -369,14 +303,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath=String.format("//app-strategy-leg-form[%s]//mat-select[@formcontrolname='slReOrderType']/div", legNumber);
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Execution")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Execution");
 		xpath=String.format("//app-strategy-leg-form[%s]//input[@formcontrolname='slReOrderValue']", legNumber);
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
@@ -407,14 +334,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='tpReOrderType']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Entry")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Entry");
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='tpReOrderValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
@@ -424,14 +344,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='tpReOrderType']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Execution")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Execution");
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='tpReOrderValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
@@ -441,14 +354,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='slReOrderType']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Entry")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Entry");
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='slReOrderValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
@@ -458,14 +364,7 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//mat-select[@formcontrolname='slReOrderType']";
 		driver.findElement(By.xpath(xpath)).click();
-		List<WebElement>reordertypList=getDropdownElements();
-		for(int i=0;i<reordertypList.size();i++) {
-			String reorderType=reordertypList.get(i).findElement(By.xpath("./span")).getText();
-			if(reorderType.contains("Execution")) {
-				reordertypList.get(i).findElement(By.xpath("./span")).click();
-					break;
-				}
-		}
+		selectListOption("Execution");
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='slReOrderValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
