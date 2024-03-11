@@ -113,5 +113,30 @@ public class PortfolioForm extends AbstractClass{
 			
 		}
 	}
+	
+	public void EnableExitToggle() {
+		String xpath="//app-portfolio-form/div/div[2]/div/form/div/div[2]/mat-slide-toggle";
+		if(driver.findElement(By.xpath(xpath+"/label/div/input")).getAttribute("aria-checked").contains("false")) {
+			driver.findElement(By.xpath(xpath)).click();
+		}
+	}
+	
+	
+	public void portfolioTP(String Value) {
+		EnableExitToggle();
+		String xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='targetProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioSL(String Value) {
+		EnableExitToggle();
+		String xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='SLEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='stopLossValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
 
 }
