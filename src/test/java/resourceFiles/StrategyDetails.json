@@ -27,7 +27,8 @@
 		"stgTrailSLat":"60",
 		"stgTrailSLby":"40",
 		"stgLockProfitOn":"53",
-		"stgLockProfitAt":"49"
+		"stgLockProfitAt":"49",
+		"portfolioTP":"90"
 		
 	}
 ]
