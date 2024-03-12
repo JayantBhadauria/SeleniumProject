@@ -1,24 +1,15 @@
-12-Mar-2024 07:33:36 BaseTest [main] INFO : Report Started
-12-Mar-2024 07:33:38 BaseTest [main] INFO : ChromeDriver initialized
-12-Mar-2024 07:33:44 BaseTest [main] INFO : Login page opened
-12-Mar-2024 07:33:44 Listners [main] INFO : =========TEST INFO===========
-12-Mar-2024 07:33:44 Listners [main] INFO : Test : Bookmark Strategy started
-12-Mar-2024 07:33:55 LoginPage [main] INFO : User Logged In
-12-Mar-2024 07:33:55 LoginPage [main] INFO : My portfolio page opened
-12-Mar-2024 07:33:58 LoginPage [main] INFO : Portfolio form opened
-12-Mar-2024 07:33:58 PortfolioForm [main] INFO : Strategy form opened
-12-Mar-2024 07:34:15 RetryAnalyzer [main] WARN : Retrying test : null
-12-Mar-2024 07:34:15 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-12-Mar-2024 07:34:17 BaseTest [main] INFO : ChromeDriver initialized
-12-Mar-2024 07:34:23 BaseTest [main] INFO : Login page opened
-12-Mar-2024 07:34:23 Listners [main] INFO : =========TEST INFO===========
-12-Mar-2024 07:34:23 Listners [main] INFO : Test : Bookmark Strategy started
-12-Mar-2024 07:34:33 LoginPage [main] INFO : User Logged In
-12-Mar-2024 07:34:34 LoginPage [main] INFO : My portfolio page opened
-12-Mar-2024 07:34:36 LoginPage [main] INFO : Portfolio form opened
-12-Mar-2024 07:34:37 PortfolioForm [main] INFO : Strategy form opened
-12-Mar-2024 07:34:46 RetryAnalyzer [main] WARN : Retrying test : null
-12-Mar-2024 07:34:46 BaseTest [main] INFO : Screenshot taken
-12-Mar-2024 07:34:46 Listners [main] ERROR: Test : Bookmark Strategy Failed
-12-Mar-2024 07:34:47 BaseTest [main] INFO : Report Ended
-12-Mar-2024 07:34:47 BaseTest [main] INFO : Program completed
+12-Mar-2024 10:01:37 BaseTest [main] INFO : Report Started
+12-Mar-2024 10:01:41 BaseTest [main] INFO : ChromeDriver initialized
+12-Mar-2024 10:01:50 BaseTest [main] INFO : Login page opened
+12-Mar-2024 10:01:50 Listners [main] INFO : =========TEST INFO===========
+12-Mar-2024 10:01:50 Listners [main] INFO : Test : Bookmark Strategy started
+12-Mar-2024 10:02:01 LoginPage [main] INFO : User Logged In
+12-Mar-2024 10:02:01 LoginPage [main] INFO : My portfolio page opened
+12-Mar-2024 10:02:04 LoginPage [main] INFO : Portfolio form opened
+12-Mar-2024 10:02:05 PortfolioForm [main] INFO : Strategy form opened
+12-Mar-2024 10:03:21 StrategyForm [main] INFO : Strategy Added
+12-Mar-2024 10:03:40 PortfolioForm [main] INFO : Portfolio Submitted
+12-Mar-2024 10:03:42 MyPortfolio [main] INFO : My portfolio page opened
+12-Mar-2024 10:03:46 Listners [main] INFO : Test : Bookmark Strategy Success
+12-Mar-2024 10:03:47 BaseTest [main] INFO : Report Ended
+12-Mar-2024 10:03:47 BaseTest [main] INFO : Program completed

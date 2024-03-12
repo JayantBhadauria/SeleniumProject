@@ -1,5 +1,7 @@
 package MainModules;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -114,6 +116,11 @@ public class PortfolioForm extends AbstractClass{
 		}
 	}
 	
+	public void portfolioField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		Method method=getClass().getMethod(fieldName, String.class);
+		method.invoke(this, fieldValue);
+	}
+	
 	public void EnableExitToggle() {
 		String xpath="//app-portfolio-form/div/div[2]/div/form/div/div[2]/mat-slide-toggle";
 		if(driver.findElement(By.xpath(xpath+"/label/div/input")).getAttribute("aria-checked").contains("false")) {
@@ -124,17 +131,18 @@ public class PortfolioForm extends AbstractClass{
 	
 	public void portfolioTP(String Value) {
 		EnableExitToggle();
-		String xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']";
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']";
 		driver.findElement(By.xpath(xpath)).click();
-		xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='targetProfitValue']";
+		System.out.println();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='targetProfitValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
 	
 	public void portfolioSL(String Value) {
 		EnableExitToggle();
-		String xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='SLEnabled']";
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='SLEnabled']";
 		driver.findElement(By.xpath(xpath)).click();
-		xpath="//app-strategy-exit-form//mat-checkbox[@formcontrolname='stopLossValue']";
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='stopLossValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
 	
