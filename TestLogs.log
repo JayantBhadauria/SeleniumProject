@@ -1,17 +1,24 @@
-11-Mar-2024 08:21:16 BaseTest [main] INFO : Report Started
-11-Mar-2024 08:21:57 BaseTest [main] INFO : ChromeDriver initialized
-11-Mar-2024 08:22:03 BaseTest [main] INFO : Login page opened
-11-Mar-2024 08:22:03 Listners [main] INFO : =========TEST INFO===========
-11-Mar-2024 08:22:03 Listners [main] INFO : Test : Bookmark Strategy started
-11-Mar-2024 08:22:21 LoginPage [main] INFO : User Logged In
-11-Mar-2024 08:22:21 LoginPage [main] INFO : My portfolio page opened
-11-Mar-2024 08:22:24 LoginPage [main] INFO : Portfolio form opened
-11-Mar-2024 08:22:25 PortfolioForm [main] INFO : Strategy form opened
-11-Mar-2024 08:22:55 StrategyForm [main] ERROR: Mandatory Fields Missing
-11-Mar-2024 08:23:09 RetryAnalyzer [main] WARN : Retrying test : null
-11-Mar-2024 08:23:09 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-11-Mar-2024 08:23:11 BaseTest [main] INFO : ChromeDriver initialized
-11-Mar-2024 08:23:14 BaseTest [main] INFO : Login page opened
-11-Mar-2024 08:23:14 Listners [main] INFO : =========TEST INFO===========
-11-Mar-2024 08:23:14 Listners [main] INFO : Test : Bookmark Strategy started
-11-Mar-2024 08:23:14 RetryAnalyzer [main] WARN : Retrying test : null
+12-Mar-2024 07:33:36 BaseTest [main] INFO : Report Started
+12-Mar-2024 07:33:38 BaseTest [main] INFO : ChromeDriver initialized
+12-Mar-2024 07:33:44 BaseTest [main] INFO : Login page opened
+12-Mar-2024 07:33:44 Listners [main] INFO : =========TEST INFO===========
+12-Mar-2024 07:33:44 Listners [main] INFO : Test : Bookmark Strategy started
+12-Mar-2024 07:33:55 LoginPage [main] INFO : User Logged In
+12-Mar-2024 07:33:55 LoginPage [main] INFO : My portfolio page opened
+12-Mar-2024 07:33:58 LoginPage [main] INFO : Portfolio form opened
+12-Mar-2024 07:33:58 PortfolioForm [main] INFO : Strategy form opened
+12-Mar-2024 07:34:15 RetryAnalyzer [main] WARN : Retrying test : null
+12-Mar-2024 07:34:15 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+12-Mar-2024 07:34:17 BaseTest [main] INFO : ChromeDriver initialized
+12-Mar-2024 07:34:23 BaseTest [main] INFO : Login page opened
+12-Mar-2024 07:34:23 Listners [main] INFO : =========TEST INFO===========
+12-Mar-2024 07:34:23 Listners [main] INFO : Test : Bookmark Strategy started
+12-Mar-2024 07:34:33 LoginPage [main] INFO : User Logged In
+12-Mar-2024 07:34:34 LoginPage [main] INFO : My portfolio page opened
+12-Mar-2024 07:34:36 LoginPage [main] INFO : Portfolio form opened
+12-Mar-2024 07:34:37 PortfolioForm [main] INFO : Strategy form opened
+12-Mar-2024 07:34:46 RetryAnalyzer [main] WARN : Retrying test : null
+12-Mar-2024 07:34:46 BaseTest [main] INFO : Screenshot taken
+12-Mar-2024 07:34:46 Listners [main] ERROR: Test : Bookmark Strategy Failed
+12-Mar-2024 07:34:47 BaseTest [main] INFO : Report Ended
+12-Mar-2024 07:34:47 BaseTest [main] INFO : Program completed
