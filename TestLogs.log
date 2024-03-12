@@ -1,17 +1,15 @@
-11-Mar-2024 08:21:16 BaseTest [main] INFO : Report Started
-11-Mar-2024 08:21:57 BaseTest [main] INFO : ChromeDriver initialized
-11-Mar-2024 08:22:03 BaseTest [main] INFO : Login page opened
-11-Mar-2024 08:22:03 Listners [main] INFO : =========TEST INFO===========
-11-Mar-2024 08:22:03 Listners [main] INFO : Test : Bookmark Strategy started
-11-Mar-2024 08:22:21 LoginPage [main] INFO : User Logged In
-11-Mar-2024 08:22:21 LoginPage [main] INFO : My portfolio page opened
-11-Mar-2024 08:22:24 LoginPage [main] INFO : Portfolio form opened
-11-Mar-2024 08:22:25 PortfolioForm [main] INFO : Strategy form opened
-11-Mar-2024 08:22:55 StrategyForm [main] ERROR: Mandatory Fields Missing
-11-Mar-2024 08:23:09 RetryAnalyzer [main] WARN : Retrying test : null
-11-Mar-2024 08:23:09 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
-11-Mar-2024 08:23:11 BaseTest [main] INFO : ChromeDriver initialized
-11-Mar-2024 08:23:14 BaseTest [main] INFO : Login page opened
-11-Mar-2024 08:23:14 Listners [main] INFO : =========TEST INFO===========
-11-Mar-2024 08:23:14 Listners [main] INFO : Test : Bookmark Strategy started
-11-Mar-2024 08:23:14 RetryAnalyzer [main] WARN : Retrying test : null
+12-Mar-2024 10:01:37 BaseTest [main] INFO : Report Started
+12-Mar-2024 10:01:41 BaseTest [main] INFO : ChromeDriver initialized
+12-Mar-2024 10:01:50 BaseTest [main] INFO : Login page opened
+12-Mar-2024 10:01:50 Listners [main] INFO : =========TEST INFO===========
+12-Mar-2024 10:01:50 Listners [main] INFO : Test : Bookmark Strategy started
+12-Mar-2024 10:02:01 LoginPage [main] INFO : User Logged In
+12-Mar-2024 10:02:01 LoginPage [main] INFO : My portfolio page opened
+12-Mar-2024 10:02:04 LoginPage [main] INFO : Portfolio form opened
+12-Mar-2024 10:02:05 PortfolioForm [main] INFO : Strategy form opened
+12-Mar-2024 10:03:21 StrategyForm [main] INFO : Strategy Added
+12-Mar-2024 10:03:40 PortfolioForm [main] INFO : Portfolio Submitted
+12-Mar-2024 10:03:42 MyPortfolio [main] INFO : My portfolio page opened
+12-Mar-2024 10:03:46 Listners [main] INFO : Test : Bookmark Strategy Success
+12-Mar-2024 10:03:47 BaseTest [main] INFO : Report Ended
+12-Mar-2024 10:03:47 BaseTest [main] INFO : Program completed

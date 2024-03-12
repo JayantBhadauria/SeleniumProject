@@ -36,6 +36,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import MainModules.LoginPage;
+import MainModules.PortfolioForm;
 import MainModules.StrategyForm;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import resourceFiles.DataReader;
@@ -62,7 +63,7 @@ public class BaseTest extends DataReader{
 			if(browser.contains("Google")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-//		        options.addArguments("--headless");
+		        options.addArguments("--headless");
 				this.driver=new ChromeDriver(options);
 				log.info("ChromeDriver initialized");
 			}
@@ -126,7 +127,7 @@ public class BaseTest extends DataReader{
 		    log.info("Program completed");
 		}
 		
-		public void SetStrategyLegParams(LinkedHashMap<String,String> input,StrategyForm strategyform) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		public void SetFormParams(LinkedHashMap<String,String> input,StrategyForm strategyform, PortfolioForm portfolioform) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 			Iterator<Map.Entry<String, String>> iterator = input.entrySet().iterator();
 			Map<Integer,Boolean>legStatus=new HashMap<>();
 	        for (int i = 1; i <= 5; i++) {
@@ -144,16 +145,20 @@ public class BaseTest extends DataReader{
 		            	}
 		            	if(key.contains("ExitRange")) {
 		            		strategyform.enableRange(value, legNumber);
+		            		
 		            	}
 		            	else {
 		            		strategyform.legField(key, value);
 		            	}
 		            		
 		            }
-		            
-		            else {
+		          
+		            else if(key.contains("portfolio")) {
+		            	portfolioform.portfolioField(key,value);
+		            }
+		            else{
 		            	strategyform.strategyField(key, value);
-		            }            
+		            }
 		     }
 		}
 		
