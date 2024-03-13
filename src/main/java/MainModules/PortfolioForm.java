@@ -133,7 +133,6 @@ public class PortfolioForm extends AbstractClass{
 		EnableExitToggle();
 		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']";
 		driver.findElement(By.xpath(xpath)).click();
-		System.out.println();
 		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='targetProfitValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
@@ -146,5 +145,23 @@ public class PortfolioForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
 	
-
+	public void portfolioMoveSL(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='costTypeEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='costValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioLockProfitOn(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfit']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioLockProfitAt(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='lockProfitAt']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
 }
