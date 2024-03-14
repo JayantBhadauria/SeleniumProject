@@ -155,12 +155,12 @@ public class PortfolioForm extends AbstractClass{
 	public void portfolioLockProfitOn(String Value) {
 		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfit']/label/div";
 		driver.findElement(By.xpath(xpath)).click();
-		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfitValue']";
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='trailLockedProfitValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
 	
 	public void portfolioLockProfitAt(String Value) {
-		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='lockProfitAt']";
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
 	
