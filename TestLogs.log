@@ -1,15 +1,2 @@
-12-Mar-2024 10:01:37 BaseTest [main] INFO : Report Started
-12-Mar-2024 10:01:41 BaseTest [main] INFO : ChromeDriver initialized
-12-Mar-2024 10:01:50 BaseTest [main] INFO : Login page opened
-12-Mar-2024 10:01:50 Listners [main] INFO : =========TEST INFO===========
-12-Mar-2024 10:01:50 Listners [main] INFO : Test : Bookmark Strategy started
-12-Mar-2024 10:02:01 LoginPage [main] INFO : User Logged In
-12-Mar-2024 10:02:01 LoginPage [main] INFO : My portfolio page opened
-12-Mar-2024 10:02:04 LoginPage [main] INFO : Portfolio form opened
-12-Mar-2024 10:02:05 PortfolioForm [main] INFO : Strategy form opened
-12-Mar-2024 10:03:21 StrategyForm [main] INFO : Strategy Added
-12-Mar-2024 10:03:40 PortfolioForm [main] INFO : Portfolio Submitted
-12-Mar-2024 10:03:42 MyPortfolio [main] INFO : My portfolio page opened
-12-Mar-2024 10:03:46 Listners [main] INFO : Test : Bookmark Strategy Success
-12-Mar-2024 10:03:47 BaseTest [main] INFO : Report Ended
-12-Mar-2024 10:03:47 BaseTest [main] INFO : Program completed
+14-Mar-2024 08:42:58 BaseTest [main] INFO : Report Started
+14-Mar-2024 08:43:03 BaseTest [main] INFO : EdgeDriver initialized

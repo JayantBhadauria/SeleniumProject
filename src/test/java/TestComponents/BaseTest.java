@@ -54,23 +54,25 @@ public class BaseTest extends DataReader{
 	Logger log=(Logger) LogManager.getLogger(BaseTest.class);
 
 		public WebDriver initialization() throws IOException {
-			
-			
 			FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
 			prop.load(fis);
 			
-			String browser=prop.getProperty("browserName");
-			if(browser.contains("Google")) {
+			String browser=System.getProperty("browser")!=null?System.getProperty("browser"): prop.getProperty("browserName");
+			if(browser.contains("Chrome")) {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--headless");
+				if(browser.contains("headless")) {
+					options.addArguments("--headless");
+				}
 				this.driver=new ChromeDriver(options);
 				log.info("ChromeDriver initialized");
 			}
 			else if(browser.contains("Edge")) {
 				WebDriverManager.edgedriver().setup();
 				EdgeOptions options=new EdgeOptions();
-//				options.addArguments("--headless");
+				if(browser.contains("headless")) {
+					options.addArguments("--headless");
+				}
 				this.driver=new EdgeDriver(options);
 				log.info("EdgeDriver initialized");
 			}
