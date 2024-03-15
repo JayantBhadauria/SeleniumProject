@@ -163,5 +163,10 @@ public class PortfolioForm extends AbstractClass{
 		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
 	}
+
+	public void enableUnderlying(){
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='isUnderlying']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+	}
 	
 }
