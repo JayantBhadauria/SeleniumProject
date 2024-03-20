@@ -66,19 +66,19 @@ public class StrategyForm extends AbstractClass{
 	
 	public void strategyType(String strategyType) {
 		// Strategy Type
-		driver.findElement(By.xpath("//mat-select[@id='mat-select-5']")).click();
+		driver.findElement(By.xpath("//mat-select[@formcontrolname='strategyType']")).click();
 		selectListOption(strategyType);
 	}
 	
 	public void expiryType(String expiryType) {
 		// Expiry type 
-		driver.findElement(By.xpath("// mat-select[@id='mat-select-8']")).click();
+		driver.findElement(By.xpath("// mat-select[@formcontrolname='expiryType']")).click();
 		selectListOption(expiryType);
 	}
 	
 	public void strikeSelection(String strikeType) {
 		// Strike type 
-		driver.findElement(By.xpath("// mat-select[@id='mat-select-10']")).click();
+		driver.findElement(By.xpath("// mat-select[@formcontrolname='strikeSelection']")).click();
 		selectListOption(strikeType);
 	}
 	
