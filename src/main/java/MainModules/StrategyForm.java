@@ -391,6 +391,7 @@ public class StrategyForm extends AbstractClass{
 	public void stgLockProfitAt(String Value) {
 		String xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+		log.info("LockProfit : "+Value);
 	}
 
 }
