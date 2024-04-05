@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-05T07:35:52 IST" name="Suite" finished-at="2024-04-05T07:37:33 IST" duration-ms="100622">
+  <suite started-at="2024-03-20T07:55:16 IST" name="Suite" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
     <groups>
     </groups>
-    <test started-at="2024-04-05T07:35:52 IST" name="Bookmark Strategy" finished-at="2024-04-05T07:37:33 IST" duration-ms="100622">
+    <test started-at="2024-03-20T07:55:16 IST" name="Bookmark Strategy" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
       <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-04-05T07:35:52 IST" name="InitiateReport" finished-at="2024-04-05T07:35:52 IST" duration-ms="406" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:15 IST" name="InitiateReport" finished-at="2024-03-20T07:55:16 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-04-05T07:35:53 IST" name="launchApplication" finished-at="2024-04-05T07:36:07 IST" duration-ms="14220" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:16 IST" name="launchApplication" finished-at="2024-03-20T07:55:33 IST" duration-ms="17135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-04-05T07:36:07 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-04-05T07:37:32 IST" duration-ms="85340" status="PASS">
+        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:33 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-20T07:56:58 IST" duration-ms="84732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-04-05T07:37:32 IST" name="closeDriver" finished-at="2024-04-05T07:37:33 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:58 IST" name="closeDriver" finished-at="2024-03-20T07:56:59 IST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-04-05T07:37:33 IST" name="flushReport" finished-at="2024-04-05T07:37:34 IST" duration-ms="1078" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:59 IST" name="flushReport" finished-at="2024-03-20T07:56:59 IST" duration-ms="899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

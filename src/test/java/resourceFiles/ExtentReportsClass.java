@@ -12,7 +12,7 @@ public class ExtentReportsClass {
     	Properties prop=new Properties();
     	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//Gobaldata.properties");
     	prop.load(fis);
-        String path = "C://Users//jayan//.jenkins//workspace//SeleniumProject" + "//reports//index.html";
+        String path = System.getProperty("user.dir") + "//reports//index.html";
         // Create an ExtentSparkReporter and attach it to the ExtentReports instance
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         ExtentReports extent = new ExtentReports();
