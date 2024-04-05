@@ -386,12 +386,13 @@ public class StrategyForm extends AbstractClass{
 		driver.findElement(By.xpath(xpath)).click();
 		xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='trailLockedProfitValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+		log.info("LockProfitOn : "+Value);
 	}
 	
 	public void stgLockProfitAt(String Value) {
 		String xpath="//app-individual-strategy-form//app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
 		driver.findElement(By.xpath(xpath)).sendKeys(Value);
-		log.info("LockProfit : "+Value);
+		log.info("LockProfitAt : "+Value);
 	}
 
 }
