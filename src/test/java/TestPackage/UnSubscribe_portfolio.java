@@ -13,6 +13,6 @@ public class UnSubscribe_portfolio extends BaseTest{
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		MyPortfolio myPortfolio = new MyPortfolio(driver);
 		myPortfolio.goToMyportfolioPage();
-		myPortfolio.UnSubscribePortfolio("Brahmastra");
+		myPortfolio.UnSubscribePortfolio("Teji Mandi Ka King");
 	}
 }
