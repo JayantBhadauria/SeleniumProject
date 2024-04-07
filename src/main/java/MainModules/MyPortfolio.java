@@ -3,6 +3,8 @@ package MainModules;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ import AbstractClasses.AbstractClass;
 
 public class MyPortfolio extends AbstractClass {
 	WebDriver driver;
+	Logger log=(Logger) LogManager.getLogger(getClass());
 	public MyPortfolio(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -23,18 +26,22 @@ public class MyPortfolio extends AbstractClass {
 	
 	public void deployedTab() {
 		driver.findElement(By.xpath("// div[@class='mat-tab-labels']/div[@aria-setsize=4][1]")).click();
+		log.info("Deployed tab opened");
 	}
 	
 	public void createdTab() {
 		driver.findElement(By.xpath("// div[@class='mat-tab-labels']/div[@aria-setsize=4][2]")).click();
+		log.info("Created tab opened");
 	}
 	
 	public void subscribedTab() {
 		driver.findElement(By.xpath("// div[@class='mat-tab-labels']/div[@aria-setsize=4][3]")).click();
+		log.info("Subscribed tab opened");
 	}
 	
 	public void bookmarkedTab() {
 		driver.findElement(By.xpath("// div[@class='mat-tab-labels']/div[@aria-setsize=4][4]")).click();
+		log.info("BookMarked tab opened");
 	}
 	
 	public List<WebElement> getListofPortfolios() {
@@ -104,6 +111,22 @@ public class MyPortfolio extends AbstractClass {
 				break;
 			}
 		}
+	}
+	
+	public void UnSubscribePortfolio(String portfolioName) throws InterruptedException {
+		subscribedTab();
+		
+        sleep(1500);
+        List<WebElement> elements=getListofPortfolios();
+        for(int i=0;i<elements.size();i++) {
+            if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
+                elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button[2]")).click();
+                driver.findElement(By.xpath("//div[@class='cdk-overlay-container']/div[2]/div/div/div/button[1]")).click();
+                driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
+                log.info("Portfolio UnBookmarked Successfully");
+                break;
+            }
+        }
 	}
 	
 	

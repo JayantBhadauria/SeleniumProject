@@ -1,0 +1,10 @@
+07-Apr-2024 05:01:16 BaseTest [main] INFO : Report Started
+07-Apr-2024 05:01:20 BaseTest [main] INFO : ChromeDriver initialized
+07-Apr-2024 05:01:26 BaseTest [main] INFO : Login page opened
+07-Apr-2024 05:01:26 Listners [main] INFO : =========TEST INFO===========
+07-Apr-2024 05:01:26 Listners [main] INFO : Test : UnSubscribe portfolio started
+07-Apr-2024 05:01:37 LoginPage [main] INFO : User Logged In
+07-Apr-2024 05:01:38 MyPortfolio [main] INFO : My portfolio page opened
+07-Apr-2024 05:01:41 Listners [main] INFO : Test : UnSubscribe portfolio Success
+07-Apr-2024 05:01:42 BaseTest [main] INFO : Report Ended
+07-Apr-2024 05:01:42 BaseTest [main] INFO : Program completed

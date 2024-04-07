@@ -23,11 +23,6 @@ public class StrategyForm extends AbstractClass{
 		super(driver);
 		this.driver=driver;
 	}
-	public List<WebElement> getDropdownElements() {
-		String xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
-		List<WebElement> elements=driver.findElements(By.xpath(xpath));
-		return elements;
-	}
 	
 	public void selectListOption(String option) {
 		List<WebElement>listItems=getDropdownElements();
