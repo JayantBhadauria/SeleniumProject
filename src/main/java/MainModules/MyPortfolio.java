@@ -130,5 +130,20 @@ public class MyPortfolio extends AbstractClass {
 	}
 	
 	
+	public void SubscribePortfolioFormFavourite(String portfolioName) throws InterruptedException {
+		bookmarkedTab();
+		sleep(1500);
+		List<WebElement> elements=getListofPortfolios();
+        for(int i=0;i<elements.size();i++) {
+            if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
+                System.out.println("Element Found");
+            	elements.get(i).findElement(By.xpath("./app-strategy-card/div/mat-card/mat-card-actions/span/button")).click();
+                driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
+                log.info("Portfolio Bookmarked Successfully");
+                break;
+            }
+        }
+	}
+	
 
 }

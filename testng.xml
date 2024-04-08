@@ -24,12 +24,12 @@
     </classes>
   </test!--> 
   
-  <test name="UnSubscribe portfolio">
+  <test name="Subscribe functionality">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="To check the unsubscribe button functionality"></parameter>
-	 <parameter name="portfolioName" value="Turtle Trader"></parameter>
+	 <parameter name="portfolioName" value="Dual Nifty"></parameter>
     <classes>
-      <class name="TestPackage.UnSubscribe_portfolio"/>
+      <class name="TestPackage.Subscribe_functionality"/>
     </classes>
   </test>
  
