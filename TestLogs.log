@@ -1,0 +1,12 @@
+08-Apr-2024 09:17:07 BaseTest [main] INFO : Report Started
+08-Apr-2024 09:17:11 BaseTest [main] INFO : ChromeDriver initialized
+08-Apr-2024 09:17:15 BaseTest [main] INFO : Login page opened
+08-Apr-2024 09:17:15 Listners [main] INFO : =========TEST INFO===========
+08-Apr-2024 09:17:15 Listners [main] INFO : Test : Bookmark Strategy started
+08-Apr-2024 09:17:15 RetryAnalyzer [main] WARN : Retrying test : null
+08-Apr-2024 09:17:15 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+08-Apr-2024 09:17:16 BaseTest [main] INFO : ChromeDriver initialized
+08-Apr-2024 09:17:19 BaseTest [main] INFO : Login page opened
+08-Apr-2024 09:17:19 Listners [main] INFO : =========TEST INFO===========
+08-Apr-2024 09:17:19 Listners [main] INFO : Test : Bookmark Strategy started
+08-Apr-2024 09:17:19 RetryAnalyzer [main] WARN : Retrying test : null
