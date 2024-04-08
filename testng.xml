@@ -16,12 +16,21 @@
   
   
   
-  <test thread-count="2" name="Bookmark Strategy">
+  <!--test thread-count="2" name="Bookmark Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="Functionality of Bookmark Strategy"></parameter>
     <classes>
       <class name="TestPackage.BookMark_Functionality"/>
     </classes>
-  </test> 
+  </test!--> 
+  
+  <test name="Subscribe functionality">
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="To check the unsubscribe button functionality"></parameter>
+	 <parameter name="portfolioName" value="Dual Nifty"></parameter>
+    <classes>
+      <class name="TestPackage.Subscribe_functionality"/>
+    </classes>
+  </test>
  
 </suite> <!-- Suite -->

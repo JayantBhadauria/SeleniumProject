@@ -16,6 +16,7 @@ public class ExtentReportsClass {
         // Create an ExtentSparkReporter and attach it to the ExtentReports instance
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         ExtentReports extent = new ExtentReports();
+      
 
         // Additional configurations (if needed)
         reporter.config().setDocumentTitle("uAlgos Test Report");

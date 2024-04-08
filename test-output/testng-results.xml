@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-20T07:55:16 IST" name="Suite" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
+  <suite started-at="2024-04-08T22:02:22 IST" name="Suite" finished-at="2024-04-08T22:03:13 IST" duration-ms="50868">
     <groups>
+      <group name="Smoke">
+        <method signature="Subscribe_functionality.Subscribe(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" name="Subscribe" class="TestPackage.Subscribe_functionality"/>
+        <method signature="Subscribe_functionality.unSubscribe(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" name="unSubscribe" class="TestPackage.Subscribe_functionality"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-03-20T07:55:16 IST" name="Bookmark Strategy" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
-      <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:15 IST" name="InitiateReport" finished-at="2024-03-20T07:55:16 IST" duration-ms="446" status="PASS">
+    <test started-at="2024-04-08T22:02:22 IST" name="Subscribe functionality" finished-at="2024-04-08T22:03:13 IST" duration-ms="50868">
+      <class name="TestPackage.Subscribe_functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:22 IST" name="InitiateReport" finished-at="2024-04-08T22:02:22 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:16 IST" name="launchApplication" finished-at="2024-03-20T07:55:33 IST" duration-ms="17135" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:22 IST" name="launchApplication" finished-at="2024-04-08T22:02:33 IST" duration-ms="10722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:33 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-20T07:56:58 IST" duration-ms="84732" status="PASS">
+        <test-method signature="Subscribe(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:33 IST" name="Subscribe" finished-at="2024-04-08T22:02:48 IST" duration-ms="15184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50}]]>
+                <![CDATA[Dual Nifty]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:58 IST" name="closeDriver" finished-at="2024-03-20T07:56:59 IST" duration-ms="538" status="PASS">
+        </test-method> <!-- Subscribe -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:48 IST" name="closeDriver" finished-at="2024-04-08T22:02:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:59 IST" name="flushReport" finished-at="2024-03-20T07:56:59 IST" duration-ms="899" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:48 IST" name="launchApplication" finished-at="2024-04-08T22:02:58 IST" duration-ms="10093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="unSubscribe(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:02:58 IST" name="unSubscribe" finished-at="2024-04-08T22:03:13 IST" depends-on-methods="TestPackage.Subscribe_functionality.Subscribe" duration-ms="14746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dual Nifty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unSubscribe -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:03:13 IST" name="closeDriver" finished-at="2024-04-08T22:03:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Subscribe_functionality@1eba372c]" started-at="2024-04-08T22:03:13 IST" name="flushReport" finished-at="2024-04-08T22:03:14 IST" duration-ms="1543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.BookMark_Functionality -->
-    </test> <!-- Bookmark Strategy -->
+      </class> <!-- TestPackage.Subscribe_functionality -->
+    </test> <!-- Subscribe functionality -->
   </suite> <!-- Suite -->
 </testng-results>
