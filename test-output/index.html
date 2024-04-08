@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.UnSubscribe_portfolio" class="method navigator-link" hash-for-method="unSubscribe">unSubscribe</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.UnSubscribe_portfolio" class="method navigator-link" hash-for-method="unSubscribe(Turtle Trader)">unSubscribe(Turtle Trader)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,9 +126,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="unSubscribe">
-                  </a> <!-- unSubscribe -->
+                  <a name="unSubscribe(Turtle Trader)">
+                  </a> <!-- unSubscribe(Turtle Trader) -->
                   <span class="method-name">unSubscribe</span>
+                  <span class="parameters">(Turtle Trader)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,6 +150,7 @@
   &lt;test thread-count=&quot;1&quot; name=&quot;UnSubscribe portfolio&quot;&gt;
     &lt;parameter name=&quot;Description&quot; value=&quot;To check the unsubscribe button functionality&quot;/&gt;
     &lt;parameter name=&quot;Author&quot; value=&quot;Jayant Bhadauria&quot;/&gt;
+    &lt;parameter name=&quot;portfolioName&quot; value=&quot;Turtle Trader&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestPackage.UnSubscribe_portfolio&quot;/&gt;
     &lt;/classes&gt;
@@ -202,7 +204,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'unSubscribe')
 data.setCell(0, 2, 'TestPackage.UnSubscribe_portfolio')
-data.setCell(0, 3, 14646);
+data.setCell(0, 3, 14491);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -240,19 +242,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">358 ms</span>
+                <span class="method-start">536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">unSubscribe</span>
-                <span class="method-start">10027 ms</span>
+                <span class="method-name">unSubscribe(Turtle Trader)</span>
+                <span class="method-start">11477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">24682 ms</span>
+                <span class="method-start">25977 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">24747 ms</span>
+                <span class="method-start">26001 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="TestComponents.Listners"/>
-  </listeners>
-  <test thread-count="1" name="UnSubscribe portfolio(failed)">
-    <parameter name="Description" value="To check the unsubscribe button functionality"/>
-    <parameter name="Author" value="Jayant Bhadauria"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="TestPackage.UnSubscribe_portfolio">
         <methods>
-          <include name="flushReport"/>
           <include name="unSubscribe"/>
+          <include name="flushReport"/>
           <include name="launchApplication"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- TestPackage.UnSubscribe_portfolio -->
     </classes>
-  </test> <!-- UnSubscribe portfolio(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

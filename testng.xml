@@ -27,6 +27,7 @@
   <test name="UnSubscribe portfolio">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="To check the unsubscribe button functionality"></parameter>
+	 <parameter name="portfolioName" value="Turtle Trader"></parameter>
     <classes>
       <class name="TestPackage.UnSubscribe_portfolio"/>
     </classes>
