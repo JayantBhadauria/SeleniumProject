@@ -4,19 +4,19 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="Bookmark Strategy(failed)">
-    <parameter name="Description" value="Functionality of Bookmark Strategy"/>
+  <test thread-count="1" name="UnSubscribe portfolio(failed)">
+    <parameter name="Description" value="To check the unsubscribe button functionality"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
     <classes>
-      <class name="TestPackage.BookMark_Functionality">
+      <class name="TestPackage.UnSubscribe_portfolio">
         <methods>
           <include name="flushReport"/>
+          <include name="unSubscribe"/>
           <include name="launchApplication"/>
-          <include name="BookMark_testing" invocation-numbers="0"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.BookMark_Functionality -->
+      </class> <!-- TestPackage.UnSubscribe_portfolio -->
     </classes>
-  </test> <!-- Bookmark Strategy(failed) -->
+  </test> <!-- UnSubscribe portfolio(failed) -->
 </suite> <!-- Failed suite [Suite] -->

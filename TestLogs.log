@@ -1,0 +1,21 @@
+08-Apr-2024 10:02:22 BaseTest [main] INFO : Report Started
+08-Apr-2024 10:02:26 BaseTest [main] INFO : ChromeDriver initialized
+08-Apr-2024 10:02:33 BaseTest [main] INFO : Login page opened
+08-Apr-2024 10:02:33 Listners [main] INFO : =========TEST INFO===========
+08-Apr-2024 10:02:33 Listners [main] INFO : Test : Subscribe functionality started
+08-Apr-2024 10:02:44 LoginPage [main] INFO : User Logged In
+08-Apr-2024 10:02:44 MyPortfolio [main] INFO : My portfolio page opened
+08-Apr-2024 10:02:45 MyPortfolio [main] INFO : BookMarked tab opened
+08-Apr-2024 10:02:48 MyPortfolio [main] INFO : Portfolio Bookmarked Successfully
+08-Apr-2024 10:02:48 Listners [main] INFO : Test : Subscribe functionality Success
+08-Apr-2024 10:02:50 BaseTest [main] INFO : ChromeDriver initialized
+08-Apr-2024 10:02:58 BaseTest [main] INFO : Login page opened
+08-Apr-2024 10:02:58 Listners [main] INFO : =========TEST INFO===========
+08-Apr-2024 10:02:58 Listners [main] INFO : Test : Subscribe functionality started
+08-Apr-2024 10:03:09 LoginPage [main] INFO : User Logged In
+08-Apr-2024 10:03:10 MyPortfolio [main] INFO : My portfolio page opened
+08-Apr-2024 10:03:10 MyPortfolio [main] INFO : Subscribed tab opened
+08-Apr-2024 10:03:13 MyPortfolio [main] INFO : Portfolio UnBookmarked Successfully
+08-Apr-2024 10:03:13 Listners [main] INFO : Test : Subscribe functionality Success
+08-Apr-2024 10:03:14 BaseTest [main] INFO : Report Ended
+08-Apr-2024 10:03:14 BaseTest [main] INFO : Program completed
