@@ -108,6 +108,8 @@ public class MyPortfolio extends AbstractClass {
 		for(int i=0;i<elements.size();i++) {
 			if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
 				elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button")).click();
+				String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+                log.info(Response);
 				break;
 			}
 		}
@@ -123,7 +125,8 @@ public class MyPortfolio extends AbstractClass {
                 elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button[2]")).click();
                 driver.findElement(By.xpath("//div[@class='cdk-overlay-container']/div[2]/div/div/div/button[1]")).click();
                 driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
-                log.info("Portfolio UnBookmarked Successfully");
+                String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+                log.info(Response);
                 break;
             }
         }
@@ -139,10 +142,25 @@ public class MyPortfolio extends AbstractClass {
                 System.out.println("Element Found");
             	elements.get(i).findElement(By.xpath("./app-strategy-card/div/mat-card/mat-card-actions/span/button")).click();
                 driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
-                log.info("Portfolio Bookmarked Successfully");
+                String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+                log.info(Response);
                 break;
             }
         }
+	}
+	
+	public void CopyPortfolio(String portfolioName) throws InterruptedException {
+		sleep(1500);
+		List<WebElement> elements=getListofPortfolios();
+        for(int i=0;i<elements.size();i++) {
+            if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
+            	elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button[2]")).click();
+                driver.findElement(By.xpath("//div[@class='cdk-overlay-container']/div[2]/div/div/div/button[3]")).click();
+                String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+                log.info(Response);
+                break;
+            }
+        } 
 	}
 	
 

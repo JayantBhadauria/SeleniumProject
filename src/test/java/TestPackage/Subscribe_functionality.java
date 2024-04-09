@@ -9,7 +9,7 @@ import TestComponents.*;
 public class Subscribe_functionality extends BaseTest{
 	@Parameters("portfolioName")
 	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="UnSubscribe portfolio")
-	public void Subscribe(String portfolioName) throws InterruptedException {
+	public void SubscribePortfolioFormFavourite(String portfolioName) throws InterruptedException {
 		// TODO Auto-generated constructor stub
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		MyPortfolio myPortfolio = new MyPortfolio(driver);
