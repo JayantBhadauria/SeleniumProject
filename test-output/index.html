@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.BookMark_Functionality" class="method navigator-link" hash-for-method="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.Copy_functionality" class="method navigator-link" hash-for-method="createCopy(Guruvar Ka Guru)">createCopy(Guruvar Ka Guru)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,15 +121,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestPackage.BookMark_Functionality</span>
+              <span class="class-name">TestPackage.Copy_functionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)">
-                  </a> <!-- BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...) -->
-                  <span class="method-name">BookMark_testing</span>
-                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50})</span>
+                  <a name="createCopy(Guruvar Ka Guru)">
+                  </a> <!-- createCopy(Guruvar Ka Guru) -->
+                  <span class="method-name">createCopy</span>
+                  <span class="parameters">(Guruvar Ka Guru)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,13 +147,14 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;TestComponents.Listners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;Bookmark Strategy&quot;&gt;
-    &lt;parameter name=&quot;Description&quot; value=&quot;Functionality of Bookmark Strategy&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Copy functionality&quot;&gt;
+    &lt;parameter name=&quot;Description&quot; value=&quot;To check the copy portfolio functionality&quot;/&gt;
     &lt;parameter name=&quot;Author&quot; value=&quot;Jayant Bhadauria&quot;/&gt;
+    &lt;parameter name=&quot;portfolioName&quot; value=&quot;Guruvar Ka Guru&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestPackage.BookMark_Functionality&quot;/&gt;
+      &lt;class name=&quot;TestPackage.Copy_functionality&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Bookmark Strategy --&gt;
+  &lt;/test&gt; &lt;!-- Copy functionality --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Bookmark Strategy (1 class)</span>
+                <span class="test-name">Copy functionality (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,6 +176,14 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createCopy</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -193,14 +202,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BookMark_testing')
-data.setCell(0, 2, 'TestPackage.BookMark_Functionality')
-data.setCell(0, 3, 84732);
+data.setCell(0, 1, 'createCopy')
+data.setCell(0, 2, 'TestPackage.Copy_functionality')
+data.setCell(0, 3, 14497);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,26 +235,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.BookMark_Functionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.Copy_functionality</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">InitiateReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">963 ms</span>
+                <span class="method-start">374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">BookMark_testing({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)</span>
-                <span class="method-start">18100 ms</span>
+                <span class="method-name">createCopy(Guruvar Ka Guru)</span>
+                <span class="method-start">10523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">102852 ms</span>
+                <span class="method-start">25035 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">103427 ms</span>
+                <span class="method-start">25563 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

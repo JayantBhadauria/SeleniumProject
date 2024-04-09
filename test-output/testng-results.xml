@@ -2,39 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-20T07:55:16 IST" name="Suite" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
+  <suite started-at="2024-04-09T08:16:13 IST" name="Suite" finished-at="2024-04-09T08:16:38 IST" duration-ms="25250">
     <groups>
+      <group name="Smoke">
+        <method signature="Copy_functionality.createCopy(java.lang.String)[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" name="createCopy" class="TestPackage.Copy_functionality"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-03-20T07:55:16 IST" name="Bookmark Strategy" finished-at="2024-03-20T07:56:59 IST" duration-ms="102947">
-      <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:15 IST" name="InitiateReport" finished-at="2024-03-20T07:55:16 IST" duration-ms="446" status="PASS">
+    <test started-at="2024-04-09T08:16:13 IST" name="Copy functionality" finished-at="2024-04-09T08:16:38 IST" duration-ms="25250">
+      <class name="TestPackage.Copy_functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:13 IST" name="InitiateReport" finished-at="2024-04-09T08:16:13 IST" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:16 IST" name="launchApplication" finished-at="2024-03-20T07:55:33 IST" duration-ms="17135" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:13 IST" name="launchApplication" finished-at="2024-04-09T08:16:23 IST" duration-ms="10147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="BookMark_testing(java.util.LinkedHashMap)[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:55:33 IST" name="BookMark_testing" data-provider="StrategyDetailsData" finished-at="2024-03-20T07:56:58 IST" duration-ms="84732" status="PASS">
+        <test-method signature="createCopy(java.lang.String)[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:23 IST" name="createCopy" finished-at="2024-04-09T08:16:38 IST" duration-ms="14497" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50}]]>
+                <![CDATA[Guruvar Ka Guru]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookMark_testing -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:58 IST" name="closeDriver" finished-at="2024-03-20T07:56:59 IST" duration-ms="538" status="PASS">
+        </test-method> <!-- createCopy -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:38 IST" name="closeDriver" finished-at="2024-04-09T08:16:38 IST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@6cea706c]" started-at="2024-03-20T07:56:59 IST" name="flushReport" finished-at="2024-03-20T07:56:59 IST" duration-ms="899" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:38 IST" name="flushReport" finished-at="2024-04-09T08:16:39 IST" duration-ms="834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.BookMark_Functionality -->
-    </test> <!-- Bookmark Strategy -->
+      </class> <!-- TestPackage.Copy_functionality -->
+    </test> <!-- Copy functionality -->
   </suite> <!-- Suite -->
 </testng-results>
