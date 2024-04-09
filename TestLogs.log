@@ -1,21 +1,12 @@
-08-Apr-2024 10:02:22 BaseTest [main] INFO : Report Started
-08-Apr-2024 10:02:26 BaseTest [main] INFO : ChromeDriver initialized
-08-Apr-2024 10:02:33 BaseTest [main] INFO : Login page opened
-08-Apr-2024 10:02:33 Listners [main] INFO : =========TEST INFO===========
-08-Apr-2024 10:02:33 Listners [main] INFO : Test : Subscribe functionality started
-08-Apr-2024 10:02:44 LoginPage [main] INFO : User Logged In
-08-Apr-2024 10:02:44 MyPortfolio [main] INFO : My portfolio page opened
-08-Apr-2024 10:02:45 MyPortfolio [main] INFO : BookMarked tab opened
-08-Apr-2024 10:02:48 MyPortfolio [main] INFO : Portfolio Bookmarked Successfully
-08-Apr-2024 10:02:48 Listners [main] INFO : Test : Subscribe functionality Success
-08-Apr-2024 10:02:50 BaseTest [main] INFO : ChromeDriver initialized
-08-Apr-2024 10:02:58 BaseTest [main] INFO : Login page opened
-08-Apr-2024 10:02:58 Listners [main] INFO : =========TEST INFO===========
-08-Apr-2024 10:02:58 Listners [main] INFO : Test : Subscribe functionality started
-08-Apr-2024 10:03:09 LoginPage [main] INFO : User Logged In
-08-Apr-2024 10:03:10 MyPortfolio [main] INFO : My portfolio page opened
-08-Apr-2024 10:03:10 MyPortfolio [main] INFO : Subscribed tab opened
-08-Apr-2024 10:03:13 MyPortfolio [main] INFO : Portfolio UnBookmarked Successfully
-08-Apr-2024 10:03:13 Listners [main] INFO : Test : Subscribe functionality Success
-08-Apr-2024 10:03:14 BaseTest [main] INFO : Report Ended
-08-Apr-2024 10:03:14 BaseTest [main] INFO : Program completed
+09-Apr-2024 08:16:13 BaseTest [main] INFO : Report Started
+09-Apr-2024 08:16:16 BaseTest [main] INFO : ChromeDriver initialized
+09-Apr-2024 08:16:23 BaseTest [main] INFO : Login page opened
+09-Apr-2024 08:16:23 Listners [main] INFO : =========TEST INFO===========
+09-Apr-2024 08:16:23 Listners [main] INFO : Test : Copy functionality started
+09-Apr-2024 08:16:34 LoginPage [main] INFO : User Logged In
+09-Apr-2024 08:16:35 MyPortfolio [main] INFO : My portfolio page opened
+09-Apr-2024 08:16:35 MyPortfolio [main] INFO : BookMarked tab opened
+09-Apr-2024 08:16:38 MyPortfolio [main] INFO : Copy Of Guruvar Ka Guru_1 created
+09-Apr-2024 08:16:38 Listners [main] INFO : Test : Copy functionality Success
+09-Apr-2024 08:16:39 BaseTest [main] INFO : Report Ended
+09-Apr-2024 08:16:39 BaseTest [main] INFO : Program completed
