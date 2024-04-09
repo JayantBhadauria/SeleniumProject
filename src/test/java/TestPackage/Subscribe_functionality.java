@@ -18,6 +18,8 @@ public class Subscribe_functionality extends BaseTest{
 	}
 	
 	
+	
+	
 	@Parameters("portfolioName")
 	@Test(dependsOnMethods = { "Subscribe" },groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="UnSubscribe portfolio")
 	public void unSubscribe(String portfolioName) throws InterruptedException {
@@ -26,5 +28,6 @@ public class Subscribe_functionality extends BaseTest{
 		MyPortfolio myPortfolio = new MyPortfolio(driver);
 		myPortfolio.goToMyportfolioPage();
 		myPortfolio.UnSubscribePortfolio(portfolioName);
+		
 	}
 }
