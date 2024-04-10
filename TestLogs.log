@@ -1,9 +1,11 @@
-10-Apr-2024 10:02:49 BaseTest [main] INFO : Report Started
-10-Apr-2024 10:02:54 BaseTest [main] INFO : ChromeDriver initialized
-10-Apr-2024 10:03:01 BaseTest [main] INFO : Login page opened
-10-Apr-2024 10:03:01 Listners [main] INFO : =========TEST INFO===========
-10-Apr-2024 10:03:01 Listners [main] INFO : Test : Subscribe functionality started
-10-Apr-2024 10:03:12 LoginPage [main] INFO : User Logged In
-10-Apr-2024 10:03:14 Listners [main] INFO : Test : Subscribe functionality Success
-10-Apr-2024 10:03:16 BaseTest [main] INFO : Report Ended
-10-Apr-2024 10:03:16 BaseTest [main] INFO : Program completed
+10-Apr-2024 11:58:13 BaseTest [main] INFO : Report Started
+10-Apr-2024 11:58:16 BaseTest [main] INFO : ChromeDriver initialized
+10-Apr-2024 11:58:19 BaseTest [main] INFO : Login page opened
+10-Apr-2024 11:58:19 Listners [main] INFO : =========TEST INFO===========
+10-Apr-2024 11:58:19 Listners [main] INFO : Test : Copy functionality started
+10-Apr-2024 11:58:33 LoginPage [main] INFO : User Logged In
+10-Apr-2024 11:58:33 LoginPage [main] INFO : Alert widet closed
+10-Apr-2024 11:58:37 HomePage [main] INFO : Copy Of Copy Of Copy Of Copy Of PF_131223_213352 created
+10-Apr-2024 11:58:37 Listners [main] INFO : Test : Copy functionality Success
+10-Apr-2024 11:58:39 BaseTest [main] INFO : Report Ended
+10-Apr-2024 11:58:39 BaseTest [main] INFO : Program completed

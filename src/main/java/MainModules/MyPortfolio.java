@@ -44,11 +44,6 @@ public class MyPortfolio extends AbstractClass {
 		log.info("BookMarked tab opened");
 	}
 	
-	public List<WebElement> getListofPortfolios() {
-		List<WebElement> elements =driver.findElements(By.xpath("//div[@class='card-section margin-8-left']/div"));
-		return elements;
-	}
-	
 	public boolean findPortfolio(String portfolioName,String SectionName) throws InterruptedException {
 		boolean returnValue=false;
 		if(SectionName.equalsIgnoreCase("Created")) {
@@ -139,7 +134,6 @@ public class MyPortfolio extends AbstractClass {
 		List<WebElement> elements=getListofPortfolios();
         for(int i=0;i<elements.size();i++) {
             if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
-                System.out.println("Element Found");
             	elements.get(i).findElement(By.xpath("./app-strategy-card/div/mat-card/mat-card-actions/span/button")).click();
                 driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
                 String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
