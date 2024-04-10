@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestPackage.UnSubscribe_portfolio">
+      <class name="TestPackage.Subscribe_functionality">
         <methods>
-          <include name="unSubscribe"/>
           <include name="flushReport"/>
           <include name="launchApplication"/>
+          <include name="SubscribePortfolioFormFavourite"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.UnSubscribe_portfolio -->
+      </class> <!-- TestPackage.Subscribe_functionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

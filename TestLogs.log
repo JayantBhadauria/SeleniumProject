@@ -1,12 +1,9 @@
-09-Apr-2024 08:16:13 BaseTest [main] INFO : Report Started
-09-Apr-2024 08:16:16 BaseTest [main] INFO : ChromeDriver initialized
-09-Apr-2024 08:16:23 BaseTest [main] INFO : Login page opened
-09-Apr-2024 08:16:23 Listners [main] INFO : =========TEST INFO===========
-09-Apr-2024 08:16:23 Listners [main] INFO : Test : Copy functionality started
-09-Apr-2024 08:16:34 LoginPage [main] INFO : User Logged In
-09-Apr-2024 08:16:35 MyPortfolio [main] INFO : My portfolio page opened
-09-Apr-2024 08:16:35 MyPortfolio [main] INFO : BookMarked tab opened
-09-Apr-2024 08:16:38 MyPortfolio [main] INFO : Copy Of Guruvar Ka Guru_1 created
-09-Apr-2024 08:16:38 Listners [main] INFO : Test : Copy functionality Success
-09-Apr-2024 08:16:39 BaseTest [main] INFO : Report Ended
-09-Apr-2024 08:16:39 BaseTest [main] INFO : Program completed
+10-Apr-2024 10:02:49 BaseTest [main] INFO : Report Started
+10-Apr-2024 10:02:54 BaseTest [main] INFO : ChromeDriver initialized
+10-Apr-2024 10:03:01 BaseTest [main] INFO : Login page opened
+10-Apr-2024 10:03:01 Listners [main] INFO : =========TEST INFO===========
+10-Apr-2024 10:03:01 Listners [main] INFO : Test : Subscribe functionality started
+10-Apr-2024 10:03:12 LoginPage [main] INFO : User Logged In
+10-Apr-2024 10:03:14 Listners [main] INFO : Test : Subscribe functionality Success
+10-Apr-2024 10:03:16 BaseTest [main] INFO : Report Ended
+10-Apr-2024 10:03:16 BaseTest [main] INFO : Program completed
