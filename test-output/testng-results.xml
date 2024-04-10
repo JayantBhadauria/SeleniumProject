@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-09T08:16:13 IST" name="Suite" finished-at="2024-04-09T08:16:38 IST" duration-ms="25250">
+  <suite started-at="2024-04-09T23:09:48 IST" name="Suite" finished-at="2024-04-09T23:10:12 IST" duration-ms="24211">
     <groups>
       <group name="Smoke">
-        <method signature="Copy_functionality.createCopy(java.lang.String)[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" name="createCopy" class="TestPackage.Copy_functionality"/>
+        <method signature="Subscribe_functionality.SubscribePortfolioFormFavourite(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" name="SubscribePortfolioFormFavourite" class="TestPackage.Subscribe_functionality"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-09T08:16:13 IST" name="Copy functionality" finished-at="2024-04-09T08:16:38 IST" duration-ms="25250">
-      <class name="TestPackage.Copy_functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:13 IST" name="InitiateReport" finished-at="2024-04-09T08:16:13 IST" duration-ms="274" status="PASS">
+    <test started-at="2024-04-09T23:09:48 IST" name="Subscribe functionality" finished-at="2024-04-09T23:10:12 IST" duration-ms="24211">
+      <class name="TestPackage.Subscribe_functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" started-at="2024-04-09T23:09:47 IST" name="InitiateReport" finished-at="2024-04-09T23:09:48 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:13 IST" name="launchApplication" finished-at="2024-04-09T08:16:23 IST" duration-ms="10147" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" started-at="2024-04-09T23:09:48 IST" name="launchApplication" finished-at="2024-04-09T23:09:59 IST" duration-ms="11322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createCopy(java.lang.String)[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:23 IST" name="createCopy" finished-at="2024-04-09T08:16:38 IST" duration-ms="14497" status="PASS">
+        <test-method signature="SubscribePortfolioFormFavourite(java.lang.String)[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" started-at="2024-04-09T23:09:59 IST" name="SubscribePortfolioFormFavourite" finished-at="2024-04-09T23:10:11 IST" duration-ms="12269" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Guruvar Ka Guru]]>
+                <![CDATA[Dual Nifty]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createCopy -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:38 IST" name="closeDriver" finished-at="2024-04-09T08:16:38 IST" duration-ms="478" status="PASS">
+        </test-method> <!-- SubscribePortfolioFormFavourite -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" started-at="2024-04-09T23:10:11 IST" name="closeDriver" finished-at="2024-04-09T23:10:12 IST" duration-ms="535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Copy_functionality@6cea706c]" started-at="2024-04-09T08:16:38 IST" name="flushReport" finished-at="2024-04-09T08:16:39 IST" duration-ms="834" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Subscribe_functionality@6cea706c]" started-at="2024-04-09T23:10:12 IST" name="flushReport" finished-at="2024-04-09T23:10:13 IST" duration-ms="1087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.Copy_functionality -->
-    </test> <!-- Copy functionality -->
+      </class> <!-- TestPackage.Subscribe_functionality -->
+    </test> <!-- Subscribe functionality -->
   </suite> <!-- Suite -->
 </testng-results>
