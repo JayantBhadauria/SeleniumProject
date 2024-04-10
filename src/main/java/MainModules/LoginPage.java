@@ -37,7 +37,7 @@ public class LoginPage extends AbstractClass{
 				log.info("User Logged In");
 				WaitImplicit(5);
 				driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
-				System.out.println("Big box clicked");
+				log.info("Alert widet closed");
 			}
 			
 			
@@ -64,7 +64,6 @@ public class LoginPage extends AbstractClass{
 		}
 		
 		public HomePage getHomePage() {
-			System.out.println("Home page function called");
 			return new HomePage(driver);
 		}
 
