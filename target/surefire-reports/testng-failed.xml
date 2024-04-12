@@ -7,6 +7,8 @@
   <test thread-count="1" name="Bookmark Strategy(failed)" verbose="0">
     <parameter name="Description" value="Functionality of Bookmark Strategy"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
+    <parameter name="portfolioName2" value="PF_131223_213352"/>
+    <parameter name="portfolioName1" value="Dual Nifty"/>
     <classes>
       <class name="TestPackage.BookMark_Functionality">
         <methods>
@@ -14,6 +16,7 @@
           <include name="launchApplication"/>
           <include name="BookMark_testing" invocation-numbers="0"/>
           <include name="InitiateReport"/>
+          <include name="bookmarkFromHomePage" invocation-numbers="0"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- TestPackage.BookMark_Functionality -->
