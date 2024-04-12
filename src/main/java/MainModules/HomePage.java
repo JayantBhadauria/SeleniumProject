@@ -1,4 +1,5 @@
 package MainModules;
+import java.lang.annotation.IncompleteAnnotationException;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -75,6 +76,22 @@ public class HomePage extends AbstractClass{
 			}
 		}
 
+		public PortfolioForm AddPortfolio() throws InterruptedException{
+			driver.findElement(By.xpath("//app-strategy-board//span[text()=' Add a New Portfolio ']")).click();
+			sleep(1500);
+			PortfolioForm portfolioForm=new PortfolioForm(driver);
+			return portfolioForm;
+		}
 
+		public void BookMarkPortfolio(String portfolioName, String section) throws IncompleteAnnotationException {
+			WebElement portfolioCard= findPortfolio(portfolioName,section);
+			portfolioCard.findElement(By.xpath(".//app-strategy-card/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button")).click();
+			String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+            log.info(Response);
+		}
+
+		public void UnBookmarkPortfolio(String portfolioName, String section){
+			BookMarkPortfolio(portfolioName, section);
+		}
 
 }
