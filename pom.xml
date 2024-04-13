@@ -3,12 +3,35 @@
   <groupId>uTradeAlgos</groupId>
   <artifactId>uTradeAlgos_1.0</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
+  
+  <profiles>
+	<profile>
+	<id>Regression</id>
+	<build>
+    <plugins>
+	<plugin>  
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.2.5</version>
+    <configuration>
+		<suiteXmlFiles>
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+		</suiteXmlFiles>
+	</configuration>
+	</plugin>
+    </plugins>
+    </build>
+    </profile>
+  </profiles>
+  
+ 
+  
+<dependencies>
 	   
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.17.0</version>
+    <version>4.19.1</version>
 </dependency>
 
 <dependency>
@@ -58,7 +81,6 @@
     <artifactId>slf4j-api</artifactId>
     <version>2.0.12</version>
 </dependency>
-
 
   	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>

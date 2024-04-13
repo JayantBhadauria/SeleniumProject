@@ -1,5 +1,7 @@
 package MainModules;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,9 +33,16 @@ public class PortfolioForm extends AbstractClass{
 	
 	public void SubmitPortfolioForm() throws InterruptedException {
 		sleep(2000);
-		driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']")).click();
+		WebElement SubmitButton=driver.findElement(By.xpath("//button/span[text()=' Save & Review Portfolio ']"));
+		By elementLocator = By.xpath("//button/span[text()=' Save & Review Portfolio ']");
+		if(SubmitButton.isEnabled()) {
+			SubmitButton.click();
+			log.info("Portfolio Submitted");
+		}
+		else {
+			log.error("Portfolio not submitted");
+		}
 		sleep(2000);
-		log.info("Portfolio Submitted");
 	}
 	
 	public void ChangePortfolioDetails(String portfolioName,String startHour,String startMin, String endHour, String endMin,String []tagsList,String[]days) throws InterruptedException {
@@ -106,5 +115,58 @@ public class PortfolioForm extends AbstractClass{
 			
 		}
 	}
+	
+	public void portfolioField(String fieldName, String fieldValue) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+		Method method=getClass().getMethod(fieldName, String.class);
+		method.invoke(this, fieldValue);
+	}
+	
+	public void EnableExitToggle() {
+		String xpath="//app-portfolio-form/div/div[2]/div/form/div/div[2]/mat-slide-toggle";
+		if(driver.findElement(By.xpath(xpath+"/label/div/input")).getAttribute("aria-checked").contains("false")) {
+			driver.findElement(By.xpath(xpath)).click();
+		}
+	}
+	
+	
+	public void portfolioTP(String Value) {
+		EnableExitToggle();
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='TPEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='targetProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioSL(String Value) {
+		EnableExitToggle();
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='SLEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='stopLossValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioMoveSL(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='costTypeEnabled']";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='costValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioLockProfitOn(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='trailLockedProfit']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+		xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='trailLockedProfitValue']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
+	
+	public void portfolioLockProfitAt(String Value) {
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//input[@formcontrolname='lockProfitAt']";
+		driver.findElement(By.xpath(xpath)).sendKeys(Value);
+	}
 
+	public void enableUnderlying(){
+		String xpath="//div[@class='portfolio-details padding ng-star-inserted']/app-strategy-exit-form//mat-checkbox[@formcontrolname='isUnderlying']/label/div";
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
 }

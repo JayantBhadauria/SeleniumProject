@@ -1,11 +1,13 @@
 package AbstractClasses;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import MainModules.MyPortfolio;
 
@@ -20,6 +22,11 @@ public class AbstractClass {
 	public void WaitImplicit(int time) {
 
 		driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
+	}
+	public List<WebElement> getDropdownElements() {
+		String xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
+		List<WebElement> elements=driver.findElements(By.xpath(xpath));
+		return elements;
 	}
 	
 	public void sleep(int time) throws InterruptedException {
@@ -51,6 +58,14 @@ public class AbstractClass {
 		driver.findElement(By.id("mat-button-toggle-5-button")).click();
 		log.info("Margin Calculator opened");
 	}
-
+	
+	public boolean isElementPresent(By locator) {
+		try{
+			WebElement element = driver.findElement(locator);
+            return element.isDisplayed();
+		}catch (org.openqa.selenium.NoSuchElementException | org.openqa.selenium.StaleElementReferenceException e) {
+			return false;
+		}
+	}
 
 }

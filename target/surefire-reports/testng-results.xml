@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-10T23:58:13 IST" name="Suite" finished-at="2024-04-10T23:58:38 IST" duration-ms="24921">
+    <groups>
+    </groups>
+    <test started-at="2024-04-10T23:58:13 IST" name="Copy functionality" finished-at="2024-04-10T23:58:38 IST" duration-ms="24921">
+      <class name="TestPackage.Copy_functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Copy_functionality@5c8504fd]" started-at="2024-04-10T23:58:13 IST" name="InitiateReport" finished-at="2024-04-10T23:58:13 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiateReport -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Copy_functionality@5c8504fd]" started-at="2024-04-10T23:58:13 IST" name="launchApplication" finished-at="2024-04-10T23:58:19 IST" duration-ms="6007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createCopyFromHomePage(java.lang.String)[pri:0, instance:TestPackage.Copy_functionality@5c8504fd]" started-at="2024-04-10T23:58:19 IST" name="createCopyFromHomePage" finished-at="2024-04-10T23:58:37 IST" duration-ms="18144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PF_131223_213352]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCopyFromHomePage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Copy_functionality@5c8504fd]" started-at="2024-04-10T23:58:37 IST" name="closeDriver" finished-at="2024-04-10T23:58:38 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Copy_functionality@5c8504fd]" started-at="2024-04-10T23:58:38 IST" name="flushReport" finished-at="2024-04-10T23:58:39 IST" duration-ms="1067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- TestPackage.BookMark_Functionality -->
+    </test> <!-- Bookmark Strategy -->
+  </suite> <!-- Suite -->
+</testng-results>

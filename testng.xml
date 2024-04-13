@@ -6,21 +6,41 @@
 </listeners>
 
    
-  <test thread-count="2" name="Create Strategy">
+ <!--<test thread-count="2" name="Create Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="Functionality of Create Strategy"></parameter>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
     </classes>
-  </test> 
+  </test> --> 
+  
   
   
   <test thread-count="2" name="Bookmark Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="portfolioName" value="Expiry Special"></parameter>
 	 <parameter name="Description" value="Functionality of Bookmark Strategy"></parameter>
     <classes>
       <class name="TestPackage.BookMark_Functionality"/>
     </classes>
-  </test>
+  </test> 
+  
+  <!--test name="Subscribe functionality">
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="To check the unsubscribe button functionality"></parameter>
+	 <parameter name="portfolioName" value="Dual Nifty"></parameter>
+    <classes>
+      <class name="TestPackage.Subscribe_functionality"/>
+    </classes>
+  </test!-->
+  
+  <!--test name="Copy functionality">
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="To check the copy portfolio functionality"></parameter>
+	 <parameter name="portfolioName" value="Guruvar Ka Guru"></parameter>
+    <classes>
+      <class name="TestPackage.Copy_functionality"/>
+    </classes>
+  </test!-->
  
 </suite> <!-- Suite -->

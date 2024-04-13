@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import AbstractClasses.AbstractClass;
@@ -28,16 +29,37 @@ public class LoginPage extends AbstractClass{
 			driver.findElement(By.xpath("// input[@tabindex='3']")).sendKeys(username);
 			driver.findElement(By.id("mat-input-1")).sendKeys(password);
 			driver.findElement(By.xpath("// button[@tabindex='7']")).click();
-			WaitImplicit(10);
-			driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
-			log.info("User Logged In");
+			By elementLocator = By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster");
+			if(isElementPresent(elementLocator)) {
+				WebElement toastContainer=driver.findElement(By.xpath("//div[@class='overlay-container']/div[@id='toast-container']/app-custom-toaster"));
+				String errorMsg=toastContainer.findElement(By.xpath("./div/div/div/div")).getText();
+				log.error(errorMsg);	
+			}
+			else {
+				log.info("User Logged In");
+				WaitImplicit(5);
+				driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
+			}
+			
+			
+			
 		}
 		
 		public PortfolioForm AddPortfolio() throws InterruptedException {
 			goToMyportfolioPage();
 			sleep(2000);
 			driver.findElement(By.xpath("// button[@color='accent' and @type='button']")).click();
-			log.info("Portfolio form opened");
+			By elementLocator=By.xpath("//div[text()=' Create Portfolio ']");
+			
+			if(isElementPresent(elementLocator)) {
+				WebElement portfolioForm=driver.findElement(elementLocator);
+				log.info("Portfolio form opened");
+				
+			}
+			else {
+				log.warn("Portfolio form not visible");
+			}
+			
 			return new PortfolioForm(driver);
 			
 		}

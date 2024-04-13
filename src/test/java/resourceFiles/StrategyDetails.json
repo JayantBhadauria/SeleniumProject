@@ -1,9 +1,34 @@
 [
 	{
 		"strategyType":"Bear Call Spread",
-		"expiryType":"Monthly",
 		"strikeSelection":"Price",
-		"price1":"100",
-		"price2":"200"
+		"expiryType":"Monthly",
+		"stgSqroffType":"Complete",
+		"legExpiryType1":"Basic",
+		"legInstrumentType1":"Put",
+		"legOrderMode2":"Sell",
+		"legPrice1":"56",
+		"legPrice2":"57",
+		"legLotMultiplier1":"4",
+		"legTP1":"100",
+		"legSL1":"30",
+		"legMoveSL1":"70",
+		"legSL2":"40",
+		"legMoveSL2":"41",
+		"legWTT1":"93",
+		"legSlReExecution2":"5",
+		"legExitRangeType1":"2",
+		"legMinRangeValue1":"50",
+		"legMaxRangeValue1":"99",
+		"stgSl":"44",
+		"stgSlReExecution":"46",
+		"stgTrailSLat":"60",
+		"stgTrailSLby":"40",
+		"stgLockProfitOn":"53",
+		"stgLockProfitAt":"49",
+		"portfolioTP":"90",
+		"portfolioLockProfitOn":"70",
+		"portfolioLockProfitAt":"50"
+		
 	}
 ]
