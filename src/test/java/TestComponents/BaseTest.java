@@ -103,6 +103,7 @@ public class BaseTest extends DataReader{
 		@AfterMethod()
 		public void closeDriver() {
 			driver.quit();
+		    log.info("Program completed");
 		}
 		
 		@DataProvider()
@@ -126,7 +127,6 @@ public class BaseTest extends DataReader{
 		public void flushReport() {
 		    extent.flush();
 		    log.info("Report Ended");
-		    log.info("Program completed");
 		}
 		
 		public void SetFormParams(LinkedHashMap<String,String> input,StrategyForm strategyform, PortfolioForm portfolioform) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
