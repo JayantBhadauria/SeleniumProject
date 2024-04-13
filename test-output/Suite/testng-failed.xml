@@ -4,19 +4,20 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="UnSubscribe portfolio(failed)">
+  <test thread-count="1" name="Subscribe functionality(failed)">
     <parameter name="Description" value="To check the unsubscribe button functionality"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
+    <parameter name="portfolioName" value="Dual Nifty"/>
     <classes>
-      <class name="TestPackage.UnSubscribe_portfolio">
+      <class name="TestPackage.Subscribe_functionality">
         <methods>
           <include name="flushReport"/>
-          <include name="unSubscribe"/>
           <include name="launchApplication"/>
+          <include name="SubscribePortfolioFormFavourite" invocation-numbers="0"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.UnSubscribe_portfolio -->
+      </class> <!-- TestPackage.Subscribe_functionality -->
     </classes>
-  </test> <!-- UnSubscribe portfolio(failed) -->
+  </test> <!-- Subscribe functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->

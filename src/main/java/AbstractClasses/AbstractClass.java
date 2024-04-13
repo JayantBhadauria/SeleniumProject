@@ -23,6 +23,11 @@ public class AbstractClass {
 
 		driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
 	}
+	public List<WebElement> getListofPortfolios() {
+		List<WebElement> elements =driver.findElements(By.xpath("//div[@class='card-section margin-8-left']/div"));
+		return elements;
+	}
+	
 	public List<WebElement> getDropdownElements() {
 		String xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
 		List<WebElement> elements=driver.findElements(By.xpath(xpath));
