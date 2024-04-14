@@ -1,11 +1,10 @@
-14-Apr-2024 07:47:42 BaseTest [main] INFO : Report Started
-14-Apr-2024 07:47:47 BaseTest [main] INFO : ChromeDriver initialized
-14-Apr-2024 07:47:53 BaseTest [main] INFO : Login page opened
-14-Apr-2024 07:47:53 Listners [main] INFO : =========TEST INFO===========
-14-Apr-2024 07:47:53 Listners [main] INFO : Test : Create Strategy started
-14-Apr-2024 07:48:04 LoginPage [main] INFO : User Logged In
-14-Apr-2024 07:48:05 LoginPage [main] INFO : Home Page opened
-14-Apr-2024 07:48:05 HomePage [main] INFO : Notification widget opened
-14-Apr-2024 07:48:05 Listners [main] INFO : Test : Create Strategy Success
-14-Apr-2024 07:48:06 BaseTest [main] INFO : Program completed
-14-Apr-2024 07:48:07 BaseTest [main] INFO : Report Ended
+14-Apr-2024 10:19:49 BaseTest [main] INFO : Report Started
+14-Apr-2024 10:19:52 BaseTest [main] INFO : ChromeDriver initialized
+14-Apr-2024 10:20:00 BaseTest [main] INFO : Login page opened
+14-Apr-2024 10:20:00 Listners [main] INFO : =========TEST INFO===========
+14-Apr-2024 10:20:00 Listners [main] INFO : Test : Bookmark Strategy started
+14-Apr-2024 10:20:11 LoginPage [main] INFO : User Logged In
+14-Apr-2024 10:20:19 HomePage [main] INFO : Portfolio 'Copy Of Copy Of Copy Of Copy Of PF_131223_213352' Deleted
+14-Apr-2024 10:20:19 Listners [main] INFO : Test : Bookmark Strategy Success
+14-Apr-2024 10:20:19 BaseTest [main] INFO : Program completed
+14-Apr-2024 10:20:20 BaseTest [main] INFO : Report Ended

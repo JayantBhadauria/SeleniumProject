@@ -2,35 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-14T19:47:42 IST" name="Suite" finished-at="2024-04-14T19:48:06 IST" duration-ms="23795">
+  <suite started-at="2024-04-14T22:19:49 IST" name="Suite" finished-at="2024-04-14T22:20:19 IST" duration-ms="30554">
     <groups>
-      <group name="Smoke">
-        <method signature="Create_portfolio_functionality.CreatePortfolioWithoutTags()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" name="CreatePortfolioWithoutTags" class="TestPackage.Create_portfolio_functionality"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-14T19:47:42 IST" name="Create Strategy" finished-at="2024-04-14T19:48:06 IST" duration-ms="23795">
-      <class name="TestPackage.Create_portfolio_functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" started-at="2024-04-14T19:47:42 IST" name="InitiateReport" finished-at="2024-04-14T19:47:42 IST" duration-ms="290" status="PASS">
+    <test started-at="2024-04-14T22:19:49 IST" name="Bookmark Strategy" finished-at="2024-04-14T22:20:19 IST" duration-ms="30554">
+      <class name="TestPackage.BookMark_Functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@4bd1f8dd]" started-at="2024-04-14T22:19:48 IST" name="InitiateReport" finished-at="2024-04-14T22:19:49 IST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" started-at="2024-04-14T19:47:43 IST" name="launchApplication" finished-at="2024-04-14T19:47:53 IST" duration-ms="10550" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@4bd1f8dd]" started-at="2024-04-14T22:19:49 IST" name="launchApplication" finished-at="2024-04-14T22:20:00 IST" duration-ms="10910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="CreatePortfolioWithoutTags()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" started-at="2024-04-14T19:47:53 IST" name="CreatePortfolioWithoutTags" finished-at="2024-04-14T19:48:05 IST" duration-ms="12191" status="PASS">
+        <test-method signature="bookmarkFromHomePage(java.lang.String)[pri:0, instance:TestPackage.BookMark_Functionality@4bd1f8dd]" started-at="2024-04-14T22:20:00 IST" name="bookmarkFromHomePage" finished-at="2024-04-14T22:20:19 IST" duration-ms="18955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Copy Of Copy Of Copy Of Copy Of PF_131223_213352]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreatePortfolioWithoutTags -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" started-at="2024-04-14T19:48:05 IST" name="closeDriver" finished-at="2024-04-14T19:48:06 IST" duration-ms="932" status="PASS">
+        </test-method> <!-- bookmarkFromHomePage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@4bd1f8dd]" started-at="2024-04-14T22:20:19 IST" name="closeDriver" finished-at="2024-04-14T22:20:19 IST" duration-ms="598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Create_portfolio_functionality@14d14731]" started-at="2024-04-14T19:48:06 IST" name="flushReport" finished-at="2024-04-14T19:48:07 IST" duration-ms="1070" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@4bd1f8dd]" started-at="2024-04-14T22:20:19 IST" name="flushReport" finished-at="2024-04-14T22:20:20 IST" duration-ms="1275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.Create_portfolio_functionality -->
-    </test> <!-- Create Strategy -->
+      </class> <!-- TestPackage.BookMark_Functionality -->
+    </test> <!-- Bookmark Strategy -->
   </suite> <!-- Suite -->
 </testng-results>
