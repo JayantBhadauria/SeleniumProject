@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import MainModules.HomePage;
 import MainModules.MyPortfolio;
 
 public class AbstractClass {
@@ -39,9 +40,10 @@ public class AbstractClass {
 		return new MyPortfolio(driver);
 	}
 	
-	public void goToHomePage() {
+	public HomePage goToHomePage() {
 		driver.findElement(By.id("mat-button-toggle-1-button")).click();
 		log.info("Home Page opened");
+		return  new HomePage(driver);
 	}
 	
 	public void goToBooksPage() {

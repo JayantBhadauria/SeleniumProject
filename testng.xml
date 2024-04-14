@@ -6,24 +6,24 @@
 </listeners>
 
    
- <!--<test thread-count="2" name="Create Strategy">
+ <test thread-count="2" name="Create Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="Functionality of Create Strategy"></parameter>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
     </classes>
-  </test> --> 
+  </test> 
   
   
   
-  <test thread-count="2" name="Bookmark Strategy">
+  <!--test thread-count="2" name="Bookmark Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="portfolioName" value="Expiry Special"></parameter>
 	 <parameter name="Description" value="Functionality of Bookmark Strategy"></parameter>
     <classes>
       <class name="TestPackage.BookMark_Functionality"/>
     </classes>
-  </test> 
+  </test!--> 
   
   <!--test name="Subscribe functionality">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
