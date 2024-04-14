@@ -103,7 +103,7 @@ public class BaseTest extends DataReader{
 		@AfterMethod()
 		public void closeDriver() {
 			driver.quit();
-		    log.info("Program completed by Jayant");
+		    log.info("Program completed");
 		}
 		
 		@DataProvider()
