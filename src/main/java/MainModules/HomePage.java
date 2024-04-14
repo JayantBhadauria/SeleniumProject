@@ -96,4 +96,18 @@ public class HomePage extends AbstractClass{
 			BookMarkPortfolio(portfolioName, section);
 		}
 
+		public void deletePortfolio(String portfolioName) throws InterruptedException {
+			WebElement portfolioCard=findPortfolio(portfolioName,"Created");
+			if(portfolioCard!=null){
+				sleep(2000);
+				portfolioCard.findElement(By.xpath(".//app-strategy-card/div[1]/mat-card[1]/div[1]/div[1]/div[2]/div/button[2]")).click();
+                driver.findElement(By.xpath("//div[@class='cdk-overlay-container']/div[2]/div/div/div/button[2]")).click();
+				driver.findElement(By.xpath("//app-confirmation-dialog/div/div[2]/div[2]/button")).click();
+                String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+                log.info(Response);
+			}
+			else{
+				log.error(portfolioName + " not found");
+			}
+		}
 }

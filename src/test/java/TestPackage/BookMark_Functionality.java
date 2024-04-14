@@ -51,7 +51,8 @@ public class BookMark_Functionality extends BaseTest {
 public void bookmarkFromHomePage(String portfolioName) throws IOException, IncompleteAnnotationException, InterruptedException{
 	LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
 	HomePage homepage = new HomePage(driver);
-	homepage.BookMarkPortfolio(portfolioName, "Subscribed");
+	// homepage.BookMarkPortfolio(portfolioName, "Subscribed");
+	homepage.deletePortfolio(portfolioName);
 }
 
 }

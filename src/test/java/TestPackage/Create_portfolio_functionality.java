@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.junit.Assert;
+import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -51,12 +52,12 @@ public class Create_portfolio_functionality extends BaseTest{
 	// 	}
 	// }
 
+
 	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Create portfolio")
 	public void CreatePortfolioWithoutTags() throws InterruptedException{
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty( "password"));
 		HomePage homepage=LoginPage.goToHomePage();
-		// homepage.AddPortfolio();
-		homepage.OpenNotificationWidget();
+		homepage.AddPortfolio();	
 	}
 
 }
