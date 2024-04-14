@@ -70,4 +70,21 @@ public class AbstractClass {
 		}
 	}
 
+	public void OpenNotificationWidget(){
+		WebElement notificationButton=driver.findElement(By.xpath("//mat-toolbar/div[2]/mat-icon"));
+		notificationButton.click();
+		log.info("Notification widget opened");
+	}
+
+	public void OpenIndexWatch(){
+		WebElement indexWatchButton=driver.findElement(By.xpath("//button/span[text()='Index Watch']"));
+		indexWatchButton.click();
+		log.info("Index watch opened" );
+	}
+
+	public void OpenCreateStrategyPage(){
+		WebElement createStratButton=driver.findElement(By.xpath("//button/span[text()=' + Create Strategy ']"));
+		createStratButton.click();
+		log.info("Create strategy page opened");
+	}
 }

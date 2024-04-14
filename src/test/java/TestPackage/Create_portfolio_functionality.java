@@ -55,7 +55,8 @@ public class Create_portfolio_functionality extends BaseTest{
 	public void CreatePortfolioWithoutTags() throws InterruptedException{
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty( "password"));
 		HomePage homepage=LoginPage.goToHomePage();
-		homepage.AddPortfolio();
+		// homepage.AddPortfolio();
+		homepage.OpenNotificationWidget();
 	}
 
 }
