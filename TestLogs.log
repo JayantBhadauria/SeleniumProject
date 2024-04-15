@@ -1,10 +1,35 @@
-14-Apr-2024 10:19:49 BaseTest [main] INFO : Report Started
-14-Apr-2024 10:19:52 BaseTest [main] INFO : ChromeDriver initialized
-14-Apr-2024 10:20:00 BaseTest [main] INFO : Login page opened
-14-Apr-2024 10:20:00 Listners [main] INFO : =========TEST INFO===========
-14-Apr-2024 10:20:00 Listners [main] INFO : Test : Bookmark Strategy started
-14-Apr-2024 10:20:11 LoginPage [main] INFO : User Logged In
-14-Apr-2024 10:20:19 HomePage [main] INFO : Portfolio 'Copy Of Copy Of Copy Of Copy Of PF_131223_213352' Deleted
-14-Apr-2024 10:20:19 Listners [main] INFO : Test : Bookmark Strategy Success
-14-Apr-2024 10:20:19 BaseTest [main] INFO : Program completed
-14-Apr-2024 10:20:20 BaseTest [main] INFO : Report Ended
+15-Apr-2024 10:57:11 BaseTest [main] INFO : Report Started
+15-Apr-2024 10:57:15 BaseTest [main] INFO : ChromeDriver initialized
+15-Apr-2024 10:57:22 BaseTest [main] INFO : Login page opened
+15-Apr-2024 10:57:22 Listners [main] INFO : =========TEST INFO===========
+15-Apr-2024 10:57:22 Listners [main] INFO : Test : Copy functionality started
+15-Apr-2024 10:57:33 LoginPage [main] INFO : User Logged In
+15-Apr-2024 10:57:34 LoginPage [main] INFO : My portfolio page opened
+15-Apr-2024 10:57:37 LoginPage [main] INFO : Portfolio form opened
+15-Apr-2024 10:57:38 PortfolioForm [main] INFO : Strategy form opened
+15-Apr-2024 10:58:16 StrategyForm [main] INFO : LockProfit : 49
+15-Apr-2024 10:58:19 StrategyForm [main] ERROR: PF_150424_225736 created
+15-Apr-2024 10:58:37 PortfolioForm [main] INFO : Portfolio Submitted
+15-Apr-2024 10:58:39 MyPortfolio [main] INFO : My portfolio page opened
+15-Apr-2024 10:58:40 MyPortfolio [main] INFO : Created tab opened
+15-Apr-2024 10:58:45 MyPortfolio [main] INFO : Copy Of PF_150424_225736PF1 created
+15-Apr-2024 10:58:45 Listners [main] INFO : Test : Copy functionality Success
+15-Apr-2024 10:58:45 BaseTest [main] INFO : Program completed
+15-Apr-2024 10:58:47 BaseTest [main] INFO : ChromeDriver initialized
+15-Apr-2024 10:58:55 BaseTest [main] INFO : Login page opened
+15-Apr-2024 10:58:55 Listners [main] INFO : =========TEST INFO===========
+15-Apr-2024 10:58:55 Listners [main] INFO : Test : Copy functionality started
+15-Apr-2024 10:59:06 LoginPage [main] INFO : User Logged In
+15-Apr-2024 10:59:06 LoginPage [main] INFO : Home Page opened
+15-Apr-2024 10:59:11 HomePage [main] INFO : Copy Of Guruvar Ka Guru created
+15-Apr-2024 10:59:11 Listners [main] INFO : Test : Copy functionality Success
+15-Apr-2024 10:59:12 BaseTest [main] INFO : Program completed
+15-Apr-2024 10:59:13 BaseTest [main] INFO : ChromeDriver initialized
+15-Apr-2024 10:59:20 BaseTest [main] INFO : Login page opened
+15-Apr-2024 10:59:20 Listners [main] INFO : =========TEST INFO===========
+15-Apr-2024 10:59:20 Listners [main] INFO : Test : Copy functionality started
+15-Apr-2024 10:59:31 LoginPage [main] INFO : User Logged In
+15-Apr-2024 10:59:32 LoginPage [main] INFO : Home Page opened
+15-Apr-2024 10:59:37 HomePage [main] INFO : Copy Of Guruvar Ka Guru_1 created
+15-Apr-2024 10:59:37 Listners [main] INFO : Test : Copy functionality Success
+15-Apr-2024 10:59:37 BaseTest [main] INFO : Program completed
