@@ -15,11 +15,7 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.databind.annotation.JsonAppend.Prop;
 
-import MainModules.HomePage;
-import MainModules.LoginPage;
-import MainModules.MyPortfolio;
-import MainModules.PortfolioForm;
-import MainModules.StrategyForm;
+import MainModules.*;
 import TestComponents.BaseTest;
 import TestComponents.RetryAnalyzer;
 
