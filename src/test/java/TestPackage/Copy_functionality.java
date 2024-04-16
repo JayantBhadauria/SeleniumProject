@@ -4,7 +4,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -18,7 +17,7 @@ public class Copy_functionality extends BaseTest{
 	public String portfolioName=null;
 
 	@Parameters("portfolioName")
-	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Originals")
+	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Originals section in home tab")
 	public void createCopyfromOriginals(String portfolioName) throws InterruptedException {
 		LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
 		HomePage homePage=LoginPage.goToHomePage();
@@ -26,7 +25,7 @@ public class Copy_functionality extends BaseTest{
 	}
 
 	@Parameters("portfolioName")
-	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Subscribed")
+	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Subscribed section in home tab")
 	public void createCopyfromSubscribed(String portfolioName) throws InterruptedException{
 		LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
 		HomePage homePage=LoginPage.goToHomePage();
@@ -54,11 +53,12 @@ public class Copy_functionality extends BaseTest{
 		myportfolio.CopyPortfolio(portfolioName);
 	}
 
-	@Test(dependsOnMethods = {"createCopyfromCreatedMyPortfolio"},groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Subscribed")
+	@Test(dependsOnMethods = {"createCopyfromCreatedMyPortfolio"},groups = "Smoke",retryAnalyzer=RetryAnalyzer.class, testName="Copy portfolio from Created section in home tab")
 	public void createCopyfromCreatedHome(String portfolioName) throws InterruptedException{
 		LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
 		HomePage homePage=LoginPage.goToHomePage();
 		homePage.CopyPortfolio(portfolioName, "Created");
 	}
+
 
 }
