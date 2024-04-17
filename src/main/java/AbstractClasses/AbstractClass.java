@@ -82,9 +82,24 @@ public class AbstractClass {
 		log.info("Index watch opened" );
 	}
 
+	public void MyProfileSection(String Option){
+		MyProfileButton();
+		List<WebElement>profilemenu=driver.findElements(By.xpath("//app-profile-menu/div/div[2]/button"));
+		for(int i=0;i<profilemenu.size();i++){
+			if (Option.equalsIgnoreCase(profilemenu.get(i).getText())) {
+				profilemenu.get(i).click();
+				break;
+			}
+		}
+	}
+
 	public void OpenCreateStrategyPage(){
 		WebElement createStratButton=driver.findElement(By.xpath("//button/span[text()=' + Create Strategy ']"));
 		createStratButton.click();
 		log.info("Create strategy page opened");
+	}
+
+	public void MyProfileButton(){
+		driver.findElement(By.xpath("//app-display-picture")).click();
 	}
 }
