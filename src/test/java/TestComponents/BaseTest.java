@@ -123,6 +123,7 @@ public class BaseTest extends DataReader{
 			this.extent=extent;
 			log.info("Report Started");
 		}
+
 		@AfterSuite
 		public void flushReport() {
 		    extent.flush();
