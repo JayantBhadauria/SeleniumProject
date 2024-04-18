@@ -1,59 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-15T22:18:11 IST" name="Suite" finished-at="2024-04-15T22:19:25 IST" duration-ms="73681">
+  <suite started-at="2024-04-18T20:18:10 IST" name="Suite" finished-at="2024-04-18T20:18:40 IST" duration-ms="29189">
     <groups>
+      <group name="Smoke">
+        <method signature="MyProfile.DeleteProfile()[pri:0, instance:TestPackage.MyProfile@14d14731]" name="DeleteProfile" class="TestPackage.MyProfile"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-15T22:18:11 IST" name="Bookmark Strategy" finished-at="2024-04-15T22:19:25 IST" duration-ms="73681">
-      <class name="TestPackage.BookMark_Functionality">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:11 IST" name="InitiateReport" finished-at="2024-04-15T22:18:11 IST" duration-ms="352" status="PASS">
+    <test started-at="2024-04-18T20:18:10 IST" name="MyProfile" finished-at="2024-04-18T20:18:40 IST" duration-ms="29189">
+      <class name="TestPackage.MyProfile">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@14d14731]" started-at="2024-04-18T20:18:10 IST" name="InitiateReport" finished-at="2024-04-18T20:18:10 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:11 IST" name="launchApplication" finished-at="2024-04-15T22:18:23 IST" duration-ms="11502" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@14d14731]" started-at="2024-04-18T20:18:10 IST" name="launchApplication" finished-at="2024-04-18T20:18:23 IST" duration-ms="12326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="bookmarkFromHomePageOriginals(java.lang.String)[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:23 IST" name="bookmarkFromHomePageOriginals" finished-at="2024-04-15T22:18:49 IST" duration-ms="25852" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Expiry Special]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="DeleteProfile()[pri:0, instance:TestPackage.MyProfile@14d14731]" started-at="2024-04-18T20:18:23 IST" name="DeleteProfile" finished-at="2024-04-18T20:18:39 IST" duration-ms="16311" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookmarkFromHomePageOriginals -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:49 IST" name="closeDriver" finished-at="2024-04-15T22:18:49 IST" duration-ms="598" status="PASS">
+        </test-method> <!-- DeleteProfile -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@14d14731]" started-at="2024-04-18T20:18:39 IST" name="closeDriver" finished-at="2024-04-18T20:18:40 IST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:49 IST" name="launchApplication" finished-at="2024-04-15T22:18:59 IST" duration-ms="9435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="bookmarkFromHomePageSubscribed(java.lang.String)[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:18:59 IST" name="bookmarkFromHomePageSubscribed" finished-at="2024-04-15T22:19:24 IST" duration-ms="25469" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Expiry Special]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookmarkFromHomePageSubscribed -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:19:24 IST" name="closeDriver" finished-at="2024-04-15T22:19:25 IST" duration-ms="688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.BookMark_Functionality@7096b474]" started-at="2024-04-15T22:19:25 IST" name="flushReport" finished-at="2024-04-15T22:19:26 IST" duration-ms="1145" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@14d14731]" started-at="2024-04-18T20:18:40 IST" name="flushReport" finished-at="2024-04-18T20:18:41 IST" duration-ms="1088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.BookMark_Functionality -->
-    </test> <!-- Bookmark Strategy -->
+      </class> <!-- TestPackage.MyProfile -->
+    </test> <!-- MyProfile -->
   </suite> <!-- Suite -->
 </testng-results>

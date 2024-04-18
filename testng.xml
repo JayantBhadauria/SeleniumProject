@@ -35,13 +35,22 @@
     </classes>
   </test!-->
   
-  <test name="Copy functionality">
+  <!--test name="Copy functionality">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="To check the copy portfolio functionality"></parameter>
 	 <parameter name="portfolioName" value="Guruvar Ka Guru"></parameter>
     <classes>
       <class name="TestPackage.Copy_functionality"/>
     </classes>
+  </test!-->
+
+  <test name="MyProfile">
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="To check if profile is deleting"></parameter>
+    <classes>
+      <class name="TestPackage.MyProfile"/>
+    </classes>
   </test>
+  
  
 </suite> <!-- Suite -->
