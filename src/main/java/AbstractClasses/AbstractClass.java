@@ -82,11 +82,12 @@ public class AbstractClass {
 		log.info("Index watch opened" );
 	}
 
-	public void MyProfileSection(String Option){
+	public void MyProfileSection(String Option) throws InterruptedException{
 		MyProfileButton();
+		sleep(2000);
 		List<WebElement>profilemenu=driver.findElements(By.xpath("//app-profile-menu/div/div[2]/button"));
 		for(int i=0;i<profilemenu.size();i++){
-			if (Option.equalsIgnoreCase(profilemenu.get(i).getText())) {
+			if (profilemenu.get(i).getText().contains(Option)) {
 				profilemenu.get(i).click();
 				break;
 			}

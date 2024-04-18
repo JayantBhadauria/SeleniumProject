@@ -1,17 +1,10 @@
-16-Apr-2024 09:56:56 BaseTest [main] INFO : Report Started
-16-Apr-2024 09:57:01 BaseTest [main] INFO : ChromeDriver initialized
-16-Apr-2024 09:57:03 BaseTest [main] INFO : Login page opened
-16-Apr-2024 09:57:03 Listners [main] INFO : =========TEST INFO===========
-16-Apr-2024 09:57:03 Listners [main] INFO : Test : Copy functionality started
-16-Apr-2024 09:57:18 LoginPage [main] INFO : User Logged In
-16-Apr-2024 09:57:19 LoginPage [main] INFO : My portfolio page opened
-16-Apr-2024 09:57:21 LoginPage [main] INFO : Portfolio form opened
-16-Apr-2024 09:57:23 PortfolioForm [main] INFO : Strategy form opened
-16-Apr-2024 09:57:41 RetryAnalyzer [main] WARN : Retrying test : null
-16-Apr-2024 09:57:41 Listners [main] DEBUG: Test : Copy functionality Skipped
-16-Apr-2024 09:57:41 BaseTest [main] INFO : Program completed
-16-Apr-2024 09:57:43 BaseTest [main] INFO : ChromeDriver initialized
-16-Apr-2024 09:57:45 BaseTest [main] INFO : Login page opened
-16-Apr-2024 09:57:45 Listners [main] INFO : =========TEST INFO===========
-16-Apr-2024 09:57:45 Listners [main] INFO : Test : Copy functionality started
-16-Apr-2024 09:57:45 RetryAnalyzer [main] WARN : Retrying test : null
+18-Apr-2024 08:18:10 BaseTest [main] INFO : Report Started
+18-Apr-2024 08:18:14 BaseTest [main] INFO : ChromeDriver initialized
+18-Apr-2024 08:18:23 BaseTest [main] INFO : Login page opened
+18-Apr-2024 08:18:23 Listners [main] INFO : =========TEST INFO===========
+18-Apr-2024 08:18:23 Listners [main] INFO : Test : MyProfile started
+18-Apr-2024 08:18:34 LoginPage [main] INFO : User Logged In
+18-Apr-2024 08:18:34 LoginPage [main] INFO : Home Page opened
+18-Apr-2024 08:18:39 Listners [main] INFO : Test : MyProfile Success
+18-Apr-2024 08:18:40 BaseTest [main] INFO : Program completed
+18-Apr-2024 08:18:41 BaseTest [main] INFO : Report Ended
