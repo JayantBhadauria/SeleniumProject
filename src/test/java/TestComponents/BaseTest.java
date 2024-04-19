@@ -108,7 +108,15 @@ public class BaseTest extends DataReader{
 		
 		@DataProvider()
 		public Object[][] StrategyDetailsData() throws IOException{	
-			List<LinkedHashMap<String,String>> maps=getJSONDataToMap();
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\StrategyDetails.json");
+			return new Object [][] {
+					{maps.get(0)}
+			}; 	
+		}
+
+		@DataProvider()
+		public Object[][] ProfileDetails() throws IOException{
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\StrategyDetails.json");
 			return new Object [][] {
 					{maps.get(0)}
 			}; 	
