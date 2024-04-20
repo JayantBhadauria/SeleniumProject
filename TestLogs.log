@@ -1,11 +1,11 @@
-20-Apr-2024 05:52:11 BaseTest [main] INFO : Report Started
-20-Apr-2024 05:52:15 BaseTest [main] INFO : ChromeDriver initialized
-20-Apr-2024 05:52:23 BaseTest [main] INFO : Login page opened
-20-Apr-2024 05:52:23 Listners [main] INFO : =========TEST INFO===========
-20-Apr-2024 05:52:23 Listners [main] INFO : Test : MyProfile started
-20-Apr-2024 05:52:34 LoginPage [main] INFO : User Logged In
-20-Apr-2024 05:52:34 LoginPage [main] INFO : Home Page opened
-20-Apr-2024 05:53:04 BaseTest [main] INFO : Image Uploaded Successfully
-20-Apr-2024 05:53:04 Listners [main] INFO : Test : MyProfile Success
-20-Apr-2024 05:53:04 BaseTest [main] INFO : Program completed
-20-Apr-2024 05:53:05 BaseTest [main] INFO : Report Ended
+20-Apr-2024 11:23:25 BaseTest [main] INFO : Report Started
+20-Apr-2024 11:23:32 BaseTest [main] INFO : ChromeDriver initialized
+20-Apr-2024 11:23:39 BaseTest [main] INFO : Login page opened
+20-Apr-2024 11:23:39 Listners [main] INFO : =========TEST INFO===========
+20-Apr-2024 11:23:39 Listners [main] INFO : Test : MyProfile started
+20-Apr-2024 11:23:50 LoginPage [main] INFO : User Logged In
+20-Apr-2024 11:23:51 LoginPage [main] INFO : Home Page opened
+20-Apr-2024 11:24:00 BaseTest [main] INFO : Image Uploaded Successfully
+20-Apr-2024 11:24:00 Listners [main] INFO : Test : MyProfile Success
+20-Apr-2024 11:24:00 BaseTest [main] INFO : Program completed
+20-Apr-2024 11:24:01 BaseTest [main] INFO : Report Ended

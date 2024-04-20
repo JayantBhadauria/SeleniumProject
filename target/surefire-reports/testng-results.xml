@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-20T17:52:11 IST" name="Suite" finished-at="2024-04-20T17:53:04 IST" duration-ms="52933">
+  <suite started-at="2024-04-20T23:23:25 IST" name="Suite" finished-at="2024-04-20T23:24:00 IST" duration-ms="34452">
     <groups>
       <group name="RunOnly">
         <method signature="MyProfile.ChangeProfilePicture()[pri:0, instance:TestPackage.MyProfile@5c18016b]" name="ChangeProfilePicture" class="TestPackage.MyProfile"/>
       </group> <!-- RunOnly -->
     </groups>
-    <test started-at="2024-04-20T17:52:11 IST" name="MyProfile" finished-at="2024-04-20T17:53:04 IST" duration-ms="52933">
+    <test started-at="2024-04-20T23:23:25 IST" name="MyProfile" finished-at="2024-04-20T23:24:00 IST" duration-ms="34452">
       <class name="TestPackage.MyProfile">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T17:52:11 IST" name="InitiateReport" finished-at="2024-04-20T17:52:11 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:25 IST" name="InitiateReport" finished-at="2024-04-20T23:23:25 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T17:52:11 IST" name="launchApplication" finished-at="2024-04-20T17:52:23 IST" duration-ms="11196" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:25 IST" name="launchApplication" finished-at="2024-04-20T23:23:39 IST" duration-ms="13591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ChangeProfilePicture()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T17:52:23 IST" name="ChangeProfilePicture" finished-at="2024-04-20T17:53:04 IST" duration-ms="41692" status="PASS">
+        <test-method signature="ChangeProfilePicture()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:39 IST" name="ChangeProfilePicture" finished-at="2024-04-20T23:24:00 IST" duration-ms="20735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChangeProfilePicture -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T17:53:04 IST" name="closeDriver" finished-at="2024-04-20T17:53:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:24:00 IST" name="closeDriver" finished-at="2024-04-20T23:24:00 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T17:53:04 IST" name="flushReport" finished-at="2024-04-20T17:53:05 IST" duration-ms="904" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:24:00 IST" name="flushReport" finished-at="2024-04-20T23:24:01 IST" duration-ms="1031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

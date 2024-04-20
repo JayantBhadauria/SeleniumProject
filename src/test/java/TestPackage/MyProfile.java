@@ -1,6 +1,7 @@
 package TestPackage;
 
 import java.awt.Robot;
+import java.io.IOException;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
@@ -21,14 +22,15 @@ public class MyProfile extends BaseTest {
     }
 
     @Test(testName="ChangeProfile", groups= "RunOnly", retryAnalyzer = RetryAnalyzer.class)
-    public void ChangeProfilePicture() throws InterruptedException{
+    public void ChangeProfilePicture() throws InterruptedException, IOException{
         LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
         HomePage homePage=LoginPage.goToHomePage();
         homePage.MyProfileSection("My Profile");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='mat-focus-indicator edit-img-button bg-white no-border position-absolute mat-icon-button mat-button-base']")).click();
+        Thread.sleep(3000);
+        Runtime.getRuntime().exec("C:\\Users\\jayan\\OneDrive\\Pictures\\OneDrive\\Documents\\FileName.exe");
         PopUpMessage();
-                
     }
 
     @Test(testName ="Edit Profile",retryAnalyzer = RetryAnalyzer.class , dataProvider="ProfileDetails")
