@@ -37,7 +37,7 @@ public class LoginPage extends AbstractClass{
 			}
 			else {
 				log.info("User Logged In");
-				WaitImplicit(5);
+				WaitImplicit(2);
 				driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
 			}
 			

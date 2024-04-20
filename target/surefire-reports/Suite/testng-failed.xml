@@ -4,24 +4,19 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="Bookmark Strategy(failed)" verbose="0">
-    <parameter name="Description" value="Functionality of Bookmark Strategy"/>
+  <test thread-count="1" name="MyProfile(failed)" verbose="0">
+    <parameter name="Description" value="To check if profile is deleting"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
-<<<<<<< Updated upstream
-=======
-    <parameter name="portfolioName" value="Expiry Special"/>
->>>>>>> Stashed changes
     <classes>
-      <class name="TestPackage.BookMark_Functionality">
+      <class name="TestPackage.MyProfile">
         <methods>
           <include name="flushReport"/>
           <include name="launchApplication"/>
-          <include name="BookMark_testing" invocation-numbers="0"/>
           <include name="InitiateReport"/>
-          <include name="bookmarkFromHomePage" invocation-numbers="0"/>
+          <include name="DeleteProfile"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.BookMark_Functionality -->
+      </class> <!-- TestPackage.MyProfile -->
     </classes>
-  </test> <!-- Bookmark Strategy(failed) -->
+  </test> <!-- MyProfile(failed) -->
 </suite> <!-- Failed suite [Suite] -->

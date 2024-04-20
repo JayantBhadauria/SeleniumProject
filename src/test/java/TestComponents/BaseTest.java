@@ -81,7 +81,7 @@ public class BaseTest extends DataReader{
 			return driver;
 		}
 		
-		@BeforeMethod()
+		@BeforeMethod(groups = {"Smoke","RunOnly"})
 		public void launchApplication() throws IOException, InterruptedException {
 			this.driver=initialization();
 			LoginPage=new LoginPage(driver);
@@ -100,15 +100,23 @@ public class BaseTest extends DataReader{
 			return outputFile.getAbsolutePath();
 		}
 		
-		@AfterMethod()
+		@AfterMethod(groups = {"Smoke","RunOnly"})
 		public void closeDriver() {
-			driver.quit();
+			// driver.quit();
 		    log.info("Program completed");
 		}
 		
 		@DataProvider()
 		public Object[][] StrategyDetailsData() throws IOException{	
-			List<LinkedHashMap<String,String>> maps=getJSONDataToMap();
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\StrategyDetails.json");
+			return new Object [][] {
+					{maps.get(0)}
+			}; 	
+		}
+
+		@DataProvider()
+		public Object[][] ProfileDetails() throws IOException{
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\StrategyDetails.json");
 			return new Object [][] {
 					{maps.get(0)}
 			}; 	
@@ -116,14 +124,15 @@ public class BaseTest extends DataReader{
 		
 		
 		
-		@BeforeSuite
+		@BeforeSuite(groups = {"Smoke","RunOnly"})
 		public void InitiateReport() throws IOException {
 			ExtentReportsClass extentReport=new ExtentReportsClass();
 			ExtentReports extent=extentReport.getObjectReport();
 			this.extent=extent;
 			log.info("Report Started");
 		}
-		@AfterSuite
+
+		@AfterSuite(groups = {"Smoke","RunOnly"})
 		public void flushReport() {
 		    extent.flush();
 		    log.info("Report Ended");
@@ -162,6 +171,11 @@ public class BaseTest extends DataReader{
 		            	strategyform.strategyField(key, value);
 		            }
 		     }
+		}
+
+		public void PopUpMessage(){
+			String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
+            log.info(Response);
 		}
 		
 }

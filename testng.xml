@@ -6,13 +6,14 @@
 </listeners>
 
    
- <test thread-count="2" name="Create Strategy">
+ <!--test thread-count="2" name="Create Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="Functionality of Create Strategy"></parameter>
+   <parameter name="portfolioName" value="Copy Of Copy Of Copy Of Copy Of PF_131223_213352"></parameter>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
     </classes>
-  </test> 
+  </test!--> 
   
   
   
@@ -42,5 +43,19 @@
       <class name="TestPackage.Copy_functionality"/>
     </classes>
   </test!-->
+
+  <test name="MyProfile">
+	  <groups>
+		 <run>
+			 <include name="RunOnly"></include>
+		 </run>
+    </groups>
+	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
+	 <parameter name="Description" value="To check if profile is deleting"></parameter>
+    <classes>
+      <class name="TestPackage.MyProfile"/>
+    </classes>
+  </test>
+  
  
 </suite> <!-- Suite -->
