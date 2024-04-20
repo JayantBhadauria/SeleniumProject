@@ -1,5 +1,6 @@
 package TestPackage;
 
+import java.awt.Robot;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
@@ -19,12 +20,14 @@ public class MyProfile extends BaseTest {
         driver.findElement(By.xpath("//div[text()=' Remove Photo ']")).click();
     }
 
-    @Test(testName="ChangeProfile", groups="Smoke", retryAnalyzer = RetryAnalyzer.class)
+    @Test(testName="ChangeProfile", groups= "RunOnly", retryAnalyzer = RetryAnalyzer.class)
     public void ChangeProfilePicture() throws InterruptedException{
         LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
         HomePage homePage=LoginPage.goToHomePage();
         homePage.MyProfileSection("My Profile");
         Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[@class='mat-focus-indicator edit-img-button bg-white no-border position-absolute mat-icon-button mat-button-base']")).click();
+        PopUpMessage();
                 
     }
 
