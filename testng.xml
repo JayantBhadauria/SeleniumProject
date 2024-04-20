@@ -45,6 +45,11 @@
   </test!-->
 
   <test name="MyProfile">
+	  <groups>
+		 <run>
+			 <include name="RunOnly"></include>
+		 </run>
+    </groups>
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="To check if profile is deleting"></parameter>
     <classes>

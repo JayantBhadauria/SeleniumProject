@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.MyProfile" class="method navigator-link" hash-for-method="DeleteProfile">DeleteProfile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.MyProfile" class="method navigator-link" hash-for-method="ChangeProfilePicture">ChangeProfilePicture</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteProfile">
-                  </a> <!-- DeleteProfile -->
-                  <span class="method-name">DeleteProfile</span>
+                  <a name="ChangeProfilePicture">
+                  </a> <!-- ChangeProfilePicture -->
+                  <span class="method-name">ChangeProfilePicture</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,6 +149,11 @@
   &lt;test thread-count=&quot;1&quot; name=&quot;MyProfile&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;Description&quot; value=&quot;To check if profile is deleting&quot;/&gt;
     &lt;parameter name=&quot;Author&quot; value=&quot;Jayant Bhadauria&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;RunOnly&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestPackage.MyProfile&quot;/&gt;
     &lt;/classes&gt;
@@ -175,10 +180,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Smoke</span>
+              <span class="test-group-name">RunOnly</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">DeleteProfile</span>
+                <span class="method-in-group-name">ChangeProfilePicture</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -200,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DeleteProfile')
+data.setCell(0, 1, 'ChangeProfilePicture')
 data.setCell(0, 2, 'TestPackage.MyProfile')
-data.setCell(0, 3, 16311);
+data.setCell(0, 3, 20735);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,9 +227,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestPackage.MyProfile</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">DeleteProfile</span>
+                <br/>
+                <span class="ignored-method-name">EditProfile</span>
+                <br/>
+                <span class="ignored-method-name">EditPAN</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -240,19 +256,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">332 ms</span>
+                <span class="method-start">337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">DeleteProfile</span>
-                <span class="method-start">12658 ms</span>
+                <span class="method-name">ChangeProfilePicture</span>
+                <span class="method-start">13928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">28981 ms</span>
+                <span class="method-start">34684 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">29500 ms</span>
+                <span class="method-start">34769 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
