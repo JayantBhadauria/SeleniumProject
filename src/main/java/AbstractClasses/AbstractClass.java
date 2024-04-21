@@ -3,11 +3,15 @@ package AbstractClasses;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.Action;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import MainModules.HomePage;
 import MainModules.MyPortfolio;
@@ -102,5 +106,10 @@ public class AbstractClass {
 
 	public void MyProfileButton(){
 		driver.findElement(By.xpath("//app-display-picture")).click();
+	}
+
+	public void Sendkey(WebElement element , String key){
+		Actions actions=new Actions(driver);
+		actions.click(element).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).keyDown(Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE).sendKeys(key).build().perform();
 	}
 }

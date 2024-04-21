@@ -116,7 +116,7 @@ public class BaseTest extends DataReader{
 
 		@DataProvider()
 		public Object[][] ProfileDetails() throws IOException{
-			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\StrategyDetails.json");
+			List<LinkedHashMap<String,String>> maps=getJSONDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\resourceFiles\\ProfileDetails.json");
 			return new Object [][] {
 					{maps.get(0)}
 			}; 	
@@ -177,5 +177,6 @@ public class BaseTest extends DataReader{
 			String Response=driver.findElement(By.xpath("//div[@id='toast-container']/app-custom-toaster/div/div/div/div")).getText();
             log.info(Response);
 		}
+
 		
 }
