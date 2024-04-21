@@ -1,10 +1,18 @@
-21-Apr-2024 01:50:34 BaseTest [main] INFO : Report Started
-21-Apr-2024 01:50:38 BaseTest [main] INFO : ChromeDriver initialized
-21-Apr-2024 01:50:45 BaseTest [main] INFO : Login page opened
-21-Apr-2024 01:50:45 Listners [main] INFO : =========TEST INFO===========
-21-Apr-2024 01:50:45 Listners [main] INFO : Test : MyProfile started
-21-Apr-2024 01:50:56 LoginPage [main] INFO : User Logged In
-21-Apr-2024 01:50:57 LoginPage [main] INFO : Home Page opened
-21-Apr-2024 01:51:04 Listners [main] INFO : Test : MyProfile Success
-21-Apr-2024 01:51:04 BaseTest [main] INFO : Program completed
-21-Apr-2024 01:51:05 BaseTest [main] INFO : Report Ended
+21-Apr-2024 10:42:28 BaseTest [main] INFO : Report Started
+21-Apr-2024 10:42:33 BaseTest [main] INFO : ChromeDriver initialized
+21-Apr-2024 10:42:37 BaseTest [main] INFO : Login page opened
+21-Apr-2024 10:42:37 Listners [main] INFO : =========TEST INFO===========
+21-Apr-2024 10:42:37 Listners [main] INFO : Test : Copy functionality started
+21-Apr-2024 10:42:49 LoginPage [main] INFO : User Logged In
+21-Apr-2024 10:42:49 LoginPage [main] INFO : My portfolio page opened
+21-Apr-2024 10:42:51 LoginPage [main] INFO : Portfolio form opened
+21-Apr-2024 10:42:52 PortfolioForm [main] INFO : Strategy form opened
+21-Apr-2024 10:43:40 StrategyForm [main] INFO : LockProfit : 49
+21-Apr-2024 10:43:43 StrategyForm [main] ERROR: PF_210424_224250 created
+21-Apr-2024 10:44:03 PortfolioForm [main] INFO : Portfolio Submitted
+21-Apr-2024 10:44:05 MyPortfolio [main] INFO : My portfolio page opened
+21-Apr-2024 10:44:06 MyPortfolio [main] INFO : Created tab opened
+21-Apr-2024 10:44:11 MyPortfolio [main] INFO : Copy Of PF_210424_224250PF1 created
+21-Apr-2024 10:44:11 Listners [main] INFO : Test : Copy functionality Success
+21-Apr-2024 10:44:12 BaseTest [main] INFO : Program completed
+21-Apr-2024 10:44:13 BaseTest [main] INFO : Report Ended

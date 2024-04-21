@@ -32,7 +32,7 @@ public class Copy_functionality extends BaseTest{
 		homePage.CopyPortfolio(portfolioName, "Subscribed");
 	}
 
-	@Test(groups = "Smoke",retryAnalyzer=RetryAnalyzer.class,dataProvider= "StrategyDetailsData", testName="Copy portfolio from Created tab of Myportfolio")
+	@Test(groups = "RunOnly",retryAnalyzer=RetryAnalyzer.class,dataProvider= "StrategyDetailsData", testName="Copy portfolio from Created tab of Myportfolio")
 	public void createCopyfromCreatedMyPortfolio(LinkedHashMap<String,String> input) throws InterruptedException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException{
 		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
 		PortfolioForm portfolioform=LoginPage.AddPortfolio();
@@ -59,6 +59,8 @@ public class Copy_functionality extends BaseTest{
 		HomePage homePage=LoginPage.goToHomePage();
 		homePage.CopyPortfolio(portfolioName, "Created");
 	}
+
+	
 
 
 }

@@ -25,9 +25,9 @@ public class AbstractClass {
 	}
 	
 	public void WaitImplicit(int time) {
-
-		driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(time,TimeUnit.SECONDS);
 	}
+	
 	public List<WebElement> getDropdownElements() {
 		String xpath="//div[@class='cdk-overlay-container']/div[2]/div/div/div/mat-option";
 		List<WebElement> elements=driver.findElements(By.xpath(xpath));

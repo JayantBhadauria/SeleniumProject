@@ -21,7 +21,6 @@ public class LoginPage extends AbstractClass{
 		
 		public void GoTo(String url) throws InterruptedException {
 			driver.get(url);
-			sleep(2000);
 		}
 	
 		public void LoginApplication(String username, String password) {
@@ -37,24 +36,19 @@ public class LoginPage extends AbstractClass{
 			}
 			else {
 				log.info("User Logged In");
-				WaitImplicit(2);
 				driver.findElement(By.xpath("// div[@class='flex-centered-container-hr']/button")).click();
 			}
-			
-			
-			
+		
 		}
 		
 		public PortfolioForm AddPortfolio() throws InterruptedException {
 			goToMyportfolioPage();
-			sleep(2000);
 			driver.findElement(By.xpath("// button[@color='accent' and @type='button']")).click();
 			By elementLocator=By.xpath("//div[text()=' Create Portfolio ']");
 			
 			if(isElementPresent(elementLocator)) {
 				WebElement portfolioForm=driver.findElement(elementLocator);
 				log.info("Portfolio form opened");
-				
 			}
 			else {
 				log.warn("Portfolio form not visible");

@@ -6,14 +6,19 @@
 </listeners>
 
    
- <!--test thread-count="2" name="Create Strategy">
+ <!-- <test thread-count="2" name="Create Strategy">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="Functionality of Create Strategy"></parameter>
-   <parameter name="portfolioName" value="Copy Of Copy Of Copy Of Copy Of PF_131223_213352"></parameter>
+   <parameter name="portfolioName" value="Copy Of Dual Nifty_1"></parameter>
+   <groups>
+		 <run>
+			 <include name="RunOnly"></include>
+		 </run>
+    </groups>
     <classes>
       <class name="TestPackage.Create_portfolio_functionality"/>
     </classes>
-  </test!--> 
+  </test>  -->
   
   
   
@@ -35,16 +40,21 @@
     </classes>
   </test!-->
   
-  <!--test name="Copy functionality">
+  <test name="Copy functionality">
 	 <parameter name="Author" value="Jayant Bhadauria"></parameter>
 	 <parameter name="Description" value="To check the copy portfolio functionality"></parameter>
-	 <parameter name="portfolioName" value="Guruvar Ka Guru"></parameter>
+	 <parameter name="portfolioName" value="Dual Nifty"></parameter>
+   <groups>
+		 <run>
+			 <include name="RunOnly"></include>
+		 </run>
+    </groups>
     <classes>
       <class name="TestPackage.Copy_functionality"/>
     </classes>
-  </test!-->
+  </test>
 
-  <test name="MyProfile">
+  <!-- <test name="MyProfile">
 	  <groups>
 		 <run>
 			 <include name="RunOnly"></include>
@@ -55,7 +65,7 @@
     <classes>
       <class name="TestPackage.MyProfile"/>
     </classes>
-  </test>
+  </test> -->
   
  
 </suite> <!-- Suite -->

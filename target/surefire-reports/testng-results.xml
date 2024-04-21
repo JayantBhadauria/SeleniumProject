@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-21T13:50:34 IST" name="Suite" finished-at="2024-04-21T13:51:04 IST" duration-ms="30498">
+  <suite started-at="2024-04-21T22:42:29 IST" name="Suite" finished-at="2024-04-21T22:44:12 IST" duration-ms="103321">
     <groups>
       <group name="RunOnly">
-        <method signature="MyProfile.EditPAN(java.util.LinkedHashMap)[pri:0, instance:TestPackage.MyProfile@5c18016b]" name="EditPAN" class="TestPackage.MyProfile"/>
+        <method signature="Copy_functionality.createCopyfromCreatedMyPortfolio(java.util.LinkedHashMap)[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" name="createCopyfromCreatedMyPortfolio" class="TestPackage.Copy_functionality"/>
       </group> <!-- RunOnly -->
     </groups>
-    <test started-at="2024-04-21T13:50:34 IST" name="MyProfile" finished-at="2024-04-21T13:51:04 IST" duration-ms="30498">
-      <class name="TestPackage.MyProfile">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:33 IST" name="InitiateReport" finished-at="2024-04-21T13:50:34 IST" duration-ms="282" status="PASS">
+    <test started-at="2024-04-21T22:42:29 IST" name="Copy functionality" finished-at="2024-04-21T22:44:12 IST" duration-ms="103321">
+      <class name="TestPackage.Copy_functionality">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" started-at="2024-04-21T22:42:28 IST" name="InitiateReport" finished-at="2024-04-21T22:42:29 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:34 IST" name="launchApplication" finished-at="2024-04-21T13:50:45 IST" duration-ms="10797" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" started-at="2024-04-21T22:42:29 IST" name="launchApplication" finished-at="2024-04-21T22:42:37 IST" duration-ms="8524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="EditPAN(java.util.LinkedHashMap)[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:45 IST" name="EditPAN" data-provider="ProfileDetails" finished-at="2024-04-21T13:51:04 IST" duration-ms="19238" status="PASS">
+        <test-method signature="createCopyfromCreatedMyPortfolio(java.util.LinkedHashMap)[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" started-at="2024-04-21T22:42:37 IST" name="createCopyfromCreatedMyPortfolio" data-provider="StrategyDetailsData" finished-at="2024-04-21T22:44:11 IST" duration-ms="93047" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesolutions.com, Area/Locality=Sector-116 , Mohali, City=Mohali, State=Punjab, Country=India, Pin Code=90991, Address=Ansal golflink2, Birth Date=17-04-1990}]]>
+                <![CDATA[{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditPAN -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:51:04 IST" name="closeDriver" finished-at="2024-04-21T13:51:04 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- createCopyfromCreatedMyPortfolio -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" started-at="2024-04-21T22:44:11 IST" name="closeDriver" finished-at="2024-04-21T22:44:12 IST" duration-ms="1280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:51:04 IST" name="flushReport" finished-at="2024-04-21T13:51:05 IST" duration-ms="1142" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.Copy_functionality@1ae67cad]" started-at="2024-04-21T22:44:12 IST" name="flushReport" finished-at="2024-04-21T22:44:13 IST" duration-ms="1578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-      </class> <!-- TestPackage.MyProfile -->
-    </test> <!-- MyProfile -->
+      </class> <!-- TestPackage.Copy_functionality -->
+    </test> <!-- Copy functionality -->
   </suite> <!-- Suite -->
 </testng-results>

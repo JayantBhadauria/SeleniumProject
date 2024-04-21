@@ -23,12 +23,11 @@ public class MyProfile extends BaseTest {
         driver.findElement(By.xpath("//div[text()=' Remove Photo ']")).click();
     }
 
-    @Test(testName="ChangeProfile", groups= "Smoke", retryAnalyzer = RetryAnalyzer.class)
+    @Test(testName="ChangeProfile", groups= "RunOnly", retryAnalyzer = RetryAnalyzer.class)
     public void ChangeProfilePicture() throws InterruptedException, IOException{
         LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
         HomePage homePage=LoginPage.goToHomePage();
         homePage.MyProfileSection("My Profile");
-        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='mat-focus-indicator edit-img-button bg-white no-border position-absolute mat-icon-button mat-button-base']")).click();
         Thread.sleep(3000);
         Runtime.getRuntime().exec("C:\\Users\\jayan\\OneDrive\\Pictures\\OneDrive\\Documents\\FileName.exe");
@@ -40,17 +39,15 @@ public class MyProfile extends BaseTest {
         // To be done
     }
 
-    @Test(testName ="Edit PAN",retryAnalyzer = RetryAnalyzer.class,groups = {"RunOnly"},dataProvider = "ProfileDetails")
+    @Test(testName ="Edit PAN",retryAnalyzer = RetryAnalyzer.class,groups = {"Smoke"},dataProvider = "ProfileDetails")
     public void EditPAN(LinkedHashMap<String,String>input) throws InterruptedException{
         String PAN=input.get("PAN Number");
         LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
         HomePage homepage=LoginPage.goToHomePage();
         homepage.MyProfileSection("My Profile");
-        Thread.sleep(2000);
         driver.findElement(By.xpath("//span[text()=' Edit Broker Details ']")).click();
         WebElement panField=driver.findElement(By.cssSelector("input[formcontrolname='pan']"));
         homepage.Sendkey(panField, PAN);
-        Thread.sleep(1500);
         driver.findElement(By.xpath("//span[text()='Save']")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//span[text()=' "+PAN+" ']")).isDisplayed());
     }
