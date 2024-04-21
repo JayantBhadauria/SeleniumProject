@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import MainModules.HomePage;
@@ -21,7 +23,7 @@ public class MyProfile extends BaseTest {
         driver.findElement(By.xpath("//div[text()=' Remove Photo ']")).click();
     }
 
-    @Test(testName="ChangeProfile", groups= "RunOnly", retryAnalyzer = RetryAnalyzer.class)
+    @Test(testName="ChangeProfile", groups= "Smoke", retryAnalyzer = RetryAnalyzer.class)
     public void ChangeProfilePicture() throws InterruptedException, IOException{
         LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
         HomePage homePage=LoginPage.goToHomePage();
@@ -38,8 +40,18 @@ public class MyProfile extends BaseTest {
         // To be done
     }
 
-    @Test(testName ="Edit Profile",retryAnalyzer = RetryAnalyzer.class)
-    public void EditPAN(String PAN){
-        // To be done
+    @Test(testName ="Edit PAN",retryAnalyzer = RetryAnalyzer.class,groups = {"RunOnly"},dataProvider = "ProfileDetails")
+    public void EditPAN(LinkedHashMap<String,String>input) throws InterruptedException{
+        String PAN=input.get("PAN Number");
+        LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
+        HomePage homepage=LoginPage.goToHomePage();
+        homepage.MyProfileSection("My Profile");
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//span[text()=' Edit Broker Details ']")).click();
+        WebElement panField=driver.findElement(By.cssSelector("input[formcontrolname='pan']"));
+        homepage.Sendkey(panField, PAN);
+        Thread.sleep(1500);
+        driver.findElement(By.xpath("//span[text()='Save']")).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//span[text()=' "+PAN+" ']")).isDisplayed());
     }
 }

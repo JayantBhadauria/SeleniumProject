@@ -2,31 +2,38 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-20T23:23:25 IST" name="Suite" finished-at="2024-04-20T23:24:00 IST" duration-ms="34452">
+  <suite started-at="2024-04-21T13:50:34 IST" name="Suite" finished-at="2024-04-21T13:51:04 IST" duration-ms="30498">
     <groups>
       <group name="RunOnly">
-        <method signature="MyProfile.ChangeProfilePicture()[pri:0, instance:TestPackage.MyProfile@5c18016b]" name="ChangeProfilePicture" class="TestPackage.MyProfile"/>
+        <method signature="MyProfile.EditPAN(java.util.LinkedHashMap)[pri:0, instance:TestPackage.MyProfile@5c18016b]" name="EditPAN" class="TestPackage.MyProfile"/>
       </group> <!-- RunOnly -->
     </groups>
-    <test started-at="2024-04-20T23:23:25 IST" name="MyProfile" finished-at="2024-04-20T23:24:00 IST" duration-ms="34452">
+    <test started-at="2024-04-21T13:50:34 IST" name="MyProfile" finished-at="2024-04-21T13:51:04 IST" duration-ms="30498">
       <class name="TestPackage.MyProfile">
-        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:25 IST" name="InitiateReport" finished-at="2024-04-20T23:23:25 IST" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="InitiateReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:33 IST" name="InitiateReport" finished-at="2024-04-21T13:50:34 IST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateReport -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:25 IST" name="launchApplication" finished-at="2024-04-20T23:23:39 IST" duration-ms="13591" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:34 IST" name="launchApplication" finished-at="2024-04-21T13:50:45 IST" duration-ms="10797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ChangeProfilePicture()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:23:39 IST" name="ChangeProfilePicture" finished-at="2024-04-20T23:24:00 IST" duration-ms="20735" status="PASS">
+        <test-method signature="EditPAN(java.util.LinkedHashMap)[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:50:45 IST" name="EditPAN" data-provider="ProfileDetails" finished-at="2024-04-21T13:51:04 IST" duration-ms="19238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesolutions.com, Area/Locality=Sector-116 , Mohali, City=Mohali, State=Punjab, Country=India, Pin Code=90991, Address=Ansal golflink2, Birth Date=17-04-1990}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeProfilePicture -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:24:00 IST" name="closeDriver" finished-at="2024-04-20T23:24:00 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- EditPAN -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:51:04 IST" name="closeDriver" finished-at="2024-04-21T13:51:04 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-20T23:24:00 IST" name="flushReport" finished-at="2024-04-20T23:24:01 IST" duration-ms="1031" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:TestPackage.MyProfile@5c18016b]" started-at="2024-04-21T13:51:04 IST" name="flushReport" finished-at="2024-04-21T13:51:05 IST" duration-ms="1142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

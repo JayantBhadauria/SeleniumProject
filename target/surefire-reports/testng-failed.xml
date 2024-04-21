@@ -7,13 +7,18 @@
   <test thread-count="1" name="MyProfile(failed)" verbose="0">
     <parameter name="Description" value="To check if profile is deleting"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
+    <groups>
+      <run>
+        <include name="RunOnly"/>
+      </run>
+    </groups>
     <classes>
       <class name="TestPackage.MyProfile">
         <methods>
           <include name="flushReport"/>
+          <include name="EditPAN"/>
           <include name="launchApplication"/>
           <include name="InitiateReport"/>
-          <include name="DeleteProfile"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- TestPackage.MyProfile -->
