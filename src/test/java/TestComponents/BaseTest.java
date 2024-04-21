@@ -102,7 +102,7 @@ public class BaseTest extends DataReader{
 		
 		@AfterMethod(groups = {"Smoke","RunOnly"})
 		public void closeDriver() {
-			// driver.quit();
+			driver.quit();
 		    log.info("Program completed");
 		}
 		

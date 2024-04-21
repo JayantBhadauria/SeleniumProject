@@ -4,24 +4,25 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="MyProfile(failed)" verbose="0">
-    <parameter name="Description" value="To check if profile is deleting"/>
+  <test thread-count="1" name="Create Strategy(failed)" verbose="0">
+    <parameter name="Description" value="Functionality of Create Strategy"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
+    <parameter name="portfolioName" value="Copy Of Dual Nifty_1"/>
     <groups>
       <run>
         <include name="RunOnly"/>
       </run>
     </groups>
     <classes>
-      <class name="TestPackage.MyProfile">
+      <class name="TestPackage.Create_portfolio_functionality">
         <methods>
           <include name="flushReport"/>
-          <include name="EditPAN"/>
           <include name="launchApplication"/>
+          <include name="CreatePortfolioTest"/>
           <include name="InitiateReport"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.MyProfile -->
+      </class> <!-- TestPackage.Create_portfolio_functionality -->
     </classes>
-  </test> <!-- MyProfile(failed) -->
+  </test> <!-- Create Strategy(failed) -->
 </suite> <!-- Failed suite [Suite] -->

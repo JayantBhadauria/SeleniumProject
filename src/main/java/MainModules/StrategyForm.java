@@ -239,13 +239,13 @@ public class StrategyForm extends AbstractClass{
 	}
 	
 	public void legMinRangeValue(String value,char legNumber) throws InterruptedException {
-		sleep(500);
+		WaitImplicit(5);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolname='underlyingMinValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
 	
 	public void legMaxRangeValue(String value,char legNumber) throws InterruptedException {
-		sleep(500);
+		WaitImplicit(5);
 		String xpath ="//app-strategy-leg-form["+legNumber+"]//input[@formcontrolname='underlyingMaxValue']";
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}

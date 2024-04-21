@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.MyProfile" class="method navigator-link" hash-for-method="EditPAN({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesoluti...)">EditPAN({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesoluti...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.Copy_functionality" class="method navigator-link" hash-for-method="createCopyfromCreatedMyPortfolio({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)">createCopyfromCreatedMyPortfolio({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,15 +121,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestPackage.MyProfile</span>
+              <span class="class-name">TestPackage.Copy_functionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditPAN({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesoluti...)">
-                  </a> <!-- EditPAN({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesoluti...) -->
-                  <span class="method-name">EditPAN</span>
-                  <span class="parameters">({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesolutions.com, Area/Locality=Sector-116 , Mohali, City=Mohali, State=Punjab, Country=India, Pin Code=90991, Address=Ansal golflink2, Birth Date=17-04-1990})</span>
+                  <a name="createCopyfromCreatedMyPortfolio({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)">
+                  </a> <!-- createCopyfromCreatedMyPortfolio({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...) -->
+                  <span class="method-name">createCopyfromCreatedMyPortfolio</span>
+                  <span class="parameters">({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,18 +147,19 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;TestComponents.Listners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;MyProfile&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;Description&quot; value=&quot;To check if profile is deleting&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Copy functionality&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;Description&quot; value=&quot;To check the copy portfolio functionality&quot;/&gt;
     &lt;parameter name=&quot;Author&quot; value=&quot;Jayant Bhadauria&quot;/&gt;
+    &lt;parameter name=&quot;portfolioName&quot; value=&quot;Dual Nifty&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;RunOnly&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestPackage.MyProfile&quot;/&gt;
+      &lt;class name=&quot;TestPackage.Copy_functionality&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- MyProfile --&gt;
+  &lt;/test&gt; &lt;!-- Copy functionality --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +171,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">MyProfile (1 class)</span>
+                <span class="test-name">Copy functionality (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,7 +185,7 @@
               <span class="test-group-name">RunOnly</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">EditPAN</span>
+                <span class="method-in-group-name">createCopyfromCreatedMyPortfolio</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -206,14 +207,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EditPAN')
-data.setCell(0, 2, 'TestPackage.MyProfile')
-data.setCell(0, 3, 19238);
+data.setCell(0, 1, 'createCopyfromCreatedMyPortfolio')
+data.setCell(0, 2, 'TestPackage.Copy_functionality')
+data.setCell(0, 3, 93047);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -232,13 +233,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestPackage.MyProfile</span>
+              <span class="ignored-class-name">TestPackage.Copy_functionality</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">DeleteProfile</span>
+                <span class="ignored-method-name">createCopyfromSubscribed</span>
                 <br/>
-                <span class="ignored-method-name">EditProfile</span>
+                <span class="ignored-method-name">createCopyfromOriginals</span>
                 <br/>
-                <span class="ignored-method-name">ChangeProfilePicture</span>
+                <span class="ignored-method-name">createCopyfromCreatedHome</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -250,26 +251,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.MyProfile</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.Copy_functionality</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">InitiateReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">714 ms</span>
+                <span class="method-start">688 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">EditPAN({PAN Number=AAAAA1235A, Name=John Doe, Mobile Number=8218561658, Email=jayant.bhadauria@utradesoluti...)</span>
-                <span class="method-start">11513 ms</span>
+                <span class="method-name">createCopyfromCreatedMyPortfolio({strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, l...)</span>
+                <span class="method-start">9216 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">30764 ms</span>
+                <span class="method-start">102286 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">30863 ms</span>
+                <span class="method-start">103622 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
