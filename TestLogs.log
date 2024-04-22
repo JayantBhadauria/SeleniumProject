@@ -1,18 +1,25 @@
-21-Apr-2024 10:42:28 BaseTest [main] INFO : Report Started
-21-Apr-2024 10:42:33 BaseTest [main] INFO : ChromeDriver initialized
-21-Apr-2024 10:42:37 BaseTest [main] INFO : Login page opened
-21-Apr-2024 10:42:37 Listners [main] INFO : =========TEST INFO===========
-21-Apr-2024 10:42:37 Listners [main] INFO : Test : Copy functionality started
-21-Apr-2024 10:42:49 LoginPage [main] INFO : User Logged In
-21-Apr-2024 10:42:49 LoginPage [main] INFO : My portfolio page opened
-21-Apr-2024 10:42:51 LoginPage [main] INFO : Portfolio form opened
-21-Apr-2024 10:42:52 PortfolioForm [main] INFO : Strategy form opened
-21-Apr-2024 10:43:40 StrategyForm [main] INFO : LockProfit : 49
-21-Apr-2024 10:43:43 StrategyForm [main] ERROR: PF_210424_224250 created
-21-Apr-2024 10:44:03 PortfolioForm [main] INFO : Portfolio Submitted
-21-Apr-2024 10:44:05 MyPortfolio [main] INFO : My portfolio page opened
-21-Apr-2024 10:44:06 MyPortfolio [main] INFO : Created tab opened
-21-Apr-2024 10:44:11 MyPortfolio [main] INFO : Copy Of PF_210424_224250PF1 created
-21-Apr-2024 10:44:11 Listners [main] INFO : Test : Copy functionality Success
-21-Apr-2024 10:44:12 BaseTest [main] INFO : Program completed
-21-Apr-2024 10:44:13 BaseTest [main] INFO : Report Ended
+22-Apr-2024 09:55:39 BaseTest [main] INFO : Report Started
+22-Apr-2024 09:55:42 BaseTest [main] INFO : ChromeDriver initialized
+22-Apr-2024 09:55:43 BaseTest [main] INFO : Login page opened
+22-Apr-2024 09:55:43 Listners [main] INFO : =========TEST INFO===========
+22-Apr-2024 09:55:43 Listners [main] INFO : Test : Bookmark Strategy started
+22-Apr-2024 09:56:00 LoginPage [main] INFO : User Logged In
+22-Apr-2024 09:56:01 LoginPage [main] INFO : My portfolio page opened
+22-Apr-2024 09:56:01 MyPortfolio [main] INFO : BookMarked tab opened
+22-Apr-2024 09:56:02 MyPortfolio [main] INFO : Created tab opened
+22-Apr-2024 09:56:03 RetryAnalyzer [main] WARN : Retrying test : null
+22-Apr-2024 09:56:03 Listners [main] DEBUG: Test : Bookmark Strategy Skipped
+22-Apr-2024 09:56:03 BaseTest [main] INFO : Program completed
+22-Apr-2024 09:56:05 BaseTest [main] INFO : ChromeDriver initialized
+22-Apr-2024 09:56:05 BaseTest [main] INFO : Login page opened
+22-Apr-2024 09:56:05 Listners [main] INFO : =========TEST INFO===========
+22-Apr-2024 09:56:05 Listners [main] INFO : Test : Bookmark Strategy started
+22-Apr-2024 09:56:21 LoginPage [main] INFO : User Logged In
+22-Apr-2024 09:56:22 LoginPage [main] INFO : My portfolio page opened
+22-Apr-2024 09:56:23 MyPortfolio [main] INFO : BookMarked tab opened
+22-Apr-2024 09:56:24 MyPortfolio [main] INFO : Created tab opened
+22-Apr-2024 09:56:24 RetryAnalyzer [main] WARN : Retrying test : null
+22-Apr-2024 09:56:25 BaseTest [main] INFO : Screenshot taken
+22-Apr-2024 09:56:25 Listners [main] ERROR: Test : Bookmark Strategy Failed
+22-Apr-2024 09:56:26 BaseTest [main] INFO : Program completed
+22-Apr-2024 09:56:26 BaseTest [main] INFO : Report Ended

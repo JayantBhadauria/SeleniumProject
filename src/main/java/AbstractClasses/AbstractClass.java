@@ -1,5 +1,6 @@
 package AbstractClasses;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import MainModules.HomePage;
 import MainModules.MyPortfolio;
@@ -26,6 +29,11 @@ public class AbstractClass {
 	
 	public void WaitImplicit(int time) {
 		driver.manage().timeouts().implicitlyWait(time,TimeUnit.SECONDS);
+	}
+
+	public void WaitUntilElementVisible(int time, By locator){
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(time));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 	
 	public List<WebElement> getDropdownElements() {
@@ -112,4 +120,6 @@ public class AbstractClass {
 		Actions actions=new Actions(driver);
 		actions.click(element).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).keyDown(Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE).sendKeys(key).build().perform();
 	}
+
+
 }

@@ -103,7 +103,7 @@ public class MyPortfolio extends AbstractClass {
 	
 	public void BookMarkPortfolio(String portfolioName) throws InterruptedException {
 		createdTab();
-		sleep(1500);
+		WaitImplicit(10);
 		List<WebElement> elements=getListofPortfolios();
 		for(int i=0;i<elements.size();i++) {
 			if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
@@ -117,8 +117,7 @@ public class MyPortfolio extends AbstractClass {
 	
 	public void UnSubscribePortfolio(String portfolioName) throws InterruptedException {
 		subscribedTab();
-		
-        sleep(1500);
+		WaitImplicit(5);
         List<WebElement> elements=getListofPortfolios();
         for(int i=0;i<elements.size();i++) {
             if(elements.get(i).findElement(By.xpath("./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1]")).getText().equalsIgnoreCase(portfolioName)){
