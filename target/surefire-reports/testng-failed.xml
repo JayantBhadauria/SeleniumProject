@@ -4,25 +4,25 @@
   <listeners>
     <listener class-name="TestComponents.Listners"/>
   </listeners>
-  <test thread-count="1" name="Create Strategy(failed)" verbose="0">
-    <parameter name="Description" value="Functionality of Create Strategy"/>
+  <test thread-count="1" name="Bookmark Strategy(failed)" verbose="0">
+    <parameter name="Description" value="Functionality of Bookmark Strategy"/>
     <parameter name="Author" value="Jayant Bhadauria"/>
-    <parameter name="portfolioName" value="Copy Of Dual Nifty_1"/>
+    <parameter name="portfolioName" value="Expiry Special"/>
     <groups>
       <run>
         <include name="RunOnly"/>
       </run>
     </groups>
     <classes>
-      <class name="TestPackage.Create_portfolio_functionality">
+      <class name="TestPackage.BookMark_Functionality">
         <methods>
           <include name="flushReport"/>
           <include name="launchApplication"/>
-          <include name="CreatePortfolioTest"/>
           <include name="InitiateReport"/>
+          <include name="bookmarkFromMyPortfolio" invocation-numbers="0"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- TestPackage.Create_portfolio_functionality -->
+      </class> <!-- TestPackage.BookMark_Functionality -->
     </classes>
-  </test> <!-- Create Strategy(failed) -->
+  </test> <!-- Bookmark Strategy(failed) -->
 </suite> <!-- Failed suite [Suite] -->

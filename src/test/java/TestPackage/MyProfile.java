@@ -37,6 +37,7 @@ public class MyProfile extends BaseTest {
     @Test(testName ="Edit Profile",retryAnalyzer = RetryAnalyzer.class , dataProvider="ProfileDetails")
     public void EditProfile(LinkedHashMap<String,String> input){
         // To be done
+        
     }
 
     @Test(testName ="Edit PAN",retryAnalyzer = RetryAnalyzer.class,groups = {"Smoke"},dataProvider = "ProfileDetails")

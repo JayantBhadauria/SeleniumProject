@@ -9,10 +9,57 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Copy functionality</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">103,321</td><td>RunOnly</td><td></td></tr>
+<tr><td><a href="#t0">Bookmark Strategy</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">46,821</td><td>RunOnly</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Copy functionality &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestPackage.Copy_functionality</td><td><a href="#m0">createCopyfromCreatedMyPortfolio</a></td><td rowspan="1">1713719557968</td><td rowspan="1">93047</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bookmark Strategy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m0">bookmarkFromMyPortfolio</a></td><td rowspan="1">1713803165929</td><td rowspan="1">18878</td></tr><tr><th colspan="4">Bookmark Strategy &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestPackage.BookMark_Functionality</td><td><a href="#m1">bookmarkFromMyPortfolio</a></td><td rowspan="1">1713803143811</td><td rowspan="1">19239</td></tr></tbody>
 </table>
-<h2>Copy functionality</h2><h3 id="m0">TestPackage.Copy_functionality#createCopyfromCreatedMyPortfolio</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{strategyType=Bear Call Spread, strikeSelection=Price, expiryType=Monthly, stgSqroffType=Complete, legExpiryType1=Basic, legInstrumentType1=Put, legOrderMode2=Sell, legPrice1=56, legPrice2=57, legLotMultiplier1=4, legTP1=100, legSL1=30, legMoveSL1=70, legSL2=40, legMoveSL2=41, legWTT1=93, legSlReExecution2=5, legExitRangeType1=2, legMinRangeValue1=50, legMaxRangeValue1=99, stgSl=44, stgSlReExecution=46, stgTrailSLat=60, stgTrailSLby=40, stgLockProfitOn=53, stgLockProfitAt=49, portfolioTP=90, portfolioLockProfitOn=70, portfolioLockProfitAt=50}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Bookmark Strategy</h2><h3 id="m0">TestPackage.BookMark_Functionality#bookmarkFromMyPortfolio</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Expiry Special</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=123.0.6312.124)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e9e14c1a209106adc8ece5847a8511b, findChildElement {using=xpath, value=./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1], id=f.E07826F27057B6073A45F7DC8AD9C8B2.d.D7ADC7676A1FC0D729C52D3432462C05.e.134}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64872/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e9e14c1a209106adc8ece5847a8511b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+	at MainModules.MyPortfolio.BookMarkPortfolio(MyPortfolio.java:109)
+	at TestPackage.BookMark_Functionality.bookmarkFromMyPortfolio(BookMark_Functionality.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestPackage.BookMark_Functionality#bookmarkFromMyPortfolio</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Expiry Special</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=123.0.6312.124)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb55b571428d498606b9f466481bba6b, findChildElement {using=xpath, value=./app-strategy-card[1]/div[1]/mat-card[1]/div[1]/div[1]/div[1]/mat-card-header[1]/div[1]/mat-card-title[1], id=f.98F45B7370100020A68A5158ECAA79C1.d.3F9888A618D232C52B040315C76F1C02.e.155}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\jayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64839}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64839/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb55b571428d498606b9f466481bba6b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
+	at MainModules.MyPortfolio.BookMarkPortfolio(MyPortfolio.java:109)
+	at TestPackage.BookMark_Functionality.bookmarkFromMyPortfolio(BookMark_Functionality.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -60,7 +60,7 @@ public class BookMark_Functionality extends BaseTest {
 		LoginPage.LoginApplication(prop.getProperty("username"), prop.getProperty("password"));
 		HomePage homepage = new HomePage(driver);
 		homepage.BookMarkPortfolio(portfolioName, "Created");
-		Thread.sleep(2500);
+		homepage.WaitImplicit(10);
 		homepage.UnBookmarkPortfolio(portfolioName, "Created");
 	}
 
@@ -86,6 +86,19 @@ public class BookMark_Functionality extends BaseTest {
 		homePage.BookMarkPortfolio(portfolioName, "Originals");
 		Thread.sleep(3000);
 		homePage.UnBookmarkPortfolio(portfolioName, "Originals");
+	}
+
+	@Parameters("portfolioName")
+	@Test(testName="Bookmark case", retryAnalyzer=RetryAnalyzer.class, groups = "RunOnly")
+	public void bookmarkFromMyPortfolio(String portfolioName) throws IOException, InterruptedException {
+		LoginPage.LoginApplication(prop.getProperty("username"),prop.getProperty("password"));
+		MyPortfolio portfolioForm=LoginPage.goToMyportfolioPage();
+		By locator=By.xpath("");
+		portfolioForm.WaitUntilElementVisible(5, );
+		portfolioForm.bookmarkedTab();
+		portfolioForm.WaitImplicit(5);
+		portfolioForm.BookMarkPortfolio(portfolioName);
+		PopUpMessage();
 	}
 
 	
